@@ -6,6 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Trades from "./Pages/Trading/Trades/Trades";
 
 
 
@@ -23,6 +24,8 @@ const App = () => {
                 <Route path="/dashboard" element={<Dashboard />}>
                   </Route>
                 <Route path="/trading" element={<Trading />}>
+                </Route>
+                <Route path="/trades" element={<Trades />}>
                 </Route>
               </Routes>
             </Router>

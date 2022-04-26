@@ -1,34 +1,14 @@
 import React from "react";
-import Table from "../Components/Table/Table";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSearch,
-  faBell,
-  faCircleUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBell, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 
-const Dashboard = () => {
+const Watchlist = () => {
   return (
     <>
       <div className="container-fluid">
         <div className="row my-3">
-          <div className="col-3 fw-bold text-start p-0 fs-5">TRADES</div>
-          <div className="col-6">
-            <form className="container-fluid">
-              <div className="input-group">
-                <span className="input-group-text" id="basic-addon1">
-                  <FontAwesomeIcon icon={faSearch} />
-                </span>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search..."
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </form>
-          </div>
+          <div className="col-3 fw-bold text-start p-0 fs-5">LEGDE REPORT</div>
+          <div className="col-6"></div>
           <div className="col-1 text-center">
             <FontAwesomeIcon
               icon={faBell}
@@ -72,9 +52,32 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <Table />
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+          <a
+              href="/"
+              className="nav-link border text-center my-2 py-3  navbar-border-radius bg-orange color-white"
+              aria-current="page"
+            >
+              NIFTY
+              <span className="float-end ">
+                {/* <FontAwesomeIcon
+                  icon={}
+                  color="white"
+                  className="pe-2"
+                /> */}
+              </span>
+            </a>
+          </div>
+          <div class="col-3">Column</div>
+          <div class="col-2">Column</div>
+          <div class="col-2">Column</div>
+          <div class="col-2">Column</div>
+        </div>
+      </div>
     </>
   );
 };
 
-export default Dashboard;
+export default Watchlist;

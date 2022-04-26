@@ -9,3 +9,12 @@
 .color-white{
     color: #fff !important;
 }
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.focus-none:focus{
+    outline: none;
+    box-shadow: none;
+}
