@@ -1,20 +1,21 @@
 import React from "react";
-import Table from "../Components/Table/Table";
+// import "./Banned.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSearch,
   faBell,
   faCircleUser,
+  faCalendarDays,
   faAngleDown,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import Table from "../../Components/Table/Table";
 
-const Dashboard = () => {
+const Banned = () => {
   return (
     <>
       <div className="container-fluid">
         <div className="row my-3">
-          <div className="col-3 fw-bold text-start p-0 fs-5">TRADES</div>
-          <div className="col-9 col-sm-9 col-md-9 col-lg-6 col-xl-6">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
             <form className="container-fluid">
               <div className="input-group">
                 <span className="input-group-text" id="basic-addon1">
@@ -30,7 +31,7 @@ const Dashboard = () => {
               </div>
             </form>
           </div>
-          <div className="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-1 text-center">
             <FontAwesomeIcon
               icon={faBell}
               className="p-0 mt-1"
@@ -76,9 +77,11 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <div className="text-start fw-bold my-5">Banned/blocked Scripts</div>
+
       <Table />
     </>
   );
 };
 
-export default Dashboard;
+export default Banned;

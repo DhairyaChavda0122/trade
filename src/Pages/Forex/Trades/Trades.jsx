@@ -1,5 +1,5 @@
 import React from "react";
-import "./Trades.css";
+import "./Trades.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -291,11 +291,14 @@ const Trades = () => {
       </div>
       <div>
         <p>
-          SHOW 
+          SHOW
           <span>
             <div className="btn-group bg-orange mx-2">
-              <button type="button" className="btn color-white focus-none btn-sm ">
-                 10
+              <button
+                type="button"
+                className="btn color-white focus-none btn-sm "
+              >
+                10
               </button>
               <button
                 type="button"
@@ -333,6 +336,7 @@ const Trades = () => {
           ENTRIES
         </p>
       </div>
+      
       <Table />
     </>
   );

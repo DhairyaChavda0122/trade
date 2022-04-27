@@ -15,10 +15,10 @@ const Portfolio = () => {
     <>
       <div className="container-fluid">
         <div className="row my-3">
-          <div className="col-5 fw-bold text-start p-0">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5 fw-bold text-start p-0">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-6">
+                <div className="col-12 col-sm-12 col-md-7 col-lg-5 col-xl-6">
                   <div className="form-check ">
                     <input
                       className="form-check-input focus-none bg-orange"
@@ -42,7 +42,7 @@ const Portfolio = () => {
                     </label>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6">
                   <div className="form-check ">
                     <input
                       className="form-check-input focus-none bg-orange"
@@ -69,7 +69,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5">
             <form className="container-fluid">
               <div className="input-group">
                 <span className="input-group-text" id="basic-addon1">
@@ -85,7 +85,7 @@ const Portfolio = () => {
               </div>
             </form>
           </div>
-          <div className="col-1 text-center">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center">
             <FontAwesomeIcon
               icon={faBell}
               className="p-0 mt-1"
@@ -93,7 +93,7 @@ const Portfolio = () => {
               color="grey"
             />
           </div>
-          <div className="col-2 d-flex flex-row">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <a
@@ -105,6 +105,9 @@ const Portfolio = () => {
                 aria-expanded="false"
               >
                 Timothy
+                <span className="ps-2">
+                  <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
+                </span>
               </a>
 
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -130,8 +133,8 @@ const Portfolio = () => {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-4">
-            <p className="ms-2">MARKET</p>
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <p className="m-2">MARKET</p>
             <div className="btn-group w-100 height-button bg-orange">
               <button type="button" className="btn color-white focus-none">
                 Select Market
@@ -169,8 +172,8 @@ const Portfolio = () => {
               </ul>
             </div>
           </div>
-          <div className="col-4">
-            <p className="ms-2">SCRIPT</p>
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <p className="m-2">SCRIPT</p>
             <div className="btn-group w-100 height-button bg-orange">
               <button type="button" className="btn color-white focus-none">
                 Select Script
@@ -208,8 +211,8 @@ const Portfolio = () => {
               </ul>
             </div>
           </div>
-          <div className="col-4">
-            <p className="ms-2">EXPIRY DATE</p>
+          <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <p className="m-2">EXPIRY DATE</p>
             <a
               href="/"
               className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
@@ -230,7 +233,7 @@ const Portfolio = () => {
 
       <div className="container-fluid my-5">
         <div className="row">
-          <div className="col-3">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
             <button
               type="button"
               className="btn btn-primary text-center btn-lg fs-6"
@@ -238,12 +241,15 @@ const Portfolio = () => {
               GET POSITION
             </button>
           </div>
-          <div className="col-3">
-            <button type="button" className="btn btn-info text-center btn-lg fs-6">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
+            <button
+              type="button"
+              className="btn btn-info text-center btn-lg fs-6"
+            >
               ROLL OVER ALL
             </button>
           </div>
-          <div className="col-3">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
             <button
               type="button"
               className="btn btn-danger text-center btn-lg fs-6"
@@ -251,8 +257,11 @@ const Portfolio = () => {
               CLOSE POSITION
             </button>
           </div>
-          <div className="col-3">
-            <button type="button" className="btn btn-secondary text-center btn-lg fs-6">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
+            <button
+              type="button"
+              className="btn btn-secondary text-center btn-lg fs-6"
+            >
               CLEAR FILTER
             </button>
           </div>

@@ -2,7 +2,17 @@ import React from "react";
 import "./Navbar.css";
 import tradeLogo from "./STOCK COIN LOGO-01.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowTrendUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowTrendUp,
+  faAngleDown,
+  faEye,
+  faDollarSign,
+  faUser,
+  faBook,
+  faFileLines,
+  faAddressBook,
+  faUserCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -35,201 +45,365 @@ const Navbar = () => {
           >
             <ul className="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
               <li>
-                <a
-                  href="/"
-                  className="nav-link border text-center my-2 py-3  navbar-border-radius bg-orange color-white"
-                  aria-current="page"
-                >
-                  <span className="float-start ">
-                    <FontAwesomeIcon
-                      icon={faArrowTrendUp}
-                      color="white"
-                      className="ps-2"
-                    />
-                  </span>
-                  Dashboard
-                  <span className="float-end ">
-                    <FontAwesomeIcon
-                      icon={faAngleDown}
-                      color="white"
-                      className="pe-2"
-                    />
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="nav-link border text-center my-2 py-3  navbar-border-radius bg-orange"
-                  aria-current="page"
-                >
-                  <span className="float-start ">
-                    <FontAwesomeIcon
-                      icon={faArrowTrendUp}
-                      color="white"
-                      className="ps-2"
-                    />
-                  </span>
-                  <div className="btn-group">
+                <div className="my-2 text-center">
+                  <div className="btn-group w-100 height-button bg-orange">
                     <button
-                      type=""
-                      className="btn dropdown-toggle color-white focus-none"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                      type="button"
+                      className="btn color-white focus-none"
                     >
-                      Trading
+                      <div className="container-fluid">
+                        <div className="row">
+                          <div className="col-2 p-0 m-0">
+                            <FontAwesomeIcon
+                              icon={faArrowTrendUp}
+                              color="white"
+                              className=""
+                            />
+                          </div>
+                          <div className="col-8">Dashboard</div>
+                          <div className="col-2">
+                            <button
+                              type="button"
+                              className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span className="float-end pe-2">
+                                <FontAwesomeIcon
+                                  icon={faAngleDown}
+                                  color="white"
+                                  className=""
+                                />
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </button>
+
                     <ul className="dropdown-menu">
                       <li>
                         <a className="dropdown-item" href="#">
-                          Watchlist
+                          Action
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Trades
+                          Another action
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Portfolio/Position
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Banned/blocked Scripts
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Margin Management
+                          Something else here
                         </a>
                       </li>
                     </ul>
                   </div>
-                  <span className="float-end ">
-                    <FontAwesomeIcon
-                      icon={faAngleDown}
-                      color="white"
-                      className="pe-2"
-                    />
-                  </span>
-                </a>
+                </div>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="nav-link border text-center my-2 py-3  navbar-border-radius bg-orange color-white"
-                  aria-current="page"
-                >
-                  <span className="float-start ">
-                    <FontAwesomeIcon
-                      icon={faArrowTrendUp}
-                      color="white"
-                      className="ps-2"
-                    />
-                  </span>
-                  Forex/Comex
-                  <span className="float-end ">
-                    <FontAwesomeIcon
-                      icon={faAngleDown}
-                      color="white"
-                      className="pe-2"
-                    />
-                  </span>
-                </a>
+                <div className="my-2 text-center">
+                  <div className="btn-group w-100 height-button bg-orange">
+                    <button
+                      type="button"
+                      className="btn color-white focus-none"
+                    >
+                      <div className="text-center">
+                        Trading
+                        <span className="float-start ">
+                          <FontAwesomeIcon
+                            icon={faEye}
+                            color="white"
+                            className="ps-2"
+                          />
+                        </span>
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span className="float-end pe-2">
+                        <FontAwesomeIcon
+                          icon={faAngleDown}
+                          color="white"
+                          className=""
+                        />
+                      </span>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="nav-link border text-center my-2 py-3  navbar-border-radius bg-orange color-white"
-                  aria-current="page"
-                >
-                  <span className="float-start ">
-                    <FontAwesomeIcon
-                      icon={faArrowTrendUp}
-                      color="white"
-                      className="ps-2"
-                    />
-                  </span>
-                  User
-                  <span className="float-end ">
-                    <FontAwesomeIcon
-                      icon={faAngleDown}
-                      color="white"
-                      className="pe-2"
-                    />
-                  </span>
-                </a>
+                <div className="my-2 text-center">
+                  <div className="btn-group w-100 height-button bg-orange">
+                    <button
+                      type="button"
+                      className="btn color-white focus-none"
+                    >
+                      <div className="text-start">
+                        Forex/Comex
+                        <span className="float-start ">
+                          <FontAwesomeIcon
+                            icon={faDollarSign}
+                            color="white"
+                            className="ps-2"
+                          />
+                        </span>
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span className="float-end pe-2">
+                        <FontAwesomeIcon
+                          icon={faAngleDown}
+                          color="white"
+                          className=""
+                        />
+                      </span>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="nav-link border text-center my-2 py-3  navbar-border-radius bg-orange color-white"
-                  aria-current="page"
-                >
-                  <span className="float-start ">
-                    <FontAwesomeIcon
-                      icon={faArrowTrendUp}
-                      color="white"
-                      className="ps-2"
-                    />
-                  </span>
-                  Log
-                  <span className="float-end ">
-                    <FontAwesomeIcon
-                      icon={faAngleDown}
-                      color="white"
-                      className="pe-2"
-                    />
-                  </span>
-                </a>
+                <div className="my-2 text-center">
+                  <div className="btn-group w-100 height-button bg-orange">
+                    <button
+                      type="button"
+                      className="btn color-white focus-none"
+                    >
+                      User
+                      <span className="float-start ">
+                        <FontAwesomeIcon
+                          icon={faUser}
+                          color="white"
+                          className="ps-2"
+                        />
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span className="float-end pe-2">
+                        <FontAwesomeIcon
+                          icon={faAngleDown}
+                          color="white"
+                          className=""
+                        />
+                      </span>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="nav-link border text-center my-2 py-3  navbar-border-radius bg-orange color-white"
-                  aria-current="page"
-                >
-                  <span className="float-start ">
-                    <FontAwesomeIcon
-                      icon={faArrowTrendUp}
-                      color="white"
-                      className="ps-2"
-                    />
-                  </span>
-                  Accounts
-                  <span className="float-end ">
-                    <FontAwesomeIcon
-                      icon={faAngleDown}
-                      color="white"
-                      className="pe-2"
-                    />
-                  </span>
-                </a>
+                <div className="my-2 text-center">
+                  <div className="btn-group w-100 height-button bg-orange">
+                    <button
+                      type="button"
+                      className="btn color-white focus-none"
+                    >
+                      Log
+                      <span className="float-start ">
+                        <FontAwesomeIcon
+                          icon={faBook}
+                          color="white"
+                          className="ps-2"
+                        />
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span className="float-end pe-2">
+                        <FontAwesomeIcon
+                          icon={faAngleDown}
+                          color="white"
+                          className=""
+                        />
+                      </span>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="nav-link border text-center my-2 py-3  navbar-border-radius bg-orange color-white"
-                  aria-current="page"
-                >
-                  <span className="float-start ">
-                    <FontAwesomeIcon
-                      icon={faArrowTrendUp}
-                      color="white"
-                      className="ps-2"
-                    />
-                  </span>
-                  Report
-                  <span className="float-end ">
-                    <FontAwesomeIcon
-                      icon={faAngleDown}
-                      color="white"
-                      className="pe-2"
-                    />
-                  </span>
-                </a>
+                <div className="my-2 text-center">
+                  <div className="btn-group w-100 height-button bg-orange">
+                    <button
+                      type="button"
+                      className="btn color-white focus-none"
+                    >
+                      Accounts
+                      <span className="float-start ">
+                        <FontAwesomeIcon
+                          icon={faUserCircle}
+                          color="white"
+                          className="ps-2"
+                        />
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span className="float-end pe-2">
+                        <FontAwesomeIcon
+                          icon={faAngleDown}
+                          color="white"
+                          className=""
+                        />
+                      </span>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="my-2 text-center">
+                  <div className="btn-group w-100 height-button bg-orange">
+                    <button
+                      type="button"
+                      className="btn color-white focus-none"
+                    >
+                      Reports
+                      <span className="float-start ">
+                        <FontAwesomeIcon
+                          icon={faAddressBook}
+                          color="white"
+                          className="ps-2"
+                        />
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span className="float-end pe-2">
+                        <FontAwesomeIcon
+                          icon={faAngleDown}
+                          color="white"
+                          className=""
+                        />
+                      </span>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
