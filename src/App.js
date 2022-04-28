@@ -34,6 +34,11 @@ import Rejection from "./Pages/Log/Rejection/Rejection";
 
 
 import Cash_Ledge from "./Pages/Accounts/Cash_Ledge/Cash_Ledge";
+import Cash_Entry from "./Pages/Accounts/Cash_Entry/Cash_Entry";
+import JV from "./Pages/Accounts/JV/JV";
+import JV_Broker from "./Pages/Accounts/JV_Broker/JV_Broker";
+import Deposit from "./Pages/Accounts/Deposit/Deposit";
+import Valan from "./Pages/Accounts/Valan/Valan";
 
 
 
