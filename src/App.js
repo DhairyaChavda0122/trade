@@ -26,6 +26,16 @@ import All_User from "./Pages/User/All_Userlist/All_User"
 import Userlist from "./Pages/User/Userlist/Userlist"
 
 
+import Trade_Edit from "./Pages/Log/Trade_Edit/Trade_Edit";
+import User_Edit from "./Pages/Log/User_Edit/User_Edit";
+import Auto from "./Pages/Log/Auto/Auto";
+import Cross from "./Pages/Log/Cross/Cross";
+import Rejection from "./Pages/Log/Rejection/Rejection";
+
+
+import Cash_Ledge from "./Pages/Accounts/Cash_Ledge/Cash_Ledge";
+
+
 
 const App = () => {
 
@@ -43,7 +53,7 @@ const App = () => {
           <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
             <Router>
               <Routes>
-              <Route path="/login" element={<Login />}>
+                <Route path="/login" element={<Login />}>
                 </Route>
 
 
@@ -54,12 +64,12 @@ const App = () => {
                 {/* Trading */}
 
 
-                
+
                 <Route path="/watchlist-trading" element={<Watchlist_Trading />}>
                 </Route>
                 <Route path="/trades-trading" element={<Trades_Trading />}>
                 </Route>
-                
+
                 <Route path="/portfolio-trading" element={<Portfolio_Trading />}>
                 </Route>
                 <Route path="/banned-trading" element={<Banned_Trading />}>
@@ -87,6 +97,38 @@ const App = () => {
                 <Route path="/All-User" element={<All_User />}>
                 </Route>
                 <Route path="/Userlist" element={<Userlist />}>
+                </Route>
+
+
+                {/* Log */}
+
+
+                <Route path="/Trade-Edit" element={<Trade_Edit />}>
+                </Route>
+                <Route path="/User-Edit" element={<User_Edit />}>
+                </Route>
+                <Route path="/Auto" element={<Auto />}>
+                </Route>
+                <Route path="/Cross" element={<Cross />}>
+                </Route>
+                <Route path="/Rejection" element={<Rejection />}>
+                </Route>
+
+
+                {/* Accounts */}
+
+
+                <Route path="/Cash_Ledge" element={<Cash_Ledge />}>
+                </Route>
+                <Route path="/Cash_Entry" element={<Cash_Entry />}>
+                </Route>
+                <Route path="/JV" element={<JV />}>
+                </Route>
+                <Route path="/JV_Broker" element={<JV_Broker />}>
+                </Route>
+                <Route path="/Deposit" element={<Deposit />}>
+                </Route>
+                <Route path="/Valan" element={<Valan />}>
                 </Route>
 
 
