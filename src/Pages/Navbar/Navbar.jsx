@@ -13,6 +13,7 @@ import {
   faAddressBook,
   faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -44,7 +45,7 @@ const Navbar = () => {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
-            <li>
+              <li>
                 <div className="my-2 text-center">
                   <div className="btn-group w-100 height-button bg-orange">
                     <button
@@ -128,20 +129,26 @@ const Navbar = () => {
                         />
                       </span>
                     </button>
-                    <ul className="dropdown-menu">
+                    <ul className="dropdown-menu navbar-border-radius">
+                      <li>
+                        <a className="dropdown-item" href="/trade/watchlist-trading">
+                          Watchlist
+                        </a>
+                      </li>
+                      
                       <li>
                         <a className="dropdown-item" href="#">
-                          Action
+                          Portfolio/Position
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Another action
+                          Banned/Blocked Scripts
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Something else here
+                         Margin Management
                         </a>
                       </li>
                     </ul>
