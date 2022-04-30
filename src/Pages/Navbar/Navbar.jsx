@@ -44,43 +44,38 @@ const Navbar = () => {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
-              <li>
+            <li>
                 <div className="my-2 text-center">
                   <div className="btn-group w-100 height-button bg-orange">
                     <button
                       type="button"
                       className="btn color-white focus-none"
                     >
-                      <div className="container-fluid">
-                        <div className="row">
-                          <div className="col-2 p-0 m-0">
-                            <FontAwesomeIcon
-                              icon={faArrowTrendUp}
-                              color="white"
-                              className=""
-                            />
-                          </div>
-                          <div className="col-8">Dashboard</div>
-                          <div className="col-2">
-                            <button
-                              type="button"
-                              className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <span className="float-end pe-2">
-                                <FontAwesomeIcon
-                                  icon={faAngleDown}
-                                  color="white"
-                                  className=""
-                                />
-                              </span>
-                            </button>
-                          </div>
-                        </div>
+                      <div className="text-center">
+                        Dashboard
+                        <span className="float-start ">
+                          <FontAwesomeIcon
+                            icon={faArrowTrendUp}
+                            color="white"
+                            className="ps-2"
+                          />
+                        </span>
                       </div>
                     </button>
-
+                    <button
+                      type="button"
+                      className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span className="float-end pe-2">
+                        <FontAwesomeIcon
+                          icon={faAngleDown}
+                          color="white"
+                          className=""
+                        />
+                      </span>
+                    </button>
                     <ul className="dropdown-menu">
                       <li>
                         <a className="dropdown-item" href="#">
@@ -160,7 +155,7 @@ const Navbar = () => {
                       type="button"
                       className="btn color-white focus-none"
                     >
-                      <div className="text-start">
+                      <div className="text-center">
                         Forex/Comex
                         <span className="float-start ">
                           <FontAwesomeIcon

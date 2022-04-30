@@ -24,6 +24,7 @@ import Margin_Forex from "./Pages/Forex/Margin/Margin";
 
 import All_User from "./Pages/User/All_Userlist/All_User"
 import Userlist from "./Pages/User/Userlist/Userlist"
+import Add_Account from "./Pages/User/Add_Account/Add_Account"
 
 
 import Trade_Edit from "./Pages/Log/Trade_Edit/Trade_Edit";
@@ -40,6 +41,12 @@ import JV_Broker from "./Pages/Accounts/JV_Broker/JV_Broker";
 import Deposit from "./Pages/Accounts/Deposit/Deposit";
 import Valan from "./Pages/Accounts/Valan/Valan";
 
+
+import Trade_Report from "./Pages/Report/Trade_Report/Trade_Report";
+import Ledge_Report from "./Pages/Report/Ledge_Report/Ledge_Report";
+import Deposit_Report from "./Pages/Report/Deposit_Report/Deposit_Report";
+import Trial from "./Pages/Report/Trial/Trial";
+import Client_Report from "./Pages/Report/Client_Report/Client_Report";
 
 
 const App = () => {
@@ -99,43 +106,59 @@ const App = () => {
                 {/* User */}
 
 
-                <Route path="/All-User" element={<All_User />}>
+                <Route path="/all-user" element={<All_User />}>
                 </Route>
-                <Route path="/Userlist" element={<Userlist />}>
+                <Route path="/userlist" element={<Userlist />}>
+                </Route>
+                <Route path="/add-account" element={<Add_Account />}>
                 </Route>
 
 
                 {/* Log */}
 
 
-                <Route path="/Trade-Edit" element={<Trade_Edit />}>
+                <Route path="/trade-edit" element={<Trade_Edit />}>
                 </Route>
-                <Route path="/User-Edit" element={<User_Edit />}>
+                <Route path="/user-edit" element={<User_Edit />}>
                 </Route>
-                <Route path="/Auto" element={<Auto />}>
+                <Route path="/auto" element={<Auto />}>
                 </Route>
-                <Route path="/Cross" element={<Cross />}>
+                <Route path="/cross" element={<Cross />}>
                 </Route>
-                <Route path="/Rejection" element={<Rejection />}>
+                <Route path="/rejection" element={<Rejection />}>
                 </Route>
 
 
                 {/* Accounts */}
 
 
-                <Route path="/Cash_Ledge" element={<Cash_Ledge />}>
+                <Route path="/cash-ledge" element={<Cash_Ledge />}>
                 </Route>
-                <Route path="/Cash_Entry" element={<Cash_Entry />}>
+                <Route path="/cash-entry" element={<Cash_Entry />}>
                 </Route>
-                <Route path="/JV" element={<JV />}>
+                <Route path="/jv" element={<JV />}>
                 </Route>
-                <Route path="/JV_Broker" element={<JV_Broker />}>
+                <Route path="/jv-broker" element={<JV_Broker />}>
                 </Route>
-                <Route path="/Deposit" element={<Deposit />}>
+                <Route path="/deposit" element={<Deposit />}>
                 </Route>
-                <Route path="/Valan" element={<Valan />}>
+                <Route path="/valan" element={<Valan />}>
                 </Route>
 
+
+                {/* Report */}
+
+
+                <Route path="/trade-report" element={<Trade_Report />}>
+                </Route>
+                <Route path="/ledge-report" element={<Ledge_Report />}>
+                </Route>
+                <Route path="/deposit-report" element={<Deposit_Report />}>
+                </Route>
+                <Route path="/trial" element={<Trial />}>
+                </Route>
+                <Route path="/client-report" element={<Client_Report />}>
+                </Route>
 
 
               </Routes>

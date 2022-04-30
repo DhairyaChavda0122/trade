@@ -1,0 +1,19 @@
+.bg-none{
+    background-color: none;
+}
+
+.border-none {
+    border: none;
+}
+
+.input-border{
+    border-radius: 7px !important;
+}
+
+.color-orange{
+    color: #FAB417;
+}
+
+.button-effect:hover{
+    background-color: rgb(150, 41, 41) ;
+}

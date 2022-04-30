@@ -7,14 +7,15 @@ import {
   faAngleDown,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import Table from "../../Components/Table/Table";
 
-const JV_Broker = () => {
+const Ledge_Report = () => {
   return (
     <>
-      <div className="container">
-        <div className="row">
-          <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4 fw-bold">
-            JV
+      <div class="container">
+        <div class="row">
+          <div class="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4">
+            Ledge Report
           </div>
           <div className="col-3 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
 
@@ -65,43 +66,57 @@ const JV_Broker = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container my-4">
         <div className="row">
-          <div className="col-12 my-5 ">
-            <div className="input-group ">
-              <label
-                className="input-group-text bg-transparent border-none me-5"
-                for="inputGroupSelect01"
-              >
-                Broker
-              </label>
-              <select
-                className="form-select input-border"
-                id="inputGroupSelect01"
-              >
-                <option selected>Broker</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <p className="m-2">From Date</p>
+            <a
+              href="/"
+              className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
+              aria-current="page"
+            >
+              <span className="text-start">mm/dd/yyyyy-:--</span>
+              <span className="float-end ">
+                <FontAwesomeIcon
+                  icon={faCalendarDays}
+                  color="white"
+                  className="pe-2"
+                />
+              </span>
+            </a>
           </div>
-
-          <div className="col-12 text-end my-4">
-            <button type="button" class="btn bg-brown color-white btn-lg focus-none button-effect">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <p className="m-2">From End</p>
+            <a
+              href="/"
+              className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
+              aria-current="page"
+            >
+              <span className="text-start">mm/dd/yyyyy-:--</span>
+              <span className="float-end ">
+                <FontAwesomeIcon
+                  icon={faCalendarDays}
+                  color="white"
+                  className="pe-2"
+                />
+              </span>
+            </a>
+          </div>
+          <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
+            <button type="button" class="btn btn-lg btn-primary">
               Process
             </button>
           </div>
-          <div className="col-12 text-end my-4">
-            <button type="button" class="btn bg-primary color-white btn-lg focus-none button-effect">
-              Submit
+          <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
+            <button type="button" class="btn btn-lg btn-info">
+              Clear
             </button>
           </div>
-
         </div>
       </div>
+      <Table />
     </>
   );
 };
 
-export default JV_Broker;
+export default Ledge_Report;
