@@ -98,25 +98,23 @@ const Navbar = () => {
                 </div>
               </li>
               <li>
-                <div className="my-2 text-center">
-                  <div className="btn-group w-100 height-button bg-orange dpdown">
-                    <FontAwesomeIcon icon={faEye} />
+              <div className="my-2 text-center">
+                  <div className="btn-group w-100 height-button bg-orange">
                     <button
                       type="button"
                       className="btn color-white focus-none"
                     >
-                      Trading
+                      <div className="text-center">
+                        Trading
+                        <span className="float-start ">
+                          <FontAwesomeIcon
+                            icon={faEye}
+                            color="white"
+                            className="ps-2"
+                          />
+                        </span>
+                      </div>
                     </button>
-
-                    <div className="dpdown-content">
-                      {/* <Link to={`/dashboard`}>link 1</Link>
-                      <Link to={`/dashboard`}>link 1</Link>
-                      <Link to={`/dashboard`}>link 1</Link> */}
-                    </div>
-
-
-
-
                     <button
                       type="button"
                       className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
@@ -131,29 +129,20 @@ const Navbar = () => {
                         />
                       </span>
                     </button>
-                    <ul className="dropdown-menu navbar-border-radius">
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/trade/watchlist-trading"
-                        >
-                          Watchlist
-                        </a>
-                      </li>
-
+                    <ul className="dropdown-menu">
                       <li>
                         <a className="dropdown-item" href="#">
-                          Portfolio/Position
+                          Action
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Banned/Blocked Scripts
+                          Another action
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Margin Management
+                          Something else here
                         </a>
                       </li>
                     </ul>
