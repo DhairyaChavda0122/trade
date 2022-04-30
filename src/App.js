@@ -39,15 +39,20 @@ import ClientReport from "./Pages/Report/Client_Report/Client_Report";
 const App = () => {
   const user = true;
 
+ 
+
   return (
     <div className="App">
+
+
+      
       {user ? (
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
               <Navbar />
             </div>
-            <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+            <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
               <Router>
                 <Routes>
                   <Route path="/trade/login" element={<Login />}></Route>
