@@ -12,9 +12,9 @@ import Table from "../../Components/Table/Table";
 const Auto = () => {
   return (
     <>
-      <div class="container">
-        <div class="row">
-          <div class="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4">
+      <div className="container">
+        <div className="row">
+          <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4">
             Auto Square Up Log
           </div>
           <div className="col-3 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
@@ -67,7 +67,7 @@ const Auto = () => {
       </div>
       <div className="container my-4">
         <div className="row">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <p className="m-2">From End</p>
             <a
               href="/"
@@ -84,7 +84,7 @@ const Auto = () => {
               </span>
             </a>
           </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <p className="m-2">From End</p>
             <a
               href="/"
@@ -102,25 +102,21 @@ const Auto = () => {
             </a>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
-            <button type="button" class="btn btn-lg btn-primary">
+            <button type="button" className="btn btn-lg btn-primary">
               Find Logs
             </button>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
-            <button type="button" class="btn btn-lg btn-info">
+            <button type="button" className="btn btn-lg btn-info">
               Reset
             </button>
           </div>
-
         </div>
       </div>
-
-      
 
       <div className="container my-5">
         <div className="row">
           <div className="col-0 col-sm-0 col-md-4 col-lg-6 col-xl-6"></div>
-          
         </div>
       </div>
       <div className="container my-5">
@@ -144,7 +140,7 @@ const Auto = () => {
           </div>
         </div>
       </div>
-      <p>
+      <div>
         SHOW
         <span>
           <div className="btn-group bg-orange mx-2">
@@ -188,7 +184,7 @@ const Auto = () => {
           </div>
         </span>
         ENTRIES
-      </p>
+      </div>
       <Table />
       <div className="fw-bold my-2">Sharing 0 to of 0 entries</div>
     </>

@@ -1,7 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Pages/Navbar/Navbar";
-import Dashboard from "./Pages/Dashboard/Dashboard";
 import Login from "./Pages/Login/Login";
+
+import TradesDashboard from "./Pages/Dashboard/Trades-Dashboard/Trades_Dashboard";
+import Executed from "./Pages/Dashboard/Executed/Executed";
+import Running from "./Pages/Dashboard/Running/Running";
+import Summary from "./Pages/Dashboard/Summary/Summary";
+import M2M from "./Pages/Dashboard/M2M/M2M";
+import UserDashboard from "./Pages/Dashboard/User-Dashboard/User_Dashboard";
+import TradeEntry from "./Pages/Dashboard/Trade-Entry/Trade_Entry";
+
 
 import WatchlistTrading from "./Pages/Trading/Watchlist/Watchlist";
 import TradesTrading from "./Pages/Trading/Trades/Trades";
@@ -16,6 +24,7 @@ import MarginForex from "./Pages/Forex/Margin/Margin";
 
 import AllUser from "./Pages/User/All_Userlist/All_User";
 import Userlist from "./Pages/User/Userlist/Userlist";
+import AddAccount from "./Pages/User/Add_Account/Add_Account"
 
 import TradeEdit from "./Pages/Log/Trade_Edit/Trade_Edit";
 import UserEdit from "./Pages/Log/User_Edit/User_Edit";
@@ -39,27 +48,56 @@ import ClientReport from "./Pages/Report/Client_Report/Client_Report";
 const App = () => {
   const user = true;
 
- 
+
 
   return (
     <div className="App">
 
 
-      
+
       {user ? (
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
-              <Navbar />
-            </div>
-            <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
-              <Router>
+
+        <Router>
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <Navbar />
+              </div>
+              <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+
                 <Routes>
                   <Route path="/trade/login" element={<Login />}></Route>
 
+
+                  {/* Dashboard */}
+
                   <Route
-                    path="/trade/dashboard"
-                    element={<Dashboard />}
+                    path="/trade/trades-dashboard"
+                    element={<TradesDashboard />}
+                  ></Route>
+                  <Route
+                    path="/trade/executed"
+                    element={<Executed />}
+                  ></Route>
+                  <Route
+                    path="/trade/running"
+                    element={<Running />}
+                  ></Route>
+                  <Route
+                    path="/trade/summary"
+                    element={<Summary />}
+                  ></Route>
+                  <Route
+                    path="/trade/m2m"
+                    element={<M2M />}
+                  ></Route>
+                  <Route
+                    path="/trade/user-dashboard"
+                    element={<UserDashboard />}
+                  ></Route>
+                  <Route
+                    path="/trade/trade-entry"
+                    element={<TradeEntry />}
                   ></Route>
 
                   {/* Trading */}
@@ -109,6 +147,7 @@ const App = () => {
 
                   <Route path="/trade/all-user" element={<AllUser />}></Route>
                   <Route path="/trade/userlist" element={<Userlist />}></Route>
+                  <Route path="/trade/add-account" element={<AddAccount />}></Route>
 
                   {/* Log */}
 
@@ -171,10 +210,12 @@ const App = () => {
 
 
                 </Routes>
-              </Router>
+              </div>
             </div>
+
           </div>
-        </div>
+        </Router>
+
       ) : (
         <Login />
       )}
