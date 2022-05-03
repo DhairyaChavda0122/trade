@@ -1,13 +1,7 @@
 import React from "react";
 import logo from "../Navbar/STOCK COIN LOGO-01.png";
 import "./Login.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSearch,
-  faBell,
-  faCircleUser,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+
 
 const Login = () => {
   return (

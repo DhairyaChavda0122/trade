@@ -5,16 +5,16 @@ import {
   faCircleUser,
   faCalendarDays,
   faAngleDown,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Table/Table";
+import { Link } from "react-router-dom";
 
 const Ledge_Report = () => {
   return (
     <>
-      <div class="container">
-        <div class="row">
-          <div class="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4">
+      <div className="container">
+        <div className="row">
+          <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4">
             Ledge Report
           </div>
           <div className="col-3 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
@@ -30,9 +30,9 @@ const Ledge_Report = () => {
           <div className="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
-              <a
-                className="btn dropdown-toggle fw-bold"
-                href="/"
+              <Link
+                className="btn dropdown-toggle fw-bold focus-none"
+                to="/"
                 role="button"
                 id="dropdownMenuLink"
                 data-bs-toggle="dropdown"
@@ -42,23 +42,23 @@ const Ledge_Report = () => {
                 <span className="ps-2">
                   <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
                 </span>
-              </a>
+              </Link>
 
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Another action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Something else here
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -68,10 +68,10 @@ const Ledge_Report = () => {
 
       <div className="container my-4">
         <div className="row">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <p className="m-2">From Date</p>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
               aria-current="page"
             >
@@ -83,12 +83,12 @@ const Ledge_Report = () => {
                   className="pe-2"
                 />
               </span>
-            </a>
+            </Link>
           </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <p className="m-2">From End</p>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
               aria-current="page"
             >
@@ -100,15 +100,15 @@ const Ledge_Report = () => {
                   className="pe-2"
                 />
               </span>
-            </a>
+            </Link>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
-            <button type="button" class="btn btn-lg btn-primary">
+            <button type="button" className="btn btn-lg btn-primary">
               Process
             </button>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
-            <button type="button" class="btn btn-lg btn-info">
+            <button type="button" className="btn btn-lg btn-info">
               Clear
             </button>
           </div>

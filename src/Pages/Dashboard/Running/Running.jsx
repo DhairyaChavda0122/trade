@@ -7,6 +7,7 @@ import {
   faCircleUser,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Running = () => {
   return (
@@ -42,7 +43,7 @@ const Running = () => {
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <a
-                className="btn dropdown-toggle fw-bold"
+                className="btn dropdown-toggle fw-bold focus-none"
                 href="/"
                 role="button"
                 id="dropdownMenuLink"
@@ -57,19 +58,19 @@ const Running = () => {
 
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Another action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Something else here
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Table/Table";
+import { Link } from "react-router-dom";
 
 const Banned = () => {
   return (
@@ -42,9 +42,9 @@ const Banned = () => {
           <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
-              <a
-                className="btn dropdown-toggle fw-bold"
-                href="/"
+              <Link
+                className="btn dropdown-toggle fw-bold focus-none"
+                to="/"
                 role="button"
                 id="dropdownMenuLink"
                 data-bs-toggle="dropdown"
@@ -54,23 +54,23 @@ const Banned = () => {
                 <span className="ps-2">
                   <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
                 </span>
-              </a>
+              </Link>
 
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Another action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Something else here
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

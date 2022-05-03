@@ -9,7 +9,6 @@ import {
   faDollarSign,
   faUser,
   faBook,
-  faFileLines,
   faAddressBook,
   faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
@@ -20,7 +19,7 @@ const Navbar = () => {
     <>
       <div className="container-fluid d-flex flex-column flex-lg-row">
         <nav className="navbar navbar-expand-md navbar-light d-flex flex-md-column">
-          <a href="/">
+          <Link to="/trade/trades-dashboard">
             <img
               src={tradeLogo}
               alt="Trade Logo"
@@ -28,7 +27,7 @@ const Navbar = () => {
               height="80"
               className="my-2 mx-5"
             />
-          </a>
+            </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -70,7 +69,7 @@ const Navbar = () => {
                         <ul className="list-group bg-light navbar-border-radius-2">
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/trades-dashboard"
                               className="text-start no-dec text-dark"
                             >
                               Trades
@@ -78,7 +77,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/executed"
                               className="text-start no-dec text-dark"
                             >
                               Executed Options
@@ -86,7 +85,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/running"
                               className="text-start no-dec text-dark"
                             >
                               Running Orders
@@ -94,7 +93,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/summary"
                               className="text-start no-dec text-dark"
                             >
                               Summary Reports
@@ -102,7 +101,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/m2m"
                               className="text-start no-dec text-dark"
                             >
                               M2M Alerts
@@ -110,7 +109,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/user-dashboard"
                               className="text-start no-dec text-dark"
                             >
                               User
@@ -118,7 +117,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/trade-entry"
                               className="text-start no-dec text-dark"
                             >
                               Trade Entry
@@ -155,7 +154,7 @@ const Navbar = () => {
                         <ul className="list-group bg-light navbar-border-radius-2">
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/watchlist-trading"
                               className="text-start no-dec text-dark"
                             >
                               Watchlist
@@ -163,7 +162,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/trades-trading"
                               className="text-start no-dec text-dark"
                             >
                               Trades
@@ -171,7 +170,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/portfolio-trading"
                               className="text-start no-dec text-dark"
                             >
                               Portfolio/Position
@@ -179,7 +178,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/banned-trading"
                               className="text-start no-dec text-dark"
                             >
                               Banned/Blocked Scripts
@@ -187,7 +186,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/margin-trading"
                               className="text-start no-dec text-dark"
                             >
                               Margin Management
@@ -224,7 +223,7 @@ const Navbar = () => {
                         <ul className="list-group bg-light navbar-border-radius-2">
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/watchlist-forex"
                               className="text-start no-dec text-dark"
                             >
                               Watchlist
@@ -232,7 +231,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/trades-forex"
                               className="text-start no-dec text-dark"
                             >
                               Trades
@@ -240,7 +239,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/portfolio-forex"
                               className="text-start no-dec text-dark"
                             >
                               Portfolio/Position
@@ -248,7 +247,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/margin-forex"
                               className="text-start no-dec text-dark"
                             >
                               Margin Management
@@ -285,7 +284,7 @@ const Navbar = () => {
                         <ul className="list-group bg-light navbar-border-radius-2">
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/all-user"
                               className="text-start no-dec text-dark"
                             >
                               All UserList
@@ -293,7 +292,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/userlist"
                               className="text-start no-dec text-dark"
                             >
                               UserList
@@ -301,7 +300,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/add-account"
                               className="text-start no-dec text-dark"
                             >
                               Add Account
@@ -338,7 +337,7 @@ const Navbar = () => {
                         <ul className="list-group bg-light navbar-border-radius-2">
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/trade-edit"
                               className="text-start no-dec text-dark"
                             >
                               Trade Edit/ Delete Log
@@ -346,7 +345,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/user-edit"
                               className="text-start no-dec text-dark"
                             >
                               User Edit Log
@@ -354,7 +353,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/auto"
                               className="text-start no-dec text-dark"
                             >
                               Auto Square Up Log
@@ -362,7 +361,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/cross"
                               className="text-start no-dec text-dark"
                             >
                               Cross Trade Log
@@ -370,7 +369,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/rejection"
                               className="text-start no-dec text-dark"
                             >
                               Rejection Log
@@ -407,7 +406,7 @@ const Navbar = () => {
                         <ul className="list-group bg-light navbar-border-radius-2">
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/cash-ledge"
                               className="text-start no-dec text-dark"
                             >
                               Cash Ledge
@@ -415,7 +414,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/cash-entry"
                               className="text-start no-dec text-dark"
                             >
                               Cash Entry
@@ -423,7 +422,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/jv"
                               className="text-start no-dec text-dark"
                             >
                               JV
@@ -431,7 +430,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/jv-broker"
                               className="text-start no-dec text-dark"
                             >
                               JV Broker
@@ -439,7 +438,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/deposit"
                               className="text-start no-dec text-dark"
                             >
                               Deposit Entry
@@ -447,7 +446,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/valan"
                               className="text-start no-dec text-dark"
                             >
                               Valan
@@ -484,7 +483,7 @@ const Navbar = () => {
                         <ul className="list-group bg-light navbar-border-radius-2">
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/trade-report"
                               className="text-start no-dec text-dark"
                             >
                               Track Report
@@ -492,7 +491,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/ledge-report"
                               className="text-start no-dec text-dark"
                             >
                               Ledge Report
@@ -500,7 +499,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/deposit-report"
                               className="text-start no-dec text-dark"
                             >
                               Deposit Report
@@ -508,7 +507,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/trial"
                               className="text-start no-dec text-dark"
                             >
                               Trial Balances
@@ -516,7 +515,7 @@ const Navbar = () => {
                           </li>
                           <li className="list-group-item no-dec text-start">
                             <Link
-                              to="/trade/dashboard"
+                              to="/trade/client-report"
                               className="text-start no-dec text-dark"
                             >
                               Client Cr/Dr Report

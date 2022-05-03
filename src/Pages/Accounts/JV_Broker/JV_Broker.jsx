@@ -3,10 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const JV_Broker = () => {
   return (
@@ -29,9 +28,9 @@ const JV_Broker = () => {
           <div className="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
-              <a
-                className="btn dropdown-toggle fw-bold"
-                href="/"
+              <Link
+                className="btn dropdown-toggle fw-bold focus-none"
+                to="/"
                 role="button"
                 id="dropdownMenuLink"
                 data-bs-toggle="dropdown"
@@ -41,23 +40,23 @@ const JV_Broker = () => {
                 <span className="ps-2">
                   <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
                 </span>
-              </a>
+              </Link>
 
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Another action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Something else here
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -71,15 +70,15 @@ const JV_Broker = () => {
             <div className="input-group ">
               <label
                 className="input-group-text bg-transparent border-none me-5"
-                for="inputGroupSelect01"
+                htmlFor="inputGroupSelect01"
               >
                 Broker
               </label>
               <select
-                className="form-select input-border"
+                className="form-select input-border focus-none"
                 id="inputGroupSelect01"
               >
-                <option selected>Broker</option>
+                <option defaultValue>Broker</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
@@ -88,12 +87,12 @@ const JV_Broker = () => {
           </div>
 
           <div className="col-12 text-end my-4">
-            <button type="button" class="btn bg-brown color-white btn-lg focus-none button-effect">
+            <button type="button" className="btn bg-brown color-white btn-lg focus-none button-effect">
               Process
             </button>
           </div>
           <div className="col-12 text-end my-4">
-            <button type="button" class="btn bg-primary color-white btn-lg focus-none button-effect">
+            <button type="button" className="btn bg-primary color-white btn-lg focus-none button-effect">
               Submit
             </button>
           </div>

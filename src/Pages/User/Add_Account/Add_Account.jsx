@@ -4,10 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Add_Account = () => {
   return (
@@ -30,9 +29,9 @@ const Add_Account = () => {
           <div className="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
-              <a
-                className="btn dropdown-toggle fw-bold"
-                href="/"
+              <Link
+                className="btn dropdown-toggle fw-bold focus-none"
+                to="/"
                 role="button"
                 id="dropdownMenuLink"
                 data-bs-toggle="dropdown"
@@ -42,23 +41,23 @@ const Add_Account = () => {
                 <span className="ps-2">
                   <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
                 </span>
-              </a>
+              </Link>
 
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Another action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Something else here
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -108,7 +107,7 @@ const Add_Account = () => {
             <div className="input-group">
               <label
                 className="input-group-text bg-transparent border-none"
-                for="inputGroupSelect01"
+                htmlFor="inputGroupSelect01"
               >
                 Account Type
               </label>
@@ -131,7 +130,7 @@ const Add_Account = () => {
                   <div className="input-group">
                     <label
                       className="input-group-text bg-transparent border-none"
-                      for="inputGroupSelect01"
+                      htmlFor="inputGroupSelect01"
                     >
                       Opening Balance
                     </label>
@@ -150,7 +149,7 @@ const Add_Account = () => {
                           />
                           <label
                             className="form-check-label"
-                            for="flexRadioDefault1"
+                            htmlFor="flexRadioDefault1"
                           >
                             Credit
                           </label>
@@ -166,7 +165,7 @@ const Add_Account = () => {
                           />
                           <label
                             className="form-check-label"
-                            for="flexRadioDefault1"
+                            htmlFor="flexRadioDefault1"
                           >
                             Debit
                           </label>
@@ -222,7 +221,7 @@ const Add_Account = () => {
                     />
                     <label
                       className="form-check-label "
-                      for="flexRadioDefault1"
+                      htmlFor="flexRadioDefault1"
                     >
                       MCX
                     </label>
@@ -241,7 +240,7 @@ const Add_Account = () => {
                     />
                     <label
                       className="form-check-label "
-                      for="flexRadioDefault1"
+                      htmlFor="flexRadioDefault1"
                     >
                       NSE
                     </label>
@@ -260,7 +259,7 @@ const Add_Account = () => {
                     />
                     <label
                       className="form-check-label "
-                      for="flexRadioDefault1"
+                      htmlFor="flexRadioDefault1"
                     >
                       NOPT
                     </label>
@@ -279,7 +278,7 @@ const Add_Account = () => {
                     />
                     <label
                       className="form-check-label "
-                      for="flexRadioDefault1"
+                      htmlFor="flexRadioDefault1"
                     >
                       NCDS
                     </label>
@@ -329,7 +328,7 @@ const Add_Account = () => {
           </div>
 
           <div className="col-12 text-end">
-            <button type="button" class="btn bg-brown color-white btn-lg focus-none button-effect">
+            <button type="button" className="btn bg-brown color-white btn-lg focus-none button-effect">
               Submit
             </button>
           </div>

@@ -4,10 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Trade_Report = () => {
   return (
@@ -30,9 +29,9 @@ const Trade_Report = () => {
           <div className="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
-              <a
-                className="btn dropdown-toggle fw-bold"
-                href="/"
+              <Link
+                className="btn dropdown-toggle fw-bold focus-none"
+                to="/"
                 role="button"
                 id="dropdownMenuLink"
                 data-bs-toggle="dropdown"
@@ -42,23 +41,23 @@ const Trade_Report = () => {
                 <span className="ps-2">
                   <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
                 </span>
-              </a>
+              </Link>
 
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Another action
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Something else here
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -75,7 +74,7 @@ const Trade_Report = () => {
                   <div className="input-group">
                     <label
                       className="input-group-text bg-transparent border-none"
-                      for="inputGroupSelect01"
+                      htmlFor="inputGroupSelect01"
                     >
                       Recent Type
                     </label>
@@ -94,7 +93,7 @@ const Trade_Report = () => {
                           />
                           <label
                             className="form-check-label"
-                            for="flexRadioDefault1"
+                            htmlFor="flexRadioDefault1"
                           >
                             Bill Summary
                           </label>
@@ -110,7 +109,7 @@ const Trade_Report = () => {
                           />
                           <label
                             className="form-check-label"
-                            for="flexRadioDefault1"
+                            htmlFor="flexRadioDefault1"
                           >
                             Hodiyu
                           </label>
@@ -126,7 +125,7 @@ const Trade_Report = () => {
                           />
                           <label
                             className="form-check-label"
-                            for="flexRadioDefault1"
+                            htmlFor="flexRadioDefault1"
                           >
                             Brokerage
                           </label>
@@ -142,7 +141,7 @@ const Trade_Report = () => {
                           />
                           <label
                             className="form-check-label"
-                            for="flexRadioDefault1"
+                            htmlFor="flexRadioDefault1"
                           >
                             Position
                           </label>
@@ -159,7 +158,7 @@ const Trade_Report = () => {
             <div className="input-group">
               <label
                 className="input-group-text bg-transparent border-none"
-                for="inputGroupSelect01"
+                htmlFor="inputGroupSelect01"
               >
                 Reports
               </label>
@@ -179,7 +178,7 @@ const Trade_Report = () => {
             <div className="input-group">
               <label
                 className="input-group-text bg-transparent border-none"
-                for="inputGroupSelect01"
+                htmlFor="inputGroupSelect01"
               >
                 Valan
               </label>
@@ -202,7 +201,7 @@ const Trade_Report = () => {
                 name="flexRadioDefault"
                 id="flexRadioDefault1"
               />
-              <label className="form-check-label" for="flexRadioDefault1">
+              <label className="form-check-label" htmlFor="flexRadioDefault1">
                 Customer
               </label>
             </div>
@@ -216,7 +215,7 @@ const Trade_Report = () => {
                 name="flexRadioDefault"
                 id="flexRadioDefault1"
               />
-              <label className="form-check-label" for="flexRadioDefault1">
+              <label className="form-check-label" htmlFor="flexRadioDefault1">
                 Self
               </label>
             </div>
@@ -282,7 +281,7 @@ const Trade_Report = () => {
                 <div className="input-group">
                   <label
                     className="input-group-text bg-transparent border-none"
-                    for="inputGroupSelect01"
+                    htmlFor="inputGroupSelect01"
                   >
                     Without Bokerage
                   </label>
@@ -311,7 +310,7 @@ const Trade_Report = () => {
             <div className="input-group">
               <label
                 className="input-group-text bg-transparent border-none"
-                for="inputGroupSelect01"
+                htmlFor="inputGroupSelect01"
               >
                 Segment
               </label>
@@ -334,7 +333,7 @@ const Trade_Report = () => {
                   <div className="input-group">
                     <label
                       className="input-group-text bg-transparent border-none"
-                      for="inputGroupSelect01"
+                      htmlFor="inputGroupSelect01"
                     >
                       Data Filter
                     </label>
@@ -353,7 +352,7 @@ const Trade_Report = () => {
                           />
                           <label
                             className="form-check-label"
-                            for="flexRadioDefault1"
+                            htmlFor="flexRadioDefault1"
                           >
                             All Date
                           </label>
@@ -369,7 +368,7 @@ const Trade_Report = () => {
                           />
                           <label
                             className="form-check-label"
-                            for="flexRadioDefault1"
+                            htmlFor="flexRadioDefault1"
                           >
                             Data Wise
                           </label>
@@ -386,7 +385,7 @@ const Trade_Report = () => {
             <div className="input-group">
               <label
                 className="input-group-text bg-transparent border-none"
-                for="inputGroupSelect01"
+                htmlFor="inputGroupSelect01"
               >
                 Broker
               </label>
@@ -408,7 +407,7 @@ const Trade_Report = () => {
                 <div className="input-group">
                   <label
                     className="input-group-text bg-transparent border-none"
-                    for="inputGroupSelect01"
+                    htmlFor="inputGroupSelect01"
                   >
                     Expiry Date
                   </label>

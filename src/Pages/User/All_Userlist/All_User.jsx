@@ -1,13 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBell,
-  faCircleUser,
-  faCalendarDays,
-  faAngleDown,
-  faSearch,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faSearch } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Table/Table";
+import { Link } from "react-router-dom";
 
 const All_User = () => {
   return (
@@ -42,19 +37,19 @@ const All_User = () => {
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Select Market
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Another action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Something else here
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -84,19 +79,19 @@ const All_User = () => {
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Select Market
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Another action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Something else here
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -126,19 +121,19 @@ const All_User = () => {
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Another action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Something else here
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -168,19 +163,19 @@ const All_User = () => {
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Another action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/">
                           Something else here
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -189,7 +184,7 @@ const All_User = () => {
             </div>
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 text-center">
-            <button type="button" class="btn bg-brown color-white mt-5">
+            <button type="button" className="btn bg-brown color-white mt-5">
               Submit
             </button>
           </div>
@@ -214,56 +209,58 @@ const All_User = () => {
             </form>
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 text-center">
-            <button type="button" class="btn bg-primary color-white w-100">
+            <button type="button" className="btn bg-primary color-white w-100">
               +Add Account
             </button>
           </div>
-          <p className="my-5 mx-4">
-          SHOW 
-          <span>
-            <div className="btn-group bg-orange mx-2">
-              <button type="button" className="btn color-white focus-none btn-sm ">
-                 10
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    1
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    5
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    9
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </span>
-          ENTRIES
-        </p>
-        <Table />
-      
-        </div>
-      </div>
+          </div>
+          </div>
+          <div>
+            SHOW
+            <span>
+              <div className="btn-group bg-orange mx-2">
+                <button
+                  type="button"
+                  className="btn color-white focus-none btn-sm "
+                >
+                  10
+                </button>
+                <button
+                  type="button"
+                  className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span className="">
+                    <FontAwesomeIcon
+                      icon={faAngleDown}
+                      color="white"
+                      className=""
+                    />
+                  </span>
+                </button>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" to="#">
+                      1
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="#">
+                      5
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="#">
+                      9
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </span>
+            ENTRIES
+          </div>
+          <Table />
     </>
   );
 };
