@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faSearch } from "@fortawesome/free-solid-svg-icons";
-import Table from "../../Components/Table/Table";
+import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
 
 const All_User = () => {

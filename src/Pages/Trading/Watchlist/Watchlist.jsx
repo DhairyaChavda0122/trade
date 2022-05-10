@@ -1,16 +1,18 @@
 import React from "react";
 import "./Watchlist.css";
-import Table from "../../Components/Table/Table";
+import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSearch,
   faBell,
   faCircleUser,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Search from "../../Components/Search/Search";
+
 
 const Watchlist = () => {
+
   return (
     <>
       <div className="container-fluid">
@@ -24,20 +26,7 @@ const Watchlist = () => {
             </p>
           </div>
           <div className="col-9 col-sm-9 col-md-9 col-lg-6 col-xl-6">
-            <form className="container-fluid">
-              <div className="input-group">
-                <span className="input-group-text" id="basic-addon1">
-                  <FontAwesomeIcon icon={faSearch} />
-                </span>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search..."
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </form>
+            <Search />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center">
             <FontAwesomeIcon
@@ -89,197 +78,116 @@ const Watchlist = () => {
         <div className="row">
           <div className="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
             <p className="m-2">SEGMENT</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-                NSEFUT
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option
+                className="bg-light text-dark ps-3"
+                value="1"
+                defaultValue
               >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                NSEFUT
+              </option>
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
           <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
             <p className="m-2">SCRIPT</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-                NIFTY
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option
+                className="bg-light text-dark ps-3"
+                value="1"
+                defaultValue
               >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                NIFTY
+              </option>
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
           <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
             <p className="m-2">EXPIRY</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-                31-03-2022
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option
+                className="bg-light text-dark ps-3"
+                value="1"
+                
               >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                31-03-2022
+              </option>
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
             <p className="m-2">CE/PE</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
             <p className="m-2">STRIKE</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-                Select...
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option
+                className="bg-light text-dark ps-3"
+                value="1"
+                defaultValue
               >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                Select...
+              </option>
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
         </div>
       </div>

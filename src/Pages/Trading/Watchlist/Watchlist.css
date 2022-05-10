@@ -6,3 +6,29 @@
 .orange-trade{
     color:#FAB417 !important;
 }
+
+.border-right-none{
+    border-right: none !important;
+}
+
+.border-left-none{
+    border-left: none !important;
+}
+
+.Dropdown-arrow {
+    color: #FAB417 !important;
+}
+
+.arrow-select{
+    color: #FAB417 !important;
+    background-color: beige !important;
+    font-size: large !important;
+}
+
+.bg-select span{
+    color: aqua !important;
+}
+
+.arrow-class{
+    height: 40px !important;
+}

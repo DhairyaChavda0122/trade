@@ -17,7 +17,7 @@ const Login = () => {
                   className="w-100 bg-light raduis-login px-3 py-2 mt-4"
                   name="username"
                   id="username"
-                  placeholder="Enter User ID"
+                  placeholder="Enter Username"
                   // onChange={(e) => setUsername(e.target.value)}
                 />
               </div>

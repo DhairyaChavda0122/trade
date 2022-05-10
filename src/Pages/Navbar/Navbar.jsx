@@ -23,11 +23,11 @@ const Navbar = () => {
             <img
               src={tradeLogo}
               alt="Trade Logo"
-              width="130"
-              height="80"
-              className="my-2 mx-5"
+              className="my-2 img-fluid"
+              width="175"
+              height=""
             />
-            </Link>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

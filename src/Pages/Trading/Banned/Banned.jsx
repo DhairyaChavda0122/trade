@@ -5,10 +5,13 @@ import {
   faBell,
   faCircleUser,
   faAngleDown,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
-import Table from "../../Components/Table/Table";
+import Table from "../../Components/Trading-Tables/Table-banned-trading";
 import { Link } from "react-router-dom";
+import Search from "../../Components/Search/Search";
+import Calender from "../../Components/Calender/Calender";
+import SelectEntry from "../../Components/Select-Entry/Select-Entry";
+
 
 const Banned = () => {
   return (
@@ -16,20 +19,7 @@ const Banned = () => {
       <div className="container-fluid">
         <div className="row my-3">
           <div className="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-            <form className="container-fluid">
-              <div className="input-group">
-                <span className="input-group-text" id="basic-addon1">
-                  <FontAwesomeIcon icon={faSearch} />
-                </span>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search..."
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </form>
+            <Search />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-1 text-center">
             <FontAwesomeIcon
@@ -80,6 +70,9 @@ const Banned = () => {
       <div className="text-start fw-bold my-5">Banned/blocked Scripts</div>
 
       <Table />
+
+      <Calender />
+      <SelectEntry />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "../../Components/Table/Table";
+import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,

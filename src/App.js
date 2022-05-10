@@ -44,6 +44,7 @@ import LedgeReport from "./Pages/Report/Ledge_Report/Ledge_Report";
 import DepositReport from "./Pages/Report/Deposit_Report/Deposit_Report";
 import Trial from "./Pages/Report/Trial/Trial";
 import ClientReport from "./Pages/Report/Client_Report/Client_Report";
+import Footer from "./Pages/Footer/Footer";
 
 const App = () => {
 
@@ -124,7 +125,12 @@ const App = () => {
                   <Route path="/trade/client-report" element={<ClientReport />}></Route>
 
                 </Routes>
+                
+
               </div>
+              <div>
+                  <Footer />
+                </div>
             </div>
           </div>
         </Router>

@@ -6,7 +6,7 @@ import {
   faCalendarDays,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
-import Table from "../../Components/Table/Table";
+import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
 
 const Valan = () => {
@@ -26,7 +26,10 @@ const Valan = () => {
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
                     />
-                    <label className="form-check-label" htmlFor="flexRadioDefault1">
+                    <label
+                      className="form-check-label"
+                      htmlFor="flexRadioDefault1"
+                    >
                       Open
                     </label>
                   </div>
@@ -39,7 +42,10 @@ const Valan = () => {
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
                     />
-                    <label className="form-check-label" htmlFor="flexRadioDefault1">
+                    <label
+                      className="form-check-label"
+                      htmlFor="flexRadioDefault1"
+                    >
                       Close
                     </label>
                   </div>
@@ -212,12 +218,13 @@ const Valan = () => {
         </div>
       </div>
 
-      <div className="w-100 ">
-        <button type="button" className="float-end btn btn-lg mx-5 my-2 btn-info">
+        <button
+          type="button"
+          className="float-end btn btn-lg mx-5 my-2 btn-info"
+        >
           +ADD
         </button>
-      </div>
-      <Table />
+        <Table />
     </>
   );
 };
