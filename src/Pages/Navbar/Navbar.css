@@ -61,11 +61,13 @@
   }
 
 .width-navbar-drop{
-  width: 200px !important;
+  width: 13rem !important;
   /* border-radius: 20px; */
 }
 
-
+.dropdown-menu{
+  position: relative !important;
+}
 
 
 

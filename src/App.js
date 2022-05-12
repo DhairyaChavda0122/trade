@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Pages/Navbar/Navbar";
+import Footer from "./Pages/Footer/Footer";
 import Login from "./Pages/Login/Login";
 
 import TradesDashboard from "./Pages/Dashboard/Trades-Dashboard/Trades_Dashboard";
@@ -44,7 +45,6 @@ import LedgeReport from "./Pages/Report/Ledge_Report/Ledge_Report";
 import DepositReport from "./Pages/Report/Deposit_Report/Deposit_Report";
 import Trial from "./Pages/Report/Trial/Trial";
 import ClientReport from "./Pages/Report/Client_Report/Client_Report";
-import Footer from "./Pages/Footer/Footer";
 
 const App = () => {
 
@@ -59,7 +59,7 @@ const App = () => {
         <Router>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+              <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-end border-warning">
                 <Navbar />
               </div>
               <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
@@ -128,9 +128,9 @@ const App = () => {
                 
 
               </div>
-              <div>
-                  <Footer />
-                </div>
+              <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-end border-warning">
+                <Footer />
+              </div>
             </div>
           </div>
         </Router>

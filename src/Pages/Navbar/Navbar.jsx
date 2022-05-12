@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="container-fluid d-flex flex-column flex-lg-row">
+      <div className="container-fluid d-flex flex-column flex-lg-row justify-content-center">
         <nav className="navbar navbar-expand-md navbar-light d-flex flex-md-column">
           <Link to="/trade/trades-dashboard">
             <img
