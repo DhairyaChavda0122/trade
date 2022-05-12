@@ -30,7 +30,7 @@ const Trade_Report = () => {
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
-                className="btn dropdown-toggle fw-bold focus-none"
+                className="btn fw-bold focus-none"
                 to="/"
                 role="button"
                 id="dropdownMenuLink"
@@ -86,7 +86,7 @@ const Trade_Report = () => {
                       <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault1"
@@ -102,7 +102,7 @@ const Trade_Report = () => {
                       <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault1"
@@ -118,7 +118,7 @@ const Trade_Report = () => {
                       <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault1"
@@ -134,7 +134,7 @@ const Trade_Report = () => {
                       <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault1"
@@ -163,7 +163,7 @@ const Trade_Report = () => {
                 Reports
               </label>
               <select
-                className="form-select input-border"
+                className="form-select input-border focus-none"
                 id="inputGroupSelect01"
               >
                 <option className="">Summary Bill (T Format)</option>
@@ -183,7 +183,7 @@ const Trade_Report = () => {
                 Valan
               </label>
               <select
-                className="form-select input-border"
+                className="form-select input-border focus-none"
                 id="inputGroupSelect01"
               >
                 <option className="">APROI NSE</option>
@@ -196,9 +196,9 @@ const Trade_Report = () => {
           <div className="col-6 my-2">
             <div className="form-check my-1 float-end">
               <input
-                className="form-check-input"
+                className="form-check-input focus-none"
                 type="radio"
-                name="flexRadioDefault"
+                name="flexRadioDefault01"
                 id="flexRadioDefault1"
               />
               <label className="form-check-label" htmlFor="flexRadioDefault1">
@@ -212,10 +212,10 @@ const Trade_Report = () => {
               <input
                 className="form-check-input"
                 type="radio"
-                name="flexRadioDefault"
+                name="flexRadioDefault01"
                 id="flexRadioDefault1"
               />
-              <label className="form-check-label" htmlFor="flexRadioDefault1">
+              <label className="form-check-label focus-none" htmlFor="flexRadioDefault1">
                 Self
               </label>
             </div>
@@ -231,7 +231,7 @@ const Trade_Report = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder="Select Client"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -249,7 +249,7 @@ const Trade_Report = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder="Select Master"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -267,7 +267,7 @@ const Trade_Report = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder="Select Name"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -293,9 +293,9 @@ const Trade_Report = () => {
                     <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
                       <div className="form-check my-1">
                         <input
-                          className="form-check-input"
+                          className="form-check-input focus-none"
                           type="radio"
-                          name="flexRadioDefault"
+                          name="flexRadioDefault0000"
                           id="flexRadioDefault1"
                         />
                       </div>
@@ -315,7 +315,7 @@ const Trade_Report = () => {
                 Segment
               </label>
               <select
-                className="form-select input-border"
+                className="form-select input-border focus-none"
                 id="inputGroupSelect01"
               >
                 <option className="">Segment</option>
@@ -345,9 +345,9 @@ const Trade_Report = () => {
                       <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
-                            name="flexRadioDefault"
+                            name="flexRadioDefault99"
                             id="flexRadioDefault1"
                           />
                           <label
@@ -361,9 +361,9 @@ const Trade_Report = () => {
                       <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
-                            name="flexRadioDefault"
+                            name="flexRadioDefault99"
                             id="flexRadioDefault1"
                           />
                           <label
@@ -390,7 +390,7 @@ const Trade_Report = () => {
                 Broker
               </label>
               <select
-                className="form-select input-border"
+                className="form-select input-border focus-none"
                 id="inputGroupSelect01"
               >
                 <option className="">Select Broker</option>
@@ -419,9 +419,9 @@ const Trade_Report = () => {
                     <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
                       <div className="form-check my-1">
                         <input
-                          className="form-check-input"
+                          className="form-check-input focus-none"
                           type="radio"
-                          name="flexRadioDefault"
+                          name="flexRadioDefault789"
                           id="flexRadioDefault1"
                         />
                       </div>

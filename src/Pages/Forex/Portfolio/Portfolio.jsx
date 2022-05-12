@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
+import Search from "../../Components/Search/Search";
+import Calender from "../../Components/Calender/Calender";
+import SelectEntry from "../../Components/Select-Entry/Select-Entry";
 
 const Portfolio = () => {
   return (
@@ -71,20 +72,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 my-1">
-            <form className="container-fluid">
-              <div className="input-group">
-                <span className="input-group-text" id="basic-addon1">
-                  <FontAwesomeIcon icon={faSearch} />
-                </span>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search..."
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </form>
+            <Search />
           </div>
 
           <div className="container">
@@ -105,7 +93,7 @@ const Portfolio = () => {
                 />
                 <div className="dropdown ms-1 bg-transparent">
                   <Link
-                    className="btn dropdown-toggle fw-bold focus-none"
+                    className="btn fw-bold focus-none"
                     to="/"
                     role="button"
                     id="dropdownMenuLink"
@@ -148,98 +136,55 @@ const Portfolio = () => {
         <div className="row">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <p className="m-2">MARKET</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-                Select Market
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option
+                className="bg-light text-dark ps-3"
+                value="1"
+                defaultValue
               >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Select Market
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                SELECT MARKET
+              </option>
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <p className="m-2">SCRIPT</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-                Select Script
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option
+                className="bg-light text-dark ps-3"
+                value="1"
+                defaultValue
               >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                SELECT SCRIPT
+              </option>
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <p className="m-2">EXPIRY DATE</p>
-            <Link
-              to="/"
-              className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
-              aria-current="page"
-            >
-              <span className="text-start">mm/dd/yyyyy-:--</span>
-              <span className="float-end ">
-                <FontAwesomeIcon
-                  icon={faCalendarDays}
-                  color="white"
-                  className="pe-2"
-                />
-              </span>
-            </Link>
+            <Calender />
           </div>
         </div>
       </div>
@@ -288,45 +233,7 @@ const Portfolio = () => {
       <div>
         SHOW
         <span>
-          <div className="btn-group bg-orange mx-2">
-            <button
-              type="button"
-              className="btn color-white focus-none btn-sm "
-            >
-              10
-            </button>
-            <button
-              type="button"
-              className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <span className="">
-                <FontAwesomeIcon
-                  icon={faAngleDown}
-                  color="white"
-                  className=""
-                />
-              </span>
-            </button>
-            <ul className="dropdown-menu">
-              <li>
-                <Link className="dropdown-item" to="#">
-                  1
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item" to="#">
-                  5
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item" to="#">
-                  9
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <SelectEntry />
         </span>
         ENTRIES
       </div>

@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
 import Search from "../../Components/Search/Search";
+import Calender from "../../Components/Calender/Calender";
 
 const Portfolio = () => {
   return (
@@ -19,7 +19,7 @@ const Portfolio = () => {
           <div className="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5 fw-bold text-start p-0">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-12 col-sm-12 col-md-7 col-lg-5 col-xl-6">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-6">
                   <div className="form-check ">
                     <input
                       className="form-check-input focus-none bg-orange"
@@ -43,7 +43,7 @@ const Portfolio = () => {
                     </label>
                   </div>
                 </div>
-                <div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-6">
                   <div className="form-check ">
                     <input
                       className="form-check-input focus-none bg-orange"
@@ -90,7 +90,7 @@ const Portfolio = () => {
               <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
               <div className="dropdown ms-1 bg-transparent">
                 <Link
-                  className="btn dropdown-toggle fw-bold focus-none"
+                  className="btn fw-bold focus-none"
                   to="/"
                   role="button"
                   id="dropdownMenuLink"
@@ -180,20 +180,7 @@ const Portfolio = () => {
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <p className="m-2">EXPIRY DATE</p>
-            <Link
-              to="/"
-              className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
-              aria-current="page"
-            >
-              <span className="text-start">mm/dd/yyyyy-:--</span>
-              <span className="float-end ">
-                <FontAwesomeIcon
-                  icon={faCalendarDays}
-                  color="white"
-                  className="pe-2"
-                />
-              </span>
-            </Link>
+            <Calender />
           </div>
         </div>
       </div>

@@ -33,7 +33,7 @@ const Banned = () => {
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
-                className="btn dropdown-toggle fw-bold focus-none"
+                className="btn fw-bold focus-none"
                 to="/"
                 role="button"
                 id="dropdownMenuLink"

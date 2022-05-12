@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
+import Calender from "../../Components/Calender/Calender";
 
 const Valan = () => {
   return (
@@ -21,7 +21,7 @@ const Valan = () => {
                 <div className="col-6">
                   <div className="form-check">
                     <input
-                      className="form-check-input"
+                      className="form-check-input focus-none"
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
@@ -37,7 +37,7 @@ const Valan = () => {
                 <div className="col-6">
                   <div className="form-check">
                     <input
-                      className="form-check-input"
+                      className="form-check-input focus-none"
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
@@ -66,7 +66,7 @@ const Valan = () => {
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
-                className="btn dropdown-toggle fw-bold focus-none"
+                className="btn fw-bold focus-none"
                 to="/"
                 role="button"
                 id="dropdownMenuLink"
@@ -105,126 +105,77 @@ const Valan = () => {
         <div className="row">
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
             <p>Market Type</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-                Select Market
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option
+                className="bg-light text-dark ps-3"
+                value="1"
+                defaultValue
               >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Select Market
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                Select Market
+              </option>
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
             <p>Valan Name</p>
-            <div className="btn-group w-100 height-button bg-orange">
-              <button type="button" className="btn color-white focus-none">
-                Valan Name
-              </button>
-              <button
-                type="button"
-                className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <select
+              className="form-select bg-orange color-white height-button focus-none"
+              aria-label="Default select example"
+            >
+              <option
+                className="bg-light text-dark ps-3"
+                value="1"
+                defaultValue
               >
-                <span className="">
-                  <FontAwesomeIcon
-                    icon={faAngleDown}
-                    color="white"
-                    className=""
-                  />
-                </span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                Valan Name
+              </option>
+              <option className="bg-light text-dark ps-3" value="2">
+                One
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Two
+              </option>
+              <option className="bg-light text-dark ps-3" value="3">
+                Three
+              </option>
+            </select>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
             <p className="m-2">From End</p>
-            <Link
-              to="/"
-              className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
-              aria-current="page"
-            >
-              <span className="text-start">mm/dd/yyyyy:-</span>
-              <span className="float-end ">
-                <FontAwesomeIcon
-                  icon={faCalendarDays}
-                  color="white"
-                  className="pe-2"
-                />
-              </span>
-            </Link>
+            <Calender />
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
             <p className="m-2">From End</p>
-            <Link
-              to="/"
-              className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
-              aria-current="page"
-            >
-              <span className="text-start">mm/dd/yyyyy:-</span>
-              <span className="float-end ">
-                <FontAwesomeIcon
-                  icon={faCalendarDays}
-                  color="white"
-                  className="pe-2"
-                />
-              </span>
-            </Link>
+            <Calender />
           </div>
         </div>
       </div>
 
-        <button
-          type="button"
-          className="float-end btn btn-lg mx-5 my-2 btn-info"
-        >
-          +ADD
-        </button>
-        <Table />
+      <div className="container my-5 ">
+        <div className="row">
+          <div className="col-12">
+            <button
+              type="button"
+              className="float-end btn btn-lg mx-5 btn-info "
+            >
+              +ADD
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <Table />
     </>
   );
 };

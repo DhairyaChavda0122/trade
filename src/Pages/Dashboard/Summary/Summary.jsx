@@ -2,12 +2,13 @@ import React from "react";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSearch,
   faBell,
   faCircleUser,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import SelectEntry from "../../Components/Select-Entry/Select-Entry";
+import Search from "../../Components/Search/Search";
 
 const Summary = () => {
   return (
@@ -18,20 +19,7 @@ const Summary = () => {
             SUMMARY REPORTS
           </div>
           <div className="col-9 col-sm-9 col-md-9 col-lg-6 col-xl-6">
-            <form className="container-fluid">
-              <div className="input-group">
-                <span className="input-group-text" id="basic-addon1">
-                  <FontAwesomeIcon icon={faSearch} />
-                </span>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search..."
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </form>
+            <Search />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center">
             <FontAwesomeIcon
@@ -45,7 +33,7 @@ const Summary = () => {
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
-                className="btn dropdown-toggle fw-bold focus-none"
+                className="btn fw-bold focus-none"
                 to="/"
                 role="button"
                 id="dropdownMenuLink"
@@ -79,48 +67,10 @@ const Summary = () => {
           </div>
         </div>
       </div>
-      <div className="my-3">
+      <div>
         SHOW
         <span>
-          <div className="btn-group bg-orange mx-2">
-            <button
-              type="button"
-              className="btn color-white focus-none btn-sm "
-            >
-              10
-            </button>
-            <button
-              type="button"
-              className="btn dropdown-toggle dropdown-toggle-split color-white focus-none"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <span className="">
-                <FontAwesomeIcon
-                  icon={faAngleDown}
-                  color="white"
-                  className=""
-                />
-              </span>
-            </button>
-            <ul className="dropdown-menu">
-              <li>
-                <Link className="dropdown-item" to="#">
-                  1
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item" to="#">
-                  5
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item" to="#">
-                  9
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <SelectEntry />
         </span>
         ENTRIES
       </div>

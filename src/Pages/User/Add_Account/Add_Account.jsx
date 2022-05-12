@@ -30,7 +30,7 @@ const Add_Account = () => {
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
-                className="btn dropdown-toggle fw-bold focus-none"
+                className="btn fw-bold focus-none"
                 to="/"
                 role="button"
                 id="dropdownMenuLink"
@@ -79,7 +79,7 @@ const Add_Account = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder=""
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -96,7 +96,7 @@ const Add_Account = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder=""
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -112,7 +112,7 @@ const Add_Account = () => {
                 Account Type
               </label>
               <select
-                className="form-select input-border"
+                className="form-select input-border focus-none"
                 id="inputGroupSelect01"
               >
                 <option className="">Select Account Type</option>
@@ -142,9 +142,9 @@ const Add_Account = () => {
                       <div className="col-6 ">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
-                            name="flexRadioDefault"
+                            name="flexRadioDefault1000"
                             id="flexRadioDefault1"
                           />
                           <label
@@ -158,9 +158,9 @@ const Add_Account = () => {
                       <div className="col-6">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
-                            name="flexRadioDefault"
+                            name="flexRadioDefault1000"
                             id="flexRadioDefault1"
                           />
                           <label
@@ -180,7 +180,7 @@ const Add_Account = () => {
           <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 my-3">
             <input
               type="text"
-              className="form-control input-border"
+              className="form-control input-border focus-none"
               placeholder=""
               aria-label="Username"
               aria-describedby="basic-addon1"
@@ -197,7 +197,7 @@ const Add_Account = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder=""
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -214,7 +214,7 @@ const Add_Account = () => {
                 <div className="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
                   <div className="form-check ">
                     <input
-                      className="form-check-input"
+                      className="form-check-input focus-none"
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
@@ -233,13 +233,13 @@ const Add_Account = () => {
                 <div className="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
                   <div className="form-check ">
                     <input
-                      className="form-check-input"
+                      className="form-check-input focus-none"
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
                     />
                     <label
-                      className="form-check-label "
+                      className="form-check-label focus-none"
                       htmlFor="flexRadioDefault1"
                     >
                       NSE
@@ -252,7 +252,7 @@ const Add_Account = () => {
                 <div className="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
                   <div className="form-check ">
                     <input
-                      className="form-check-input"
+                      className="form-check-input focus-none"
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
@@ -271,7 +271,7 @@ const Add_Account = () => {
                 <div className="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
                   <div className="form-check ">
                     <input
-                      className="form-check-input"
+                      className="form-check-input focus-none"
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
@@ -301,7 +301,7 @@ const Add_Account = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder=""
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -319,7 +319,7 @@ const Add_Account = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder=""
                 aria-label="Username"
                 aria-describedby="basic-addon1"

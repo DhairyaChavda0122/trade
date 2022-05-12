@@ -45,486 +45,537 @@ const Navbar = () => {
           >
             <ul className="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
               <li>
-                <div className="container-fluid my-2">
-                  <div className="row height-button bg-orange">
-                    <div className="col-2 text-start my-3">
-                      <FontAwesomeIcon
-                        icon={faArrowTrendUp}
-                        color="white"
-                        className="ps-2"
-                      />
-                    </div>
-                    <div className="col-8 color-white my-3 text-center">
-                      Dashboard
-                    </div>
-                    <div className="col-2 my-3 dropdown">
-                      <button className="dropbtn bg-transparent border-none text-start p-0">
-                        <FontAwesomeIcon
-                          icon={faAngleDown}
-                          color="white"
-                          className=""
-                        />
-                      </button>
-                      <div className="dropdown-content ">
-                        <ul className="list-group bg-light navbar-border-radius-2">
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/trades-dashboard"
-                              className="text-start no-dec text-dark"
-                            >
-                              Trades
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/executed"
-                              className="text-start no-dec text-dark"
-                            >
-                              Executed Options
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/running"
-                              className="text-start no-dec text-dark"
-                            >
-                              Running Orders
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/summary"
-                              className="text-start no-dec text-dark"
-                            >
-                              Summary Reports
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/m2m"
-                              className="text-start no-dec text-dark"
-                            >
-                              M2M Alerts
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/user-dashboard"
-                              className="text-start no-dec text-dark"
-                            >
-                              User
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/trade-entry"
-                              className="text-start no-dec text-dark"
-                            >
-                              Trade Entry
-                            </Link>
-                          </li>
-                        </ul>
+                <div className="dropdown ">
+                  <button
+                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div className="container width-navbar-drop">
+                      <div className="row">
+                        <div className="col-2 p-0">
+                          <FontAwesomeIcon
+                            icon={faArrowTrendUp}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                        <div className="col-8">Dashboard</div>
+                        <div className="col-2">
+                          <FontAwesomeIcon
+                            icon={faAngleDown}
+                            color="white"
+                            className=""
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </button>
+                  <ul
+                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <Link
+                      to="/trade/trades-dashboard"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Trades
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/executed"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Executed Options
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/running"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Running Orders
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/summary"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Summary Reports
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/m2m"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        M2M Alerts
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/user-dashboard"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        User
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/trade-entry"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Trade Entry
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <div className="dropdown ">
+                  <button
+                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div className="container width-navbar-drop">
+                      <div className="row">
+                        <div className="col-2 p-0">
+                          <FontAwesomeIcon
+                            icon={faEye}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                        <div className="col-8">Trading</div>
+                        <div className="col-2">
+                          <FontAwesomeIcon
+                            icon={faAngleDown}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  <ul
+                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <Link
+                      to="/trade/watchlist-trading"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Watchlist
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/trades-trading"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Trades
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/portfolio-trading"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Portfolio/Position
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/banned-trading"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Banned/Blocked Scripts
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/margin-trading"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Margin Management
+                      </li>
+                    </Link>
+                  </ul>
                 </div>
               </li>
               <li>
-                <div className="container-fluid my-2">
-                  <div className="row height-button bg-orange">
-                    <div className="col-2 text-start my-3">
-                      <FontAwesomeIcon
-                        icon={faEye}
-                        color="white"
-                        className="ps-2"
-                      />
-                    </div>
-                    <div className="col-8 color-white my-3 text-center">
-                      Trading
-                    </div>
-                    <div className="col-2 my-3 dropdown">
-                      <button className="dropbtn bg-transparent border-none text-start p-0">
-                        <FontAwesomeIcon
-                          icon={faAngleDown}
-                          color="white"
-                          className=""
-                        />
-                      </button>
-                      <div className="dropdown-content ">
-                        <ul className="list-group bg-light navbar-border-radius-2">
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/watchlist-trading"
-                              className="text-start no-dec text-dark"
-                            >
-                              Watchlist
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/trades-trading"
-                              className="text-start no-dec text-dark"
-                            >
-                              Trades
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/portfolio-trading"
-                              className="text-start no-dec text-dark"
-                            >
-                              Portfolio/Position
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/banned-trading"
-                              className="text-start no-dec text-dark"
-                            >
-                              Banned/Blocked Scripts
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/margin-trading"
-                              className="text-start no-dec text-dark"
-                            >
-                              Margin Management
-                            </Link>
-                          </li>
-                        </ul>
+                <div className="dropdown ">
+                  <button
+                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div className="container width-navbar-drop">
+                      <div className="row">
+                        <div className="col-2 p-0">
+                          <FontAwesomeIcon
+                            icon={faDollarSign}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                        <div className="col-8">Forex/Comex</div>
+                        <div className="col-2">
+                          <FontAwesomeIcon
+                            icon={faAngleDown}
+                            color="white"
+                            className=""
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </button>
+                  <ul
+                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <Link
+                      to="/trade/watchlist-forex"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Watchlist
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/trades-forex"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Trades
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/portfolio-forex"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Portfolio/Position
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/margin-forex"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Margin Management
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <div className="dropdown ">
+                  <button
+                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div className="container width-navbar-drop">
+                      <div className="row">
+                        <div className="col-2 p-0">
+                          <FontAwesomeIcon
+                            icon={faUserCircle}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                        <div className="col-8">User</div>
+                        <div className="col-2">
+                          <FontAwesomeIcon
+                            icon={faAngleDown}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  <ul
+                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <Link
+                      to="/trade/all-user"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        All UserList
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/userlist"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        UserList
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/add-account"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Add Account
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <div className="dropdown ">
+                  <button
+                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div className="container width-navbar-drop">
+                      <div className="row">
+                        <div className="col-2 p-0">
+                          <FontAwesomeIcon
+                            icon={faBook}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                        <div className="col-8">Log</div>
+                        <div className="col-2">
+                          <FontAwesomeIcon
+                            icon={faAngleDown}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  <ul
+                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <Link
+                      to="/trade/trade-edit"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Trade Edit/ Delete Log
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/user-edit"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        User Edit Log
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/auto"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Auto Square Up Log
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/cross"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Cross Trade Log
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/rejection"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Rejection Log
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <div className="dropdown ">
+                  <button
+                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div className="container width-navbar-drop">
+                      <div className="row">
+                        <div className="col-2 p-0">
+                          <FontAwesomeIcon
+                            icon={faUser}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                        <div className="col-8">Accounts</div>
+                        <div className="col-2">
+                          <FontAwesomeIcon
+                            icon={faAngleDown}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  <ul
+                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <Link
+                      to="/trade/cash-ledge"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Cash Ledge
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/cash-entry"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Cash Entry
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/jv"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">JV</li>
+                    </Link>
+                    <Link
+                      to="/trade/jv-broker"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        JV Broker
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/deposit"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Deposit Entry
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/valan"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Valan
+                      </li>
+                    </Link>
+                  </ul>
                 </div>
               </li>
               <li>
-                <div className="container-fluid my-2">
-                  <div className="row height-button bg-orange">
-                    <div className="col-2 text-start my-3">
-                      <FontAwesomeIcon
-                        icon={faDollarSign}
-                        color="white"
-                        className="ps-2"
-                      />
-                    </div>
-                    <div className="col-8 color-white my-3 text-center">
-                      Forex/Comex
-                    </div>
-                    <div className="col-2 my-3 dropdown">
-                      <button className="dropbtn bg-transparent border-none text-start p-0">
-                        <FontAwesomeIcon
-                          icon={faAngleDown}
-                          color="white"
-                          className=""
-                        />
-                      </button>
-                      <div className="dropdown-content ">
-                        <ul className="list-group bg-light navbar-border-radius-2">
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/watchlist-forex"
-                              className="text-start no-dec text-dark"
-                            >
-                              Watchlist
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/trades-forex"
-                              className="text-start no-dec text-dark"
-                            >
-                              Trades
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/portfolio-forex"
-                              className="text-start no-dec text-dark"
-                            >
-                              Portfolio/Position
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/margin-forex"
-                              className="text-start no-dec text-dark"
-                            >
-                              Margin Management
-                            </Link>
-                          </li>
-                        </ul>
+                <div className="dropdown ">
+                  <button
+                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div className="container width-navbar-drop">
+                      <div className="row">
+                        <div className="col-2 p-0">
+                          <FontAwesomeIcon
+                            icon={faAddressBook}
+                            color="white"
+                            className=""
+                          />
+                        </div>
+                        <div className="col-8">Report</div>
+                        <div className="col-2">
+                          <FontAwesomeIcon
+                            icon={faAngleDown}
+                            color="white"
+                            className=""
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid my-2">
-                  <div className="row height-button bg-orange">
-                    <div className="col-2 text-start my-3">
-                      <FontAwesomeIcon
-                        icon={faUserCircle}
-                        color="white"
-                        className="ps-2"
-                      />
-                    </div>
-                    <div className="col-8 color-white my-3 text-center">
-                      User
-                    </div>
-                    <div className="col-2 my-3 dropdown">
-                      <button className="dropbtn bg-transparent border-none text-start p-0">
-                        <FontAwesomeIcon
-                          icon={faAngleDown}
-                          color="white"
-                          className=""
-                        />
-                      </button>
-                      <div className="dropdown-content ">
-                        <ul className="list-group bg-light navbar-border-radius-2">
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/all-user"
-                              className="text-start no-dec text-dark"
-                            >
-                              All UserList
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/userlist"
-                              className="text-start no-dec text-dark"
-                            >
-                              UserList
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/add-account"
-                              className="text-start no-dec text-dark"
-                            >
-                              Add Account
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid my-2">
-                  <div className="row height-button bg-orange">
-                    <div className="col-2 text-start my-3">
-                      <FontAwesomeIcon
-                        icon={faBook}
-                        color="white"
-                        className="ps-2"
-                      />
-                    </div>
-                    <div className="col-8 color-white my-3 text-center">
-                      Log
-                    </div>
-                    <div className="col-2 my-3 dropdown">
-                      <button className="dropbtn bg-transparent border-none text-start p-0">
-                        <FontAwesomeIcon
-                          icon={faAngleDown}
-                          color="white"
-                          className=""
-                        />
-                      </button>
-                      <div className="dropdown-content ">
-                        <ul className="list-group bg-light navbar-border-radius-2">
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/trade-edit"
-                              className="text-start no-dec text-dark"
-                            >
-                              Trade Edit/ Delete Log
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/user-edit"
-                              className="text-start no-dec text-dark"
-                            >
-                              User Edit Log
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/auto"
-                              className="text-start no-dec text-dark"
-                            >
-                              Auto Square Up Log
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/cross"
-                              className="text-start no-dec text-dark"
-                            >
-                              Cross Trade Log
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/rejection"
-                              className="text-start no-dec text-dark"
-                            >
-                              Rejection Log
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid my-2">
-                  <div className="row height-button bg-orange">
-                    <div className="col-2 text-start my-3">
-                      <FontAwesomeIcon
-                        icon={faUser}
-                        color="white"
-                        className="ps-2"
-                      />
-                    </div>
-                    <div className="col-8 color-white my-3 text-center">
-                      Accounts
-                    </div>
-                    <div className="col-2 my-3 dropdown">
-                      <button className="dropbtn bg-transparent border-none text-start p-0">
-                        <FontAwesomeIcon
-                          icon={faAngleDown}
-                          color="white"
-                          className=""
-                        />
-                      </button>
-                      <div className="dropdown-content ">
-                        <ul className="list-group bg-light navbar-border-radius-2">
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/cash-ledge"
-                              className="text-start no-dec text-dark"
-                            >
-                              Cash Ledge
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/cash-entry"
-                              className="text-start no-dec text-dark"
-                            >
-                              Cash Entry
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/jv"
-                              className="text-start no-dec text-dark"
-                            >
-                              JV
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/jv-broker"
-                              className="text-start no-dec text-dark"
-                            >
-                              JV Broker
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/deposit"
-                              className="text-start no-dec text-dark"
-                            >
-                              Deposit Entry
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/valan"
-                              className="text-start no-dec text-dark"
-                            >
-                              Valan
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid my-2">
-                  <div className="row height-button bg-orange">
-                    <div className="col-2 text-start my-3">
-                      <FontAwesomeIcon
-                        icon={faAddressBook}
-                        color="white"
-                        className="ps-2"
-                      />
-                    </div>
-                    <div className="col-8 color-white my-3 text-center">
-                      Report
-                    </div>
-                    <div className="col-2 my-3 dropdown">
-                      <button className="dropbtn bg-transparent border-none text-start p-0">
-                        <FontAwesomeIcon
-                          icon={faAngleDown}
-                          color="white"
-                          className=""
-                        />
-                      </button>
-                      <div className="dropdown-content ">
-                        <ul className="list-group bg-light navbar-border-radius-2">
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/trade-report"
-                              className="text-start no-dec text-dark"
-                            >
-                              Track Report
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/ledge-report"
-                              className="text-start no-dec text-dark"
-                            >
-                              Ledge Report
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/deposit-report"
-                              className="text-start no-dec text-dark"
-                            >
-                              Deposit Report
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/trial"
-                              className="text-start no-dec text-dark"
-                            >
-                              Trial Balances
-                            </Link>
-                          </li>
-                          <li className="list-group-item no-dec text-start">
-                            <Link
-                              to="/trade/client-report"
-                              className="text-start no-dec text-dark"
-                            >
-                              Client Cr/Dr Report
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  </button>
+                  <ul
+                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <Link
+                      to="/trade/trade-report"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Track Report
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/ledge-report"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Ledge Report
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/deposit-report"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Deposit Report
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/trial"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Trial Balances
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/client-report"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Client Cr/Dr Report
+                      </li>
+                    </Link>
+                  </ul>
                 </div>
               </li>
             </ul>

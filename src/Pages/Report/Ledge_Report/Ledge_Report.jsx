@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
+import Calender from "../../Components/Calender/Calender";
 
 const Ledge_Report = () => {
   return (
@@ -31,7 +31,7 @@ const Ledge_Report = () => {
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
-                className="btn dropdown-toggle fw-bold focus-none"
+                className="btn fw-bold focus-none"
                 to="/"
                 role="button"
                 id="dropdownMenuLink"
@@ -70,37 +70,11 @@ const Ledge_Report = () => {
         <div className="row">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <p className="m-2">From Date</p>
-            <Link
-              to="/"
-              className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
-              aria-current="page"
-            >
-              <span className="text-start">mm/dd/yyyyy-:--</span>
-              <span className="float-end ">
-                <FontAwesomeIcon
-                  icon={faCalendarDays}
-                  color="white"
-                  className="pe-2"
-                />
-              </span>
-            </Link>
+            <Calender />
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <p className="m-2">From End</p>
-            <Link
-              to="/"
-              className="nav-link border text- my-2 py-3  navbar-border-radius bg-orange color-white "
-              aria-current="page"
-            >
-              <span className="text-start">mm/dd/yyyyy-:--</span>
-              <span className="float-end ">
-                <FontAwesomeIcon
-                  icon={faCalendarDays}
-                  color="white"
-                  className="pe-2"
-                />
-              </span>
-            </Link>
+            <Calender />
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
             <button type="button" className="btn btn-lg btn-primary">

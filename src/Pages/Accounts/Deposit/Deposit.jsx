@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faCircleUser,
-  faCalendarDays,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Date from "../../Components/Date/Date";
 
 const Deposit = () => {
   return (
@@ -31,7 +31,7 @@ const Deposit = () => {
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
-                className="btn dropdown-toggle fw-bold focus-none"
+                className="btn fw-bold focus-none"
                 to="/"
                 role="button"
                 id="dropdownMenuLink"
@@ -87,7 +87,7 @@ const Deposit = () => {
                       <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault1"
@@ -103,7 +103,7 @@ const Deposit = () => {
                       <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <div className="form-check my-1">
                           <input
-                            className="form-check-input"
+                            className="form-check-input focus-none"
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault1"
@@ -132,7 +132,7 @@ const Deposit = () => {
                 Account Code
               </label>
               <select
-                className="form-select input-border"
+                className="form-select input-border focus-none"
                 id="inputGroupSelect01"
               >
                 <option className="">Select From Account</option>
@@ -156,7 +156,7 @@ const Deposit = () => {
                 Account Name
               </label>
               <select
-                className="form-select input-border"
+                className="form-select input-border focus-none"
                 id="inputGroupSelect01"
               >
                 <option className="">Select Customer</option>
@@ -180,21 +180,7 @@ const Deposit = () => {
             </label>
           </div>
           <div className="col-7">
-            <div className="input-group flex-nowrap">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="04-07-2022"
-                aria-label="Username"
-                aria-describedby="addon-wrapping"
-              />
-              <span
-                className="input-group-text bg-transparent hover-effect"
-                id="addon-wrapping"
-              >
-                <FontAwesomeIcon icon={faCalendarDays} />
-              </span>
-            </div>
+            <Date />
           </div>
           <Link to="/" className="col-3 color-blue fw-bold dec-none">
             Show entries
@@ -210,7 +196,7 @@ const Deposit = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder=""
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -227,7 +213,7 @@ const Deposit = () => {
               </span>
               <input
                 type="text"
-                className="form-control input-border"
+                className="form-control input-border focus-none"
                 placeholder=""
                 aria-label="Username"
                 aria-describedby="basic-addon1"
