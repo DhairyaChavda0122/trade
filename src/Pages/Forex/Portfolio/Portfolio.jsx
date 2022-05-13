@@ -1,10 +1,7 @@
 import React from "react";
 import "./Portfolio.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
 import Search from "../../Components/Search/Search";
@@ -28,7 +25,10 @@ const Portfolio = () => {
                       value=""
                       id="flexCheckChecked"
                     />
-                    <label className="form-check-label" htmlFor="flexCheckChecked">
+                    <label
+                      className="form-check-label"
+                      htmlFor="flexCheckChecked"
+                    >
                       ALL
                     </label>
                   </div>
@@ -39,7 +39,10 @@ const Portfolio = () => {
                       value=""
                       id="flexCheckDefault"
                     />
-                    <label className="form-check-label" htmlFor="flexCheckDefault">
+                    <label
+                      className="form-check-label"
+                      htmlFor="flexCheckDefault"
+                    >
                       OUTSTANDING
                     </label>
                   </div>
@@ -52,7 +55,10 @@ const Portfolio = () => {
                       value=""
                       id="flexCheckChecked"
                     />
-                    <label className="form-check-label" htmlFor="flexCheckChecked">
+                    <label
+                      className="form-check-label"
+                      htmlFor="flexCheckChecked"
+                    >
                       CLIENT WISE
                     </label>
                   </div>
@@ -63,7 +69,10 @@ const Portfolio = () => {
                       value=""
                       id="flexCheckDefault"
                     />
-                    <label className="form-check-label" htmlFor="flexCheckDefault">
+                    <label
+                      className="form-check-label"
+                      htmlFor="flexCheckDefault"
+                    >
                       SCRIPT
                     </label>
                   </div>
@@ -71,16 +80,16 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 my-1">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 my-2">
             <Search />
           </div>
 
           <div className="container">
             <div className="row">
-              <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+              <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center  my-3 my-sm-3 my-md-3 my-lg-0 my-xl-0">
                 <Notifications />
               </div>
-              <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex flex-row float-end">
+              <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex flex-row float-end  my-3 my-sm-3 my-md-3 my-lg-0 my-xl-0">
                 <FontAwesomeIcon
                   icon={faCircleUser}
                   size="2x"

@@ -1,16 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
 import Calender from "../../Components/Calender/Calender";
 import Search from "../../Components/Search/Search";
 import SelectEntry from "../../Components/Select-Entry/Select-Entry";
 import Notifications from "../../Components/Notifications/Notifications";
-
 
 const Trade_Edit = () => {
   return (
@@ -53,7 +49,7 @@ const Trade_Edit = () => {
             <Calender />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center mt-5">
-           <Notifications />
+            <Notifications />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex flex-row mt-5 ">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />

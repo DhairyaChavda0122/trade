@@ -123,7 +123,10 @@ const Userlist = () => {
             <Search />
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 text-center">
-            <button type="button" className="btn bg-primary color-white w-100">
+            <button
+              type="button"
+              className="btn bg-primary color-white w-100 my-2 my-sm-2 my-md-2 my-lg-0 my-xl-0"
+            >
               +Add Account
             </button>
           </div>

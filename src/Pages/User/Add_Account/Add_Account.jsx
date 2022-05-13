@@ -1,13 +1,9 @@
 import React from "react";
 import "./Add_Account.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Notifications from "../../Components/Notifications/Notifications";
-
 
 const Add_Account = () => {
   return (
@@ -17,12 +13,12 @@ const Add_Account = () => {
           <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4 fw-bold">
             ADD ACCOUNT
           </div>
-          <div className="col-3 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
+          <div className="col-4 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
 
-          <div className="col-2 col-sm-3 col-md-2 col-lg-1 col-xl-1 text-center">
+          <div className="col-6 col-sm-3 col-md-2 col-lg-1 col-xl-1 text-center">
             <Notifications />
           </div>
-          <div className="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
+          <div className="col-6 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
@@ -324,7 +320,10 @@ const Add_Account = () => {
           </div>
 
           <div className="col-12 text-end">
-            <button type="button" className="btn bg-brown color-white btn-lg focus-none button-effect">
+            <button
+              type="button"
+              className="btn bg-brown color-white btn-lg focus-none button-effect"
+            >
               Submit
             </button>
           </div>

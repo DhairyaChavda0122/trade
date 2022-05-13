@@ -1,18 +1,13 @@
 import React from "react";
 // import "./Banned.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-banned-trading";
 import { Link } from "react-router-dom";
 import Search from "../../Components/Search/Search";
 import Calender from "../../Components/Calender/Calender";
 import SelectEntry from "../../Components/Select-Entry/Select-Entry";
 import Notifications from "../../Components/Notifications/Notifications";
-
-
 
 const Banned = () => {
   return (
@@ -22,10 +17,10 @@ const Banned = () => {
           <div className="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
             <Search />
           </div>
-          <div className="col-6 col-sm-6 col-md-6 col-lg-1 text-center">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-1 text-center  my-3 my-sm-3 my-md-3 my-lg-0 my-xl-0">
             <Notifications />
           </div>
-          <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row  my-3 my-sm-3 my-md-3 my-lg-0 my-xl-0">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link

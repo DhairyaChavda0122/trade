@@ -1,16 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
 import Calender from "../../Components/Calender/Calender";
 import Search from "../../Components/Search/Search";
 import SelectEntry from "../../Components/Select-Entry/Select-Entry";
 import Notifications from "../../Components/Notifications/Notifications";
-
 
 const Cash_Ledge = () => {
   return (
@@ -52,10 +48,10 @@ const Cash_Ledge = () => {
             <p className="m-2">From End</p>
             <Calender />
           </div>
-          <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center mt-5">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center mt-5">
             <Notifications />
           </div>
-          <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex flex-row mt-5 ">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex flex-row mt-5 ">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
@@ -97,7 +93,7 @@ const Cash_Ledge = () => {
       <div className="container my-5">
         <div className="row">
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
-          <select
+            <select
               className="form-select bg-orange color-white height-button focus-none"
               aria-label="Default select example"
             >
@@ -120,7 +116,7 @@ const Cash_Ledge = () => {
             </select>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
-          <select
+            <select
               className="form-select bg-orange color-white height-button focus-none"
               aria-label="Default select example"
             >
@@ -143,7 +139,7 @@ const Cash_Ledge = () => {
             </select>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
-          <select
+            <select
               className="form-select bg-orange color-white height-button focus-none"
               aria-label="Default select example"
             >
@@ -166,7 +162,7 @@ const Cash_Ledge = () => {
             </select>
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
-          <select
+            <select
               className="form-select bg-orange color-white height-button focus-none"
               aria-label="Default select example"
             >

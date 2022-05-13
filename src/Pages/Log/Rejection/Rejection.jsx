@@ -1,9 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
 import Calender from "../../Components/Calender/Calender";
@@ -27,10 +24,10 @@ const Rejection = () => {
             <p className="m-2">From End</p>
             <Calender />
           </div>
-          <div className="col-12 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center mt-5">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center mt-5">
             <Notifications />
           </div>
-          <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row mt-5 ">
+          <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row mt-5 ">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <a

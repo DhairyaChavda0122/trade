@@ -2,18 +2,12 @@ import React from "react";
 import "./Watchlist.css";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Search from "../../Components/Search/Search";
 import Notifications from "../../Components/Notifications/Notifications";
 
-
-
 const Watchlist = () => {
-
   return (
     <>
       <div className="container-fluid">
@@ -126,11 +120,7 @@ const Watchlist = () => {
               className="form-select bg-orange color-white height-button focus-none"
               aria-label="Default select example"
             >
-              <option
-                className="bg-light text-dark ps-3"
-                value="1"
-                
-              >
+              <option className="bg-light text-dark ps-3" value="1">
                 31-03-2022
               </option>
               <option className="bg-light text-dark ps-3" value="2">

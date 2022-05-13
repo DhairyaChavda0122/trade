@@ -1,14 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { Link } from "react-router-dom";
 import Calender from "../../Components/Calender/Calender";
 import Notifications from "../../Components/Notifications/Notifications";
-
 
 const Deposit_Report = () => {
   return (
@@ -18,12 +14,12 @@ const Deposit_Report = () => {
           <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4">
             Deposit Report
           </div>
-          <div className="col-3 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
+          <div className="col-4 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
 
-          <div className="col-2 col-sm-3 col-md-2 col-lg-1 col-xl-1 text-center">
-           <Notifications />
+          <div className="col-6 col-sm-3 col-md-2 col-lg-1 col-xl-1 text-center">
+            <Notifications />
           </div>
-          <div className="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
+          <div className="col-6 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link

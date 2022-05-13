@@ -48,7 +48,7 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -75,14 +75,14 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
                       to="/trade/trades-dashboard"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list">
                         Trades
                       </li>
                     </Link>
@@ -130,7 +130,7 @@ const Navbar = () => {
                       to="/trade/trade-entry"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Trade Entry
                       </li>
                     </Link>
@@ -141,7 +141,7 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none mt-2 p-0"
+                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -168,7 +168,7 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0 "
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
@@ -217,7 +217,7 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -244,14 +244,14 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
                       to="/trade/watchlist-forex"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list">
                         Watchlist
                       </li>
                     </Link>
@@ -275,7 +275,7 @@ const Navbar = () => {
                       to="/trade/margin-forex"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Margin Management
                       </li>
                     </Link>
@@ -286,7 +286,7 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -313,14 +313,14 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
                       to="/trade/all-user"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list">
                         All UserList
                       </li>
                     </Link>
@@ -336,7 +336,7 @@ const Navbar = () => {
                       to="/trade/add-account"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Add Account
                       </li>
                     </Link>
@@ -347,7 +347,7 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -374,14 +374,14 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
                       to="/trade/trade-edit"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list">
                         Trade Edit/ Delete Log
                       </li>
                     </Link>
@@ -413,7 +413,7 @@ const Navbar = () => {
                       to="/trade/rejection"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Rejection Log
                       </li>
                     </Link>
@@ -424,7 +424,7 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -451,14 +451,14 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
                       to="/trade/cash-ledge"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list">
                         Cash Ledge
                       </li>
                     </Link>
@@ -496,7 +496,7 @@ const Navbar = () => {
                       to="/trade/valan"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Valan
                       </li>
                     </Link>
@@ -506,7 +506,7 @@ const Navbar = () => {
               <li>
                 <div className=" ">
                   <button
-                    className="btn bg-orange dropup color-white height-button focus-none my-2 p-0"
+                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -533,14 +533,14 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
                       to="/trade/trade-report"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list">
                         Track Report
                       </li>
                     </Link>
@@ -572,7 +572,7 @@ const Navbar = () => {
                       to="/trade/client-report"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Client Cr/Dr Report
                       </li>
                     </Link>

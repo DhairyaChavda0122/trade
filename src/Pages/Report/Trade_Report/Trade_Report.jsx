@@ -1,13 +1,9 @@
 import React from "react";
 import "./Trade_Report.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faAngleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Notifications from "../../Components/Notifications/Notifications";
-
 
 const Trade_Report = () => {
   return (
@@ -17,12 +13,12 @@ const Trade_Report = () => {
           <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4 fw-bold">
             TRADE REPORT
           </div>
-          <div className="col-3 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
+          <div className="col-4 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
 
-          <div className="col-2 col-sm-3 col-md-2 col-lg-1 col-xl-1 text-center">
-           <Notifications />
+          <div className="col-6 col-sm-3 col-md-2 col-lg-1 col-xl-1 text-center">
+            <Notifications />
           </div>
-          <div className="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
+          <div className="col-6 col-sm-3 col-md-2 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
             <div className="dropdown ms-1 bg-transparent">
               <Link
@@ -211,7 +207,10 @@ const Trade_Report = () => {
                 name="flexRadioDefault01"
                 id="flexRadioDefault1"
               />
-              <label className="form-check-label focus-none" htmlFor="flexRadioDefault1">
+              <label
+                className="form-check-label focus-none"
+                htmlFor="flexRadioDefault1"
+              >
                 Self
               </label>
             </div>
@@ -428,7 +427,6 @@ const Trade_Report = () => {
             </div>
           </div>
 
-
           <div className="col-12 text-end my-2">
             <button
               type="button"
@@ -437,7 +435,6 @@ const Trade_Report = () => {
               View Report
             </button>
           </div>
-
         </div>
       </div>
     </>
