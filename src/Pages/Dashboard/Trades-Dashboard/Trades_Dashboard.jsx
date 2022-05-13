@@ -2,12 +2,12 @@ import React from "react";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBell,
   faCircleUser,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Search from "../../Components/Search/Search";
+import Notifications from "../../Components/Notifications/Notifications";
 
 const Trades_Dashboard = () => {
   return (
@@ -19,12 +19,7 @@ const Trades_Dashboard = () => {
             <Search />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center">
-            <FontAwesomeIcon
-              icon={faBell}
-              className="p-0 mt-1"
-              size="2x"
-              color="grey"
-            />
+            <Notifications />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
@@ -65,7 +60,6 @@ const Trades_Dashboard = () => {
         </div>
       </div>
 
-      
       <Table />
     </>
   );

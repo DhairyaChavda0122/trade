@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBell,
   faCircleUser,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
@@ -10,6 +9,7 @@ import { Link } from "react-router-dom";
 import Calender from "../../Components/Calender/Calender";
 import Search from "../../Components/Search/Search";
 import SelectEntry from "../../Components/Select-Entry/Select-Entry";
+import Notifications from "../../Components/Notifications/Notifications";
 
 const Rejection = () => {
   return (
@@ -28,12 +28,7 @@ const Rejection = () => {
             <Calender />
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center mt-5">
-            <FontAwesomeIcon
-              icon={faBell}
-              className="p-0 mt-1"
-              size="2x"
-              color="grey"
-            />
+            <Notifications />
           </div>
           <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row mt-5 ">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />

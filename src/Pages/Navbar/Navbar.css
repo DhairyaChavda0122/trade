@@ -62,17 +62,31 @@
 
 .no-dec:hover{
   color: #fab417;
+  margin: 0;
 }
 
-
+/* .fix{
+  position: fixed !important;
+} */
 
 .width-navbar-drop{
   width: 13rem !important;
   /* border-radius: 20px; */
 }
 
-.dropdown-menu{
+.dpdn-class{
   position: relative !important;
+  border-radius: 20px !important;
+}
+
+.border-list{
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+
+.border-list-2{
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
 }
 
 
@@ -85,6 +99,9 @@
   .width-navbar-drop{
     width: 90vw !important;
   }
+  /* .fix{
+    position: relative !important;
+  } */
 }
   
 

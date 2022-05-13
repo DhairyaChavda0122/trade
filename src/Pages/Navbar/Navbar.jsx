@@ -13,12 +13,13 @@ import {
   faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const Navbar = () => {
   return (
     <>
-      <div className="container-fluid d-flex flex-column flex-lg-row justify-content-center">
-        <nav className="navbar navbar-expand-md navbar-light d-flex flex-md-column">
+      <div className="container-fluid d-flex flex-column flex-lg-row justify-content-center ">
+        <nav className="navbar navbar-expand-md navbar-light d-flex flex-md-column fix">
           <Link to="/trade/trades-dashboard">
             <img
               src={tradeLogo}
@@ -74,7 +75,7 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
@@ -140,7 +141,7 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    className="btn bg-orange color-white height-button focus-none mt-2 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -148,7 +149,7 @@ const Navbar = () => {
                   >
                     <div className="container width-navbar-drop">
                       <div className="row">
-                        <div className="col-2 p-0">
+                        <div className="col-2 p-0 ">
                           <FontAwesomeIcon
                             icon={faEye}
                             color="white"
@@ -167,14 +168,14 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0 "
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
                       to="/trade/watchlist-trading"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list">
                         Watchlist
                       </li>
                     </Link>
@@ -206,7 +207,7 @@ const Navbar = () => {
                       to="/trade/margin-trading"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Margin Management
                       </li>
                     </Link>
@@ -243,7 +244,7 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
@@ -312,7 +313,7 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
@@ -373,7 +374,7 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
@@ -450,7 +451,7 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
@@ -503,9 +504,9 @@ const Navbar = () => {
                 </div>
               </li>
               <li>
-                <div className="dropdown ">
+                <div className=" ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none my-2 p-0"
+                    className="btn bg-orange dropup color-white height-button focus-none my-2 p-0"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -532,7 +533,7 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu width-navbar-drop border-none bg-transparent"
+                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <Link
@@ -578,6 +579,7 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
+              <Footer />
             </ul>
           </div>
         </nav>

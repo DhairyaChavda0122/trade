@@ -2,7 +2,6 @@ import React from "react";
 import "./Portfolio.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBell,
   faCircleUser,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +10,7 @@ import { Link } from "react-router-dom";
 import Search from "../../Components/Search/Search";
 import Calender from "../../Components/Calender/Calender";
 import SelectEntry from "../../Components/Select-Entry/Select-Entry";
+import Notifications from "../../Components/Notifications/Notifications";
 
 const Portfolio = () => {
   return (
@@ -78,12 +78,7 @@ const Portfolio = () => {
           <div className="container">
             <div className="row">
               <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-                <FontAwesomeIcon
-                  icon={faBell}
-                  className="p-0 mt-1"
-                  size="2x"
-                  color="grey"
-                />
+                <Notifications />
               </div>
               <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex flex-row float-end">
                 <FontAwesomeIcon

@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Pages/Navbar/Navbar";
-import Footer from "./Pages/Footer/Footer";
 import Login from "./Pages/Login/Login";
 
 import TradesDashboard from "./Pages/Dashboard/Trades-Dashboard/Trades_Dashboard";
@@ -128,9 +127,7 @@ const App = () => {
                 
 
               </div>
-              <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-end border-warning">
-                <Footer />
-              </div>
+
             </div>
           </div>
         </Router>

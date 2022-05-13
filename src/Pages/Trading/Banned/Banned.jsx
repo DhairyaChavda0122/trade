@@ -2,7 +2,6 @@ import React from "react";
 // import "./Banned.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBell,
   faCircleUser,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +10,8 @@ import { Link } from "react-router-dom";
 import Search from "../../Components/Search/Search";
 import Calender from "../../Components/Calender/Calender";
 import SelectEntry from "../../Components/Select-Entry/Select-Entry";
+import Notifications from "../../Components/Notifications/Notifications";
+
 
 
 const Banned = () => {
@@ -22,12 +23,7 @@ const Banned = () => {
             <Search />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-1 text-center">
-            <FontAwesomeIcon
-              icon={faBell}
-              className="p-0 mt-1"
-              size="2x"
-              color="grey"
-            />
+            <Notifications />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row">
             <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />

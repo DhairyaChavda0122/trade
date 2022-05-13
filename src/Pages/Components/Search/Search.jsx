@@ -7,7 +7,6 @@ import {
 
 const Search = () => {
   return (
-    <form className="container-fluid">
       <div className="input-group shadow-sm ">
         <span
           className="input-group-text focus-none bg-transparent border-right-none"
@@ -23,7 +22,6 @@ const Search = () => {
           aria-describedby="basic-addon1"
         />
       </div>
-    </form>
   );
 };
 
