@@ -56,9 +56,15 @@
   }
    */
 
-  .no-dec{
+.no-dec{
       text-decoration: none !important;
   }
+
+.no-dec:hover{
+  color: #fab417;
+}
+
+
 
 .width-navbar-drop{
   width: 13rem !important;
