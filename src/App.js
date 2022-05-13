@@ -47,93 +47,80 @@ import ClientReport from "./Pages/Report/Client_Report/Client_Report";
 
 const App = () => {
 
-  const user = true;
-
   return (
 
     <div className="App">
+      <Router>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-end border-warning">
+              <Navbar />
+            </div>
+            <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+              <Routes>
+                <Route path="/trade/login" element={<Login />}></Route>
 
-      {user ? (
+                {/* Dashboard */}
 
-        <Router>
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-end border-warning">
-                <Navbar />
-              </div>
-              <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                <Route path="/trade/trades-dashboard" element={<TradesDashboard />}></Route>
+                <Route path="/trade/executed" element={<Executed />}></Route>
+                <Route path="/trade/running" element={<Running />}></Route>
+                <Route path="/trade/summary" element={<Summary />}></Route>
+                <Route path="/trade/m2m" element={<M2M />}></Route>
+                <Route path="/trade/user-dashboard" element={<UserDashboard />}></Route>
+                <Route path="/trade/trade-entry" element={<TradeEntry />}></Route>
 
-                <Routes>
-                  
-                  <Route path="/trade/login" element={<Login />}></Route>
+                {/* Trading */}
 
-                  {/* Dashboard */}
+                <Route path="/trade/watchlist-trading" element={<WatchlistTrading />}></Route>
+                <Route path="/trade/trades-trading" element={<TradesTrading />}></Route>
+                <Route path="/trade/portfolio-trading" element={<PortfolioTrading />}></Route>
+                <Route path="/trade/banned-trading" element={<BannedTrading />}></Route>
+                <Route path="/trade/margin-trading" element={<MarginTrading />}></Route>
 
-                  <Route path="/trade/trades-dashboard" element={<TradesDashboard />}></Route>
-                  <Route path="/trade/executed" element={<Executed />}></Route>
-                  <Route path="/trade/running" element={<Running />}></Route>
-                  <Route path="/trade/summary" element={<Summary />}></Route>
-                  <Route path="/trade/m2m" element={<M2M />}></Route>
-                  <Route path="/trade/user-dashboard" element={<UserDashboard />}></Route>
-                  <Route path="/trade/trade-entry" element={<TradeEntry />}></Route>
+                {/* Forex */}
 
-                  {/* Trading */}
+                <Route path="/trade/watchlist-forex" element={<WatchlistForex />}></Route>
+                <Route path="/trade/trades-forex" element={<TradesForex />}></Route>
+                <Route path="/trade/portfolio-forex" element={<PortfolioForex />}></Route>
+                <Route path="/trade/margin-forex" element={<MarginForex />}></Route>
 
-                  <Route path="/trade/watchlist-trading" element={<WatchlistTrading />}></Route>
-                  <Route path="/trade/trades-trading" element={<TradesTrading />}></Route>
-                  <Route path="/trade/portfolio-trading" element={<PortfolioTrading />}></Route>
-                  <Route path="/trade/banned-trading" element={<BannedTrading />}></Route>
-                  <Route path="/trade/margin-trading" element={<MarginTrading />}></Route>
+                {/* User */}
 
-                  {/* Forex */}
+                <Route path="/trade/all-user" element={<AllUser />}></Route>
+                <Route path="/trade/userlist" element={<Userlist />}></Route>
+                <Route path="/trade/add-account" element={<AddAccount />}></Route>
 
-                  <Route path="/trade/watchlist-forex" element={<WatchlistForex />}></Route>
-                  <Route path="/trade/trades-forex" element={<TradesForex />}></Route>
-                  <Route path="/trade/portfolio-forex" element={<PortfolioForex />}></Route>
-                  <Route path="/trade/margin-forex" element={<MarginForex />}></Route>
+                {/* Log */}
 
-                  {/* User */}
+                <Route path="/trade/trade-edit" element={<TradeEdit />}></Route>
+                <Route path="/trade/user-edit" element={<UserEdit />}></Route>
+                <Route path="/trade/auto" element={<Auto />}></Route>
+                <Route path="/trade/cross" element={<Cross />}></Route>
+                <Route path="/trade/rejection" element={<Rejection />}></Route>
 
-                  <Route path="/trade/all-user" element={<AllUser />}></Route>
-                  <Route path="/trade/userlist" element={<Userlist />}></Route>
-                  <Route path="/trade/add-account" element={<AddAccount />}></Route>
+                {/* Accounts */}
 
-                  {/* Log */}
+                <Route path="/trade/cash-ledge" element={<CashLedge />}></Route>
+                <Route path="/trade/cash-entry" element={<CashEntry />}></Route>
+                <Route path="/trade/jv" element={<JV />}></Route>
+                <Route path="/trade/jv-broker" element={<JVBroker />}></Route>
+                <Route path="/trade/deposit" element={<Deposit />}></Route>
+                <Route path="/trade/valan" element={<Valan />}></Route>
 
-                  <Route path="/trade/trade-edit" element={<TradeEdit />}></Route>
-                  <Route path="/trade/user-edit" element={<UserEdit />}></Route>
-                  <Route path="/trade/auto" element={<Auto />}></Route>
-                  <Route path="/trade/cross" element={<Cross />}></Route>
-                  <Route path="/trade/rejection" element={<Rejection />}></Route>
+                {/* Report */}
 
-                  {/* Accounts */}
+                <Route path="/trade/trade-report" element={<TradeReport />}></Route>
+                <Route path="/trade/ledge-report" element={<LedgeReport />}></Route>
+                <Route path="/trade/deposit-report" element={<DepositReport />}></Route>
+                <Route path="/trade/trial" element={<Trial />}></Route>
+                <Route path="/trade/client-report" element={<ClientReport />}></Route>
 
-                  <Route path="/trade/cash-ledge" element={<CashLedge />}></Route>
-                  <Route path="/trade/cash-entry" element={<CashEntry />}></Route>
-                  <Route path="/trade/jv" element={<JV />}></Route>
-                  <Route path="/trade/jv-broker" element={<JVBroker />}></Route>
-                  <Route path="/trade/deposit" element={<Deposit />}></Route>
-                  <Route path="/trade/valan" element={<Valan />}></Route>
-
-                  {/* Report */}
-
-                  <Route path="/trade/trade-report" element={<TradeReport />}></Route>
-                  <Route path="/trade/ledge-report" element={<LedgeReport />}></Route>
-                  <Route path="/trade/deposit-report" element={<DepositReport />}></Route>
-                  <Route path="/trade/trial" element={<Trial />}></Route>
-                  <Route path="/trade/client-report" element={<ClientReport />}></Route>
-
-                </Routes>
-                
-
-              </div>
-
+              </Routes>
             </div>
           </div>
-        </Router>
-      ) : (
-        <Login />
-      )}
+        </div>
+      </Router>
     </div>
   );
 };
