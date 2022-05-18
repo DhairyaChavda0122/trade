@@ -1,10 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
-import { Link } from "react-router-dom";
 import Calender from "../../Components/Calender/Calender";
 import Notifications from "../../Components/Notifications/Notifications";
+import UserLogo from "../../Components/UserLogo/UserLogo";
 
 const Valan = () => {
   return (
@@ -54,41 +52,8 @@ const Valan = () => {
           <div className="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center my-2">
             <Notifications />
           </div>
-          <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex flex-row my-2">
-            <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
-            <div className="dropdown ms-1 bg-transparent">
-              <Link
-                className="btn fw-bold focus-none"
-                to="/"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Timothy
-                <span className="ps-2">
-                  <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
-                </span>
-              </Link>
-
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <UserLogo />
           </div>
         </div>
       </div>
@@ -159,7 +124,7 @@ const Valan = () => {
           <div className="col-12">
             <button
               type="button"
-              className="float-end btn btn-lg mx-5 btn-info "
+              className="float-end btn btn-lg mx-5 btn-info focus-none"
             >
               +ADD
             </button>

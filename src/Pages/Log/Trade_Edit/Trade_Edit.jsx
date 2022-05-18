@@ -1,12 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
-import { Link } from "react-router-dom";
 import Calender from "../../Components/Calender/Calender";
 import Search from "../../Components/Search/Search";
 import SelectEntry from "../../Components/Select-Entry/Select-Entry";
 import Notifications from "../../Components/Notifications/Notifications";
+import UserLogo from "../../Components/UserLogo/UserLogo";
 
 const Trade_Edit = () => {
   return (
@@ -51,41 +49,8 @@ const Trade_Edit = () => {
           <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center mt-5">
             <Notifications />
           </div>
-          <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex flex-row mt-5 ">
-            <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
-            <div className="dropdown ms-1 bg-transparent">
-              <Link
-                className="btn fw-bold focus-none"
-                to="/"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Timothy
-                <span className="ps-2">
-                  <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
-                </span>
-              </Link>
-
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-5 ">
+            <UserLogo />
           </div>
         </div>
       </div>
@@ -191,12 +156,12 @@ const Trade_Edit = () => {
         <div className="row">
           <div className="col-0 col-sm-0 col-md-4 col-lg-6 col-xl-6"></div>
           <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center my-1">
-            <button type="button" className="btn btn-lg btn-primary">
+            <button type="button" className="btn btn-lg btn-primary focus-none">
               Find Logs
             </button>
           </div>
           <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center my-1">
-            <button type="button" className="btn btn-lg btn-info">
+            <button type="button" className="btn btn-lg btn-info focus-none">
               Reset
             </button>
           </div>

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Pages/Navbar/Navbar";
 import Login from "./Pages/Login/Login";
 
-import TradesDashboard from "./Pages/Dashboard/Trades-Dashboard/Trades_Dashboard";
+import NewDashboard from "./Pages/Dashboard/New-Dashboard/NewDashboard";
 import Executed from "./Pages/Dashboard/Executed/Executed";
 import Running from "./Pages/Dashboard/Running/Running";
 import Summary from "./Pages/Dashboard/Summary/Summary";
@@ -62,7 +62,7 @@ const App = () => {
 
                 {/* Dashboard */}
 
-                <Route path="/trade/trades-dashboard" element={<TradesDashboard />}></Route>
+                <Route path="/trade/trades-dashboard" element={<NewDashboard />}></Route>
                 <Route path="/trade/executed" element={<Executed />}></Route>
                 <Route path="/trade/running" element={<Running />}></Route>
                 <Route path="/trade/summary" element={<Summary />}></Route>

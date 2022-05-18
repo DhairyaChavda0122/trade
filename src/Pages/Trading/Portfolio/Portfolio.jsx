@@ -1,12 +1,10 @@
 import React from "react";
 import "./Portfolio.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
-import { Link } from "react-router-dom";
 import Search from "../../Components/Search/Search";
 import Calender from "../../Components/Calender/Calender";
 import Notifications from "../../Components/Notifications/Notifications";
+import UserLogo from "../../Components/UserLogo/UserLogo";
 
 const Portfolio = () => {
   return (
@@ -90,41 +88,8 @@ const Portfolio = () => {
           <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
             <Notifications />
           </div>
-          <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex flex-row float-end">
-            <FontAwesomeIcon icon={faCircleUser} size="2x" className="mt-1" />
-            <div className="dropdown ms-1 bg-transparent">
-              <Link
-                className="btn fw-bold focus-none"
-                to="/"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Timothy
-                <span className="ps-2">
-                  <FontAwesomeIcon icon={faAngleDown} className="fw-bold" />
-                </span>
-              </Link>
-
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <UserLogo />
           </div>
         </div>
       </div>
@@ -191,7 +156,7 @@ const Portfolio = () => {
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
             <button
               type="button"
-              className="btn btn-primary text-center btn-lg fs-6"
+              className="btn btn-primary text-center btn-lg fs-6 focus-none"
             >
               GET POSITION
             </button>
@@ -199,7 +164,7 @@ const Portfolio = () => {
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
             <button
               type="button"
-              className="btn btn-info text-center btn-lg fs-6"
+              className="btn btn-info text-center btn-lg fs-6 focus-none"
             >
               ROLL OVER ALL
             </button>
@@ -207,7 +172,7 @@ const Portfolio = () => {
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
             <button
               type="button"
-              className="btn btn-danger text-center btn-lg fs-6"
+              className="btn btn-danger text-center btn-lg fs-6 focus-none"
             >
               CLOSE POSITION
             </button>
@@ -215,7 +180,7 @@ const Portfolio = () => {
           <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
             <button
               type="button"
-              className="btn btn-secondary text-center btn-lg fs-6"
+              className="btn btn-secondary text-center btn-lg fs-6 focus-none"
             >
               CLEAR FILTER
             </button>
