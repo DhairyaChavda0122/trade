@@ -3,10 +3,9 @@
 }
 
 .navbar-border-radius-2 {
-    border-radius: 25px !important;
-    padding: 0;
-  }
-
+  border-radius: 55px !important;
+  padding: 0;
+}
 
 .bg-orange {
   background-color: #fab417;
@@ -16,6 +15,24 @@
   color: #fff !important;
 }
 
+.height-navbar-button {
+  height: 4rem;
+}
+
+.radius-navbar {
+  /* border-radius: 15px; */
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.radius-navbar-remove {
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
 /* .dropdown-toggle::after {
   content: none;
 } */
@@ -56,11 +73,11 @@
   }
    */
 
-.no-dec{
-      text-decoration: none !important;
-  }
+.no-dec {
+  text-decoration: none !important;
+}
 
-.no-dec:hover{
+.no-dec:hover {
   color: #fab417;
   margin: 0;
 }
@@ -69,75 +86,42 @@
   position: fixed !important;
 } */
 
-.width-navbar-drop{
+.width-navbar-drop {
   width: 13rem !important;
   /* border-radius: 20px; */
 }
 
-.dpdn-class{
+.dpdn-class {
   position: relative !important;
   border-radius: 20px !important;
 }
 
-.border-list{
+.border-list {
   border-top-left-radius: 15px !important;
   border-top-right-radius: 15px !important;
 }
 
-.border-list-2{
+.border-list-2 {
   border-bottom-left-radius: 15px !important;
   border-bottom-right-radius: 15px !important;
 }
 
-
-
-
 /* Media Queries */
 
-
-@media (max-width:768px){
-  .width-navbar-drop{
+@media (max-width: 768px) {
+  .width-navbar-drop {
     width: 90vw !important;
   }
   /* .fix{
     position: relative !important;
   } */
 }
-  
 
-@media (max-width:576px){
-    .width-navbar-drop{
-      width: 85vw !important;
-    }
+@media (max-width: 576px) {
+  .width-navbar-drop {
+    width: 85vw !important;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* <li>
                 <div className="container-fluid my-2">

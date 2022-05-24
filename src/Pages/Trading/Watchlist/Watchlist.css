@@ -1,34 +1,40 @@
-.fs-small{
-    font-size: 12px;
-    margin: 0px 0px!important;
+.fs-small {
+  font-size: 12px;
+  margin: 0px 0px !important;
 }
 
-.orange-trade{
-    color:#FAB417 !important;
+.orange-trade {
+  color: #fab417 !important;
 }
 
-.border-right-none{
-    border-right: none !important;
+.border-right-none {
+  border-right: none !important;
 }
 
-.border-left-none{
-    border-left: none !important;
+.border-left-none {
+  border-left: none !important;
 }
 
 .Dropdown-arrow {
-    color: #FAB417 !important;
+  color: #fab417 !important;
 }
 
-.arrow-select{
-    color: #FAB417 !important;
-    background-color: beige !important;
-    font-size: large !important;
+.arrow-select {
+  color: #fab417 !important;
+  background-color: beige !important;
+  font-size: large !important;
 }
 
-.bg-select span{
-    color: aqua !important;
+.bg-select span {
+  color: aqua !important;
 }
 
-.arrow-class{
-    height: 40px !important;
+.arrow-class {
+  height: 40px !important;
+}
+
+.myClass option {
+  background-color: #fff !important;
+  color: #fab417 !important;
+
 }

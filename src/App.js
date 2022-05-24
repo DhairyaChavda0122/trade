@@ -45,6 +45,7 @@ import DepositReport from "./Pages/Report/Deposit_Report/Deposit_Report";
 import Trial from "./Pages/Report/Trial/Trial";
 import ClientReport from "./Pages/Report/Client_Report/Client_Report";
 
+
 const App = () => {
 
   return (
@@ -54,7 +55,7 @@ const App = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-end border-warning">
-              <Navbar />
+                <Navbar />
             </div>
             <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
               <Routes>
@@ -115,7 +116,6 @@ const App = () => {
                 <Route path="/trade/deposit-report" element={<DepositReport />}></Route>
                 <Route path="/trade/trial" element={<Trial />}></Route>
                 <Route path="/trade/client-report" element={<ClientReport />}></Route>
-
               </Routes>
             </div>
           </div>

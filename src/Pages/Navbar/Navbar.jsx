@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import tradeLogo from "./STOCK COIN LOGO-01.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,9 +16,17 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
 const Navbar = () => {
+  const [selectedTab, setSelectedTab] = useState();
+
+  const menuOpen = (currentSelectedItem) => {
+    setSelectedTab(currentSelectedItem);
+  };
+
+  console.log(selectedTab);
+
   return (
     <>
-      <div className="container-fluid d-flex flex-column flex-lg-row justify-content-center ">
+      <div className="container-fluid d-flex flex-column flex-lg-row justify-content-center">
         <nav className="navbar navbar-expand-md navbar-light d-flex flex-md-column fix">
           <Link to="/trade/trades-dashboard">
             <img
@@ -48,18 +56,31 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
+                    className={`btn  height-navbar-button border border-dark ${
+                      selectedTab === "/dashboard"
+                        ? "radius-navbar-remove bg-orange color-white border border-light"
+                        : "radius-navbar "
+                    } focus-none mt-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      } else {
+                        menuOpen("/dashboard");
+                      }
+                    }}
                   >
                     <div className="container width-navbar-drop">
                       <div className="row">
                         <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faArrowTrendUp}
-                            color="white"
+                            color={
+                              selectedTab === "/dashboard" ? "white" : "black"
+                            }
                             className=""
                           />
                         </div>
@@ -67,7 +88,9 @@ const Navbar = () => {
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
-                            color="white"
+                            color={
+                              selectedTab === "/dashboard" ? "white" : "black"
+                            }
                             className=""
                           />
                         </div>
@@ -75,14 +98,21 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
+                    className={`dropdown-menu dpdn-class ${
+                      selectedTab !== "/dashboard" ? "d-none" : "d-block"
+                    } width-navbar-drop border-none bg-transparent m-0 p-0`}
                     aria-labelledby="dropdownMenuButton1"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      }
+                    }}
                   >
                     <Link
                       to="/trade/trades-dashboard"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list">
+                      <li className="list-group-item no-dec text-start">
                         Trades
                       </li>
                     </Link>
@@ -141,11 +171,22 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
+                    className={`btn  height-navbar-button ${
+                      selectedTab === "/trades"
+                        ? "radius-navbar-remove bg-orange color-white"
+                        : "radius-navbar"
+                    } focus-none mt-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      } else {
+                        menuOpen("/trades");
+                      }
+                    }}
                   >
                     <div className="container width-navbar-drop">
                       <div className="row">
@@ -168,14 +209,21 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
+                    className={`dropdown-menu dpdn-class ${
+                      selectedTab !== "/trades" ? "d-none" : "d-block"
+                    } width-navbar-drop border-none bg-transparent m-0 p-0`}
                     aria-labelledby="dropdownMenuButton1"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      }
+                    }}
                   >
                     <Link
                       to="/trade/watchlist-trading"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list">
+                      <li className="list-group-item no-dec text-star">
                         Watchlist
                       </li>
                     </Link>
@@ -207,7 +255,7 @@ const Navbar = () => {
                       to="/trade/margin-trading"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list-2">
+                      <li className="list-group-item no-dec text-star-2">
                         Margin Management
                       </li>
                     </Link>
@@ -217,11 +265,22 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
+                    className={`btn  height-navbar-button ${
+                      selectedTab === "/forex"
+                        ? "radius-navbar-remove bg-orange color-white"
+                        : "radius-navbar"
+                    } focus-none mt-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      } else {
+                        menuOpen("/forex");
+                      }
+                    }}
                   >
                     <div className="container width-navbar-drop">
                       <div className="row">
@@ -244,14 +303,21 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
+                    className={`dropdown-menu dpdn-class ${
+                      selectedTab !== "/forex" ? "d-none" : "d-block"
+                    } width-navbar-drop border-none bg-transparent m-0 p-0`}
                     aria-labelledby="dropdownMenuButton1"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      }
+                    }}
                   >
                     <Link
                       to="/trade/watchlist-forex"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list">
+                      <li className="list-group-item no-dec text-star">
                         Watchlist
                       </li>
                     </Link>
@@ -275,7 +341,7 @@ const Navbar = () => {
                       to="/trade/margin-forex"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list-2">
+                      <li className="list-group-item no-dec text-star-2">
                         Margin Management
                       </li>
                     </Link>
@@ -286,11 +352,22 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
+                    className={`btn  height-navbar-button ${
+                      selectedTab === "/user"
+                        ? "radius-navbar-remove bg-orange color-white"
+                        : "radius-navbar"
+                    } focus-none mt-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      } else {
+                        menuOpen("/user");
+                      }
+                    }}
                   >
                     <div className="container width-navbar-drop">
                       <div className="row">
@@ -313,14 +390,21 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
+                    className={`dropdown-menu dpdn-class ${
+                      selectedTab !== "/user" ? "d-none" : "d-block"
+                    } width-navbar-drop border-none bg-transparent m-0 p-0`}
                     aria-labelledby="dropdownMenuButton1"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      }
+                    }}
                   >
                     <Link
                       to="/trade/all-user"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list">
+                      <li className="list-group-item no-dec text-star">
                         All UserList
                       </li>
                     </Link>
@@ -336,7 +420,7 @@ const Navbar = () => {
                       to="/trade/add-account"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list-2">
+                      <li className="list-group-item no-dec text-star-2">
                         Add Account
                       </li>
                     </Link>
@@ -347,11 +431,22 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
+                    className={`btn  height-navbar-button ${
+                      selectedTab === "/log"
+                        ? "radius-navbar-remove bg-orange color-white"
+                        : "radius-navbar"
+                    } focus-none mt-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      } else {
+                        menuOpen("/log");
+                      }
+                    }}
                   >
                     <div className="container width-navbar-drop">
                       <div className="row">
@@ -374,14 +469,21 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
+                    className={`dropdown-menu dpdn-class ${
+                      selectedTab !== "/log" ? "d-none" : "d-block"
+                    } width-navbar-drop border-none bg-transparent m-0 p-0`}
                     aria-labelledby="dropdownMenuButton1"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      }
+                    }}
                   >
                     <Link
                       to="/trade/trade-edit"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list">
+                      <li className="list-group-item no-dec text-star">
                         Trade Edit/ Delete Log
                       </li>
                     </Link>
@@ -413,7 +515,7 @@ const Navbar = () => {
                       to="/trade/rejection"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list-2">
+                      <li className="list-group-item no-dec text-star-2">
                         Rejection Log
                       </li>
                     </Link>
@@ -424,11 +526,22 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
+                    className={`btn  height-navbar-button ${
+                      selectedTab === "/accounts"
+                        ? "radius-navbar-remove bg-orange color-white"
+                        : "radius-navbar"
+                    } focus-none mt-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      } else {
+                        menuOpen("/accounts");
+                      }
+                    }}
                   >
                     <div className="container width-navbar-drop">
                       <div className="row">
@@ -451,14 +564,21 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
+                    className={`dropdown-menu dpdn-class ${
+                      selectedTab !== "/accounts" ? "d-none" : "d-block"
+                    } width-navbar-drop border-none bg-transparent m-0 p-0`}
                     aria-labelledby="dropdownMenuButton1"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      }
+                    }}
                   >
                     <Link
                       to="/trade/cash-ledge"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list">
+                      <li className="list-group-item no-dec text-star">
                         Cash Ledge
                       </li>
                     </Link>
@@ -496,7 +616,7 @@ const Navbar = () => {
                       to="/trade/valan"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list-2">
+                      <li className="list-group-item no-dec text-star-2">
                         Valan
                       </li>
                     </Link>
@@ -506,11 +626,22 @@ const Navbar = () => {
               <li>
                 <div className=" ">
                   <button
-                    className="btn bg-orange color-white height-button focus-none mt-3 p-0"
+                    className={`btn  height-navbar-button ${
+                      selectedTab === "/report"
+                        ? "radius-navbar-remove bg-orange color-white"
+                        : "radius-navbar"
+                    } focus-none mt-3 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      } else {
+                        menuOpen("/report");
+                      }
+                    }}
                   >
                     <div className="container width-navbar-drop">
                       <div className="row">
@@ -533,14 +664,21 @@ const Navbar = () => {
                     </div>
                   </button>
                   <ul
-                    className="dropdown-menu dpdn-class width-navbar-drop border-none bg-transparent m-0 p-0"
+                    className={`dropdown-menu dpdn-class ${
+                      selectedTab !== "/report" ? "d-none" : "d-block"
+                    } width-navbar-drop border-none bg-transparent m-0 p-0`}
                     aria-labelledby="dropdownMenuButton1"
+                    onClick={() => {
+                      if (selectedTab !== "") {
+                        setSelectedTab("");
+                      }
+                    }}
                   >
                     <Link
                       to="/trade/trade-report"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list">
+                      <li className="list-group-item no-dec text-star">
                         Track Report
                       </li>
                     </Link>
@@ -572,7 +710,7 @@ const Navbar = () => {
                       to="/trade/client-report"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list-2">
+                      <li className="list-group-item no-dec text-star-2">
                         Client Cr/Dr Report
                       </li>
                     </Link>
