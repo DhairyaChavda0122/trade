@@ -10,7 +10,7 @@ import Fade from "react-reveal/Fade";
 const Rejection = () => {
   return (
     <>
-      <Fade left bottom>
+      <Fade right bottom>
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 text-center">

@@ -10,7 +10,7 @@ import Fade from "react-reveal/Fade";
 const Cash_Ledge = () => {
   return (
     <>
-      <Fade left bottom>
+      <Fade right bottom>
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">

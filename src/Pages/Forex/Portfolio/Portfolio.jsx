@@ -11,7 +11,7 @@ import Fade from "react-reveal/Fade";
 const Portfolio = () => {
   return (
     <>
-      <Fade top left>
+      <Fade top right>
         <div className="container-fluid">
           <div className="row my-3">
             <div className="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5 fw-bold text-start p-0">

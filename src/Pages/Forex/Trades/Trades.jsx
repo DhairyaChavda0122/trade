@@ -11,7 +11,7 @@ import Fade from "react-reveal/Fade";
 const Trades = () => {
   return (
     <>
-      <Fade top left>
+      <Fade top right>
         <div className="container-fluid">
           <div className="row my-3">
             <div className="col-3 fw-bold text-start p-0">

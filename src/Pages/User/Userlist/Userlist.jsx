@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 const Userlist = () => {
   return (
     <>
-      <Fade left>
+      <Fade right>
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">

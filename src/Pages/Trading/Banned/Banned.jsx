@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 const Banned = () => {
   return (
     <>
-      <Fade top left>
+      <Fade top right>
         <div className="container-fluid">
           <div className="row my-3">
             <div className="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">

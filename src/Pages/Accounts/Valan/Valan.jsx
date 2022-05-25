@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 const Valan = () => {
   return (
     <>
-      <Fade left bottom>
+      <Fade right bottom>
         <div className="container">
           <div className="row">
             <div className="col-3 col-sm-3 col-md-6 col-lg-2 col-xl-2">

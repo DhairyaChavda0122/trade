@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 const Trade_Report = () => {
   return (
     <>
-      <Fade left bottom>
+      <Fade right bottom>
         <div className="container">
           <div className="row my-2">
             <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4 fw-bold">
