@@ -259,7 +259,7 @@ const Navbar = () => {
                       to="/trade/margin-trading"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-star-2">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Margin Management
                       </li>
                     </Link>
@@ -345,7 +345,7 @@ const Navbar = () => {
                       to="/trade/margin-forex"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-star-2">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Margin Management
                       </li>
                     </Link>
@@ -424,7 +424,7 @@ const Navbar = () => {
                       to="/trade/add-account"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-star-2">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Add Account
                       </li>
                     </Link>
@@ -519,7 +519,7 @@ const Navbar = () => {
                       to="/trade/rejection"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-star-2">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Rejection Log
                       </li>
                     </Link>
@@ -624,7 +624,7 @@ const Navbar = () => {
                       to="/trade/valan"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-star-2">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Valan
                       </li>
                     </Link>
@@ -722,7 +722,7 @@ const Navbar = () => {
                       to="/trade/client-report"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-star-2">
+                      <li className="list-group-item no-dec text-start border-list-2">
                         Client Cr/Dr Report
                       </li>
                     </Link>
