@@ -44,6 +44,7 @@ import LedgeReport from "./Pages/Report/Ledge_Report/Ledge_Report";
 import DepositReport from "./Pages/Report/Deposit_Report/Deposit_Report";
 import Trial from "./Pages/Report/Trial/Trial";
 import ClientReport from "./Pages/Report/Client_Report/Client_Report";
+import DetailGraph from "./Pages/Components/Detail-graph/DetailGraph";
 
 
 const App = () => {
@@ -55,7 +56,7 @@ const App = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-end border-warning">
-                <Navbar />
+              <Navbar />
             </div>
             <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
               <Routes>
@@ -116,6 +117,11 @@ const App = () => {
                 <Route path="/trade/deposit-report" element={<DepositReport />}></Route>
                 <Route path="/trade/trial" element={<Trial />}></Route>
                 <Route path="/trade/client-report" element={<ClientReport />}></Route>
+
+                {/* Detail Graph */}
+
+                <Route path="/trade/detail-graph" element={<DetailGraph />}></Route>
+
               </Routes>
             </div>
           </div>
