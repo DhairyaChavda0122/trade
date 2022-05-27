@@ -45,6 +45,7 @@ import DepositReport from "./Pages/Report/Deposit_Report/Deposit_Report";
 import Trial from "./Pages/Report/Trial/Trial";
 import ClientReport from "./Pages/Report/Client_Report/Client_Report";
 import DetailGraph from "./Pages/Components/Detail-graph/DetailGraph";
+import JVBrockerDelete from "./Pages/Accounts/JV_Brocker_Delete/JVBrockerDelete";
 
 
 const App = () => {
@@ -107,6 +108,8 @@ const App = () => {
                 <Route path="/trade/cash-entry" element={<CashEntry />}></Route>
                 <Route path="/trade/jv" element={<JV />}></Route>
                 <Route path="/trade/jv-broker" element={<JVBroker />}></Route>
+                <Route path="/trade/jvbrocker-delete" element={<JVBrockerDelete />}></Route>
+                
                 <Route path="/trade/deposit" element={<Deposit />}></Route>
                 <Route path="/trade/valan" element={<Valan />}></Route>
 
