@@ -1,8 +1,8 @@
 import React from "react";
-import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
-import Calender from "../../Components/Calender/Calender";
-import Search from "../../Components/Search/Search";
-import SelectEntry from "../../Components/Select-Entry/Select-Entry";
+// import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
+// import Calender from "../../Components/Calender/Calender";
+// import Search from "../../Components/Search/Search";
+// import SelectEntry from "../../Components/Select-Entry/Select-Entry";
 import Notifications from "../../Components/Notifications/Notifications";
 import UserLogo from "../../Components/UserLogo/UserLogo";
 import Fade from "react-reveal/Fade";

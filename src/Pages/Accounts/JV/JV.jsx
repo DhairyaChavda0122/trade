@@ -1,13 +1,12 @@
 import React from "react";
-import Table from "../../Components/Trading-Tables/Table-watchlist-trading";
-import Calender from "../../Components/Calender/Calender";
-import Search from "../../Components/Search/Search";
-import SelectEntry from "../../Components/Select-Entry/Select-Entry";
+import "./JV.css";
+import { Link } from "react-router-dom";
+import DateComp from "../../Components/Date/Date";
 import Notifications from "../../Components/Notifications/Notifications";
 import UserLogo from "../../Components/UserLogo/UserLogo";
 import Fade from "react-reveal/Fade";
 
-const Deposit = () => {
+const JV = () => {
   return (
     <>
       <Fade right bottom>
@@ -28,149 +27,11 @@ const Deposit = () => {
         </div>
 
         <div className="container">
-          <div className="row align-items-center my-3">
-            <div className="col-3">Type</div>
-            <div className="col-2 col-xs-5 col-sm-4 col-md-2">
-              <div className="form-check my-1">
-                <input
-                  className="form-check-input focus-none"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
-                />
-                <label className="form-check-label" htmlFor="flexRadioDefault1">
-                  Receipt
-                </label>
-              </div>
-            </div>
-            <div className="col-2 col-sm-4 col-xs-4 col-md-2">
-              <div className="form-check my-1">
-                <input
-                  className="form-check-input focus-none"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
-                />
-                <label className="form-check-label" htmlFor="flexRadioDefault1">
-                  Payment
-                </label>
-              </div>
-            </div>
-            <div className="col-md-5 col-sm-1"></div>
-          </div>
-
-          {/* from account */}
-          <div className="row align-items-center my-3">
-            <div className="col-3">From Account</div>
-            <div className="col-5">
-              <select
-                className="form-select input-border focus-none"
-                id="inputGroupSelect01"
-              >
-                <option className="">AQ-JIGNESH</option>
-                <option value="1">GW-VIRAJ</option>
-                <option value="1">KP11-MAHESH</option>
-              </select>
-            </div>
-            <div className="col-3">
-              <span>Balance : 0.00 (Cr)</span>
-            </div>
-            <div className="col-1"></div>
-          </div>
-
-          {/* To Account */}
-          <div className="row align-items-center my-3">
-            <div className="col-3">To Account</div>
-            <div className="col-5">
-              <select
-                className="form-select input-border focus-none"
-                id="inputGroupSelect01"
-              >
-                <option className="">AQ-JIGNESH</option>
-                <option value="1">GW-VIRAJ</option>
-                <option value="1">KP11-MAHESH</option>
-              </select>
-            </div>
-            <div className="col-3">
-              <span>Balance : 0.00 (Cr)</span>
-            </div>
-            <div className="col-1"></div>
-          </div>
-
-          {/* date */}
-          <div className="row align-items-center my-3">
-            <div className="col-3">Date</div>
-            <div className="col-5">
-              <input type="date" className="w-100 p-1 " />
-            </div>
-            <div className="col-3">
-              <span>Show Entries</span>
-            </div>
-            <div className="col-1"></div>
-          </div>
-
-          {/* Amount */}
-          <div className="row align-items-center my-3">
-            <div className="col-3">Amount</div>
-            <div className="col-5">
-              <input type="text" className="w-100" />
-            </div>
-
-            <div className="col-4"></div>
-          </div>
-
-          {/* Remarks */}
-          <div className="row align-items-center my-3">
-            <div className="col-3">Remark</div>
-            <div className="col-5">
-              <textarea rows={2} type="text" className="w-100" />
-            </div>
-
-            <div className="col-4"></div>
-          </div>
-
-          {/* buttons */}
-          <div className="row align-items-center my-3">
-            <div className="col-3"></div>
-            <div className="col-1">
-              <button type="button" class="btn btn-primary w-100">
-                Save
-              </button>
-            </div>
-            <div className="col-1">
-              <button type="button" class="btn btn-primary w-100">
-                Clear
-              </button>
-            </div>
-            <div className="col-6"></div>
-          </div>
-        </div>
-
-        <div className="container mt-5">
-          <table class="table">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col">From Account</th>
-                <th scope="col">To Account</th>
-                <th scope="col">Date</th>
-                <th scope="col">Type</th>
-                <th scope="col">Amount</th>
-                <th scope="col">Remarks</th>
-                <th scope="col">IP Address</th>
-                <th scope="col">Added By</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-
-        {/* <div className="container border border-primary">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-3">
               <div className="container-fluid ps-0">
                 <div className="row">
-                  <div className="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 ">
+                  <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
                     <div className="input-group">
                       <label
                         className="input-group-text bg-transparent border-none"
@@ -180,10 +41,10 @@ const Deposit = () => {
                       </label>
                     </div>
                   </div>
-                  <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
+                  <div className="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
                     <div className="container-fluid">
                       <div className="row">
-                        <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
                           <div className="form-check my-1">
                             <input
                               className="form-check-input focus-none"
@@ -195,11 +56,11 @@ const Deposit = () => {
                               className="form-check-label"
                               htmlFor="flexRadioDefault1"
                             >
-                              Cash Receipt
+                              Recipt
                             </label>
                           </div>
                         </div>
-                        <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                           <div className="form-check my-1">
                             <input
                               className="form-check-input focus-none"
@@ -211,7 +72,7 @@ const Deposit = () => {
                               className="form-check-label"
                               htmlFor="flexRadioDefault1"
                             >
-                              Cash Payment
+                              Payment
                             </label>
                           </div>
                         </div>
@@ -222,288 +83,103 @@ const Deposit = () => {
               </div>
             </div>
 
-            <div className="col-12 my-2">
-              <div className="row align-items-center">
-                <div className="col-6">
-                  <div className="input-group">
-                    <label
-                      className="input-group-text bg-transparent border-none"
-                      htmlFor="inputGroupSelect01"
-                    >
-                      Cash Code
-                    </label>
-                    <select
-                      className="form-select input-border focus-none"
-                      id="inputGroupSelect01"
-                    >
-                      <option className="">KP</option>
-                      <option value="1">KPPK</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="col-6">Balance : 0.00 (Cr)</div>
-              </div>
-            </div>
-
-            <div className="col-12 my-2">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
               <div className="input-group">
                 <label
                   className="input-group-text bg-transparent border-none"
                   htmlFor="inputGroupSelect01"
                 >
-                  Valan
+                  From Account
                 </label>
                 <select
                   className="form-select input-border focus-none"
                   id="inputGroupSelect01"
                 >
-                  <option className="">APROI NSE</option>
+                  <option className="">Select From Account</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
             </div>
-            <div className="col-6 my-2">
-              <div className="form-check my-1 float-end">
-                <input
-                  className="form-check-input focus-none"
-                  type="radio"
-                  name="flexRadioDefault01"
-                  id="flexRadioDefault1"
-                />
-                <label className="form-check-label" htmlFor="flexRadioDefault1">
-                  Customer
-                </label>
-              </div>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 text-end text-sm-end text-md-end my-1">
+              <span className="color-brown fw-bold"> Balance:</span>
+              <span className="color-blue fw-bold"> 0.00(Cr)</span>
             </div>
 
-            <div className="col-6 my-2">
-              <div className="form-check my-1">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault01"
-                  id="flexRadioDefault1"
-                />
-                <label
-                  className="form-check-label focus-none"
-                  htmlFor="flexRadioDefault1"
-                >
-                  Self
-                </label>
-              </div>
-            </div>
-
-            <div className="col-12 my-3">
-              <div className="input-group">
-                <span
-                  className="input-group-text bg-transparent border-none"
-                  id="basic-addon1"
-                >
-                  Customer *
-                </span>
-                <input
-                  type="text"
-                  className="form-control input-border focus-none"
-                  placeholder="Select Client"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-
-            <div className="col-12 my-3">
-              <div className="input-group">
-                <span
-                  className="input-group-text bg-transparent border-none"
-                  id="basic-addon1"
-                >
-                  Master *
-                </span>
-                <input
-                  type="text"
-                  className="form-control input-border focus-none"
-                  placeholder="Select Master"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-
-            <div className="col-12 my-3">
-              <div className="input-group">
-                <span
-                  className="input-group-text bg-transparent border-none"
-                  id="basic-addon1"
-                >
-                  Script *
-                </span>
-                <input
-                  type="text"
-                  className="form-control input-border focus-none"
-                  placeholder="Select Name"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-
-            <div className="container">
-              <div className="row">
-                <div className="col-6 col-sm-4 col-md-4 col-lg-2 col-xl-2">
-                  <div className="input-group">
-                    <label
-                      className="input-group-text bg-transparent border-none"
-                      htmlFor="inputGroupSelect01"
-                    >
-                      Without Bokerage
-                    </label>
-                  </div>
-                </div>
-                <div className="col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
-                        <div className="form-check my-1">
-                          <input
-                            className="form-check-input focus-none"
-                            type="radio"
-                            name="flexRadioDefault0000"
-                            id="flexRadioDefault1"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 my-2">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 my-3">
               <div className="input-group">
                 <label
                   className="input-group-text bg-transparent border-none"
                   htmlFor="inputGroupSelect01"
                 >
-                  Segment
+                  To Account
                 </label>
                 <select
                   className="form-select input-border focus-none"
                   id="inputGroupSelect01"
                 >
-                  <option className="">Segment</option>
+                  <option className="">Select To Account</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
             </div>
-
-            <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-3">
-              <div className="container-fluid ps-0">
-                <div className="row">
-                  <div className="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 ">
-                    <div className="input-group">
-                      <label
-                        className="input-group-text bg-transparent border-none"
-                        htmlFor="inputGroupSelect01"
-                      >
-                        Data Filter
-                      </label>
-                    </div>
-                  </div>
-                  <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
-                    <div className="container-fluid">
-                      <div className="row">
-                        <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
-                          <div className="form-check my-1">
-                            <input
-                              className="form-check-input focus-none"
-                              type="radio"
-                              name="flexRadioDefault99"
-                              id="flexRadioDefault1"
-                            />
-                            <label
-                              className="form-check-label"
-                              htmlFor="flexRadioDefault1"
-                            >
-                              All Date
-                            </label>
-                          </div>
-                        </div>
-                        <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
-                          <div className="form-check my-1">
-                            <input
-                              className="form-check-input focus-none"
-                              type="radio"
-                              name="flexRadioDefault99"
-                              id="flexRadioDefault1"
-                            />
-                            <label
-                              className="form-check-label"
-                              htmlFor="flexRadioDefault1"
-                            >
-                              Data Wise
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 text-end text-sm-end text-md-end my-3">
+              <span className="color-brown fw-bold"> Balance:</span>
+              <span className="color-blue fw-bold"> 0.00(Cr)</span>
             </div>
 
-            <div className="col-12 my-2">
+            <div className="col-2">
+              <label
+                className="input-group-text bg-transparent border-none"
+                htmlFor="inputGroupSelect01"
+              >
+                Date
+              </label>
+            </div>
+            <div className="col-7">
+              <div className="input-group flex-nowrap">
+                <DateComp />
+              </div>
+            </div>
+            <Link to="/" className="col-3 color-blue fw-bold dec-none">
+              Show entries
+            </Link>
+
+            <div className="col-12 my-4">
               <div className="input-group">
-                <label
+                <span
                   className="input-group-text bg-transparent border-none"
-                  htmlFor="inputGroupSelect01"
+                  id="basic-addon1"
                 >
-                  Broker
-                </label>
-                <select
-                  className="form-select input-border focus-none"
-                  id="inputGroupSelect01"
-                >
-                  <option className="">Select Broker</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                  Amount
+                </span>
+                <input
+                  type="text"
+                  className="form-control input-border focus-none"
+                  placeholder=""
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
               </div>
             </div>
-
-            <div className="container">
-              <div className="row">
-                <div className="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2">
-                  <div className="input-group">
-                    <label
-                      className="input-group-text bg-transparent border-none"
-                      htmlFor="inputGroupSelect01"
-                    >
-                      Expiry Date
-                    </label>
-                  </div>
-                </div>
-                <div className="col-8 col-sm-8 col-md-8 col-lg-10 col-xl-10">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
-                        <div className="form-check my-1">
-                          <input
-                            className="form-check-input focus-none"
-                            type="radio"
-                            name="flexRadioDefault789"
-                            id="flexRadioDefault1"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div className="col-12 my-3">
+              <div className="input-group">
+                <span
+                  className="input-group-text bg-transparent border-none"
+                  id="basic-addon1"
+                >
+                  Remarks
+                </span>
+                <input
+                  type="text"
+                  className="form-control input-border focus-none"
+                  placeholder=""
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
               </div>
             </div>
 
@@ -512,14 +188,20 @@ const Deposit = () => {
                 type="button"
                 className="btn bg-brown mx-4 color-white btn-lg focus-none button-effect my-1"
               >
-                View Report
+                Submit
+              </button>
+              <button
+                type="button"
+                className="btn bg-primary mx-4 color-white btn-lg focus-none button-effect my-1"
+              >
+                Clear
               </button>
             </div>
           </div>
-        </div> */}
+        </div>
       </Fade>
     </>
   );
 };
 
-export default Deposit;
+export default JV;
