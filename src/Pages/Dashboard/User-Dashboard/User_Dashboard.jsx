@@ -43,37 +43,37 @@ const User_Dashboard = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark" to="/trade/trades-dashboard">
+                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/trades-dashboard">
                     Dashboard
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark" to="/trade/executed">
+                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/executed">
                     Executed Options
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark" to="/trade/running">
+                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/running">
                     Running Orders
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark" to="/trade/summary">
+                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/summary">
                     Summary Reports
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark" to="/trade/m2m">
+                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/m2m">
                     M2M Alerts
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark" to="/trade/user-dashboard">
+                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/user-dashboard">
                     User
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark" to="/trade/trade-entry">
+                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/trade-entry">
                     Trade Entry
                   </Link>
                 </li>

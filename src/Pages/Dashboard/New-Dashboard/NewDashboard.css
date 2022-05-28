@@ -1,5 +1,11 @@
 .container,.container-fluid {
   font-size: 0.875rem !important;
+  /* font-family:; */
+}
+
+.hover-effect-nav:hover{
+  color: white !important;
+  background-color:#FAB417;
 }
 
 .bg-brown {
