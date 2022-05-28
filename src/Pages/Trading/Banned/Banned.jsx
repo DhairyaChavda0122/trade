@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Banned.css";
+import "./Banned.css";
 import Table from "../../Components/Trading-Tables/Table-banned-trading";
 import Search from "../../Components/Search/Search";
 import Notifications from "../../Components/Notifications/Notifications";

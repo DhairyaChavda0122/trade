@@ -9,7 +9,7 @@ import "./Table-trading.css";
 import { Link } from "react-router-dom";
 
 const Table = () => {
-  const hello = "helloo"
+  const data = "helloo";
   return (
     <>
       <div className="table-responsive ">
@@ -55,11 +55,9 @@ const Table = () => {
             <tr className="">
               <td className="td-border ">
                 <Link
-                  to={{
-                    pathname: "/trade/detail-graph",
-                    state: { hello},
-                  }}
+                  to="/trade/detail-graph"
                   className="no-dec text-dark"
+                  state={data}
                 >
                   NIFTY 31MAR2022
                 </Link>

@@ -1,19 +1,25 @@
-.bg-none{
-    background-color: none;
+.bg-none {
+  background-color: none;
 }
 
 .border-none {
-    border: none;
+  border: none;
 }
 
-.input-border{
-    border-radius: 7px !important;
+.input-border {
+  border-radius: 7px !important;
 }
 
-.color-orange{
-    color: #FAB417;
+.color-orange {
+  color: #fab417;
 }
 
-.button-effect:hover{
-    background-color: rgb(150, 41, 41) ;
+.button-effect:hover {
+  background-color: rgb(150, 41, 41);
+}
+
+
+
+.input-group-text {
+  font-size: 0.875rem !important;
 }

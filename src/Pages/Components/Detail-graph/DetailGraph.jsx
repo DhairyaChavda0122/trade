@@ -7,8 +7,6 @@ import { useLocation } from "react-router-dom";
 const DetailGraph = (props) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const text = "world"
-  console.log(location)
   return (
     <>
       <Fade bottom>
@@ -19,7 +17,7 @@ const DetailGraph = (props) => {
           >
             Back
           </button>
-          <p className="mt-3">Detail Graph {text}</p>
+          <p className="mt-3">Detail Graph {location.state}</p>
         </div>
         <ChartComp />
       </Fade>

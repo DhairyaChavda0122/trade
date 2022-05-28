@@ -10,6 +10,7 @@ import {
   faB,
   faGem,
   faUpDown,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import "./NewDashboard.css";
 import Search from "../../Components/Search/Search";
@@ -18,6 +19,9 @@ import ChartComp from "../../Components/theChart/theChart";
 import UserLogo from "../../Components/UserLogo/UserLogo";
 import DetailTable from "../../Components/Detail-Table/Detail_Table";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
+
+
 
 const NewDashboard = () => {
   return (
@@ -36,9 +40,79 @@ const NewDashboard = () => {
             </div>
           </div>
         </div>
+
+        <nav className="navbar navbar-expand-lg border-dash-nav mb-2">
+          <div className="container-fluid">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon mt-2">
+                <FontAwesomeIcon icon={faBars} />
+              </span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link
+                    className="nav-link mx-1 text-dark"
+                    to="/trade/trades-dashboard"
+                  >
+                    Dashboard
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link mx-1 text-dark"
+                    to="/trade/executed"
+                  >
+                    Executed Options
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link mx-1 text-dark" to="/trade/running">
+                    Running Orders
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link mx-1 text-dark" to="/trade/summary">
+                    Summary Reports
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link mx-1 text-dark" to="/trade/m2m">
+                    M2M Alerts
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link mx-1 text-dark"
+                    to="/trade/user-dashboard"
+                  >
+                    User
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link mx-1 text-dark"
+                    to="/trade/trade-entry"
+                  >
+                    Trade Entry
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <div className="container">
           <div className="row">
-            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 margin-cols">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 ">
               <div className=" d-flex justify-content-center pos-rel">
                 <FontAwesomeIcon
                   icon={faEye}
@@ -48,11 +122,11 @@ const NewDashboard = () => {
                 />
               </div>
               <div className="text-center border shadow btn-radius">
-                <p className="fs-1 my-0 text-info">17,000</p>
+                <p className="fs-3 my-1 text-info">17,000</p>
                 <p className="my-0">Daily Views</p>
               </div>
             </div>
-            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 margin-cols">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 ">
               <div className=" d-flex justify-content-center pos-rel">
                 <FontAwesomeIcon
                   icon={faCartShopping}
@@ -62,11 +136,11 @@ const NewDashboard = () => {
                 />
               </div>
               <div className="text-center border shadow btn-radius">
-                <p className="fs-1 my-0 text-primary">8000</p>
+                <p className="fs-3 my-1 text-primary">8000</p>
                 <p className="my-0">Sales</p>
               </div>
             </div>
-            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 margin-cols">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 ">
               <div className=" d-flex justify-content-center pos-rel">
                 <FontAwesomeIcon
                   icon={faMessage}
@@ -76,11 +150,11 @@ const NewDashboard = () => {
                 />
               </div>
               <div className="text-center border shadow btn-radius">
-                <p className="fs-1 my-0 color-brown">284</p>
+                <p className="fs-3 my-1 color-brown">284</p>
                 <p className="my-0">Comments</p>
               </div>
             </div>
-            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 margin-cols">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 ">
               <div className=" d-flex justify-content-center pos-rel">
                 <FontAwesomeIcon
                   icon={faEye}
@@ -90,14 +164,14 @@ const NewDashboard = () => {
                 />
               </div>
               <div className="text-center border shadow btn-radius">
-                <p className="fs-1 my-0 text-warning">$7786</p>
+                <p className="fs-3 my-1 text-warning">$7786</p>
                 <p className="my-0">Earnings</p>
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
               <p className="fs-3 fw-bold">Accounts</p>
               <div className="bg-primary text-center py-5 accounts-radius">
-                <p className="my-0 color-white fs-4">$14,45,000</p>
+                <p className="my-1 color-white fs-6">$14,45,000</p>
                 <span className="accounts-radius color-white bg-info font-smaller px-2 py-1">
                   <FontAwesomeIcon icon={faCaretUp} /> $32 (2%)
                 </span>
@@ -143,7 +217,7 @@ const NewDashboard = () => {
                         </div>
                         <div className="col-9">
                           <div className="">
-                            <p className="m-0 fs-5">
+                            <p className="m-0 ">
                               BTC/USDT{" "}
                               <span className="float-end">$135.25</span>
                             </p>
@@ -171,7 +245,7 @@ const NewDashboard = () => {
                         </div>
                         <div className="col-9">
                           <div className="">
-                            <p className="m-0 fs-5">
+                            <p className="m-0 ">
                               ETH/USDT{" "}
                               <span className="float-end">$215.00</span>
                             </p>
@@ -199,7 +273,7 @@ const NewDashboard = () => {
                         </div>
                         <div className="col-9">
                           <div className="">
-                            <p className="m-0 fs-5">
+                            <p className="m-0 ">
                               BNB/USDT{" "}
                               <span className="float-end">$135.25</span>
                             </p>
@@ -227,7 +301,7 @@ const NewDashboard = () => {
                         </div>
                         <div className="col-9">
                           <div className="">
-                            <p className="m-0 fs-5">
+                            <p className="m-0 ">
                               ETH/USDT{" "}
                               <span className="float-end">$215.00</span>
                             </p>
@@ -260,7 +334,7 @@ const NewDashboard = () => {
                   </div>
                   <div className="col-9">
                     <div className="">
-                      <p className="m-0 fs-5">Bitcon Buy</p>
+                      <p className="m-0 ">Bitcon Buy</p>
                       <p className="my-0 d-flex justify-content-between">
                         <span>Today</span>
                         <span className="text-success">+2.05 BTC</span>
@@ -280,7 +354,7 @@ const NewDashboard = () => {
                   </div>
                   <div className="col-9">
                     <div className="">
-                      <p className="m-0 fs-5">ETHEREUM SELL</p>
+                      <p className="m-0 ">ETHEREUM SELL</p>
                       <p className="my-0 d-flex justify-content-between">
                         <span>2 Days ago</span>
                         <span className="text-success">+2.05 BTC</span>
@@ -300,7 +374,7 @@ const NewDashboard = () => {
                   </div>
                   <div className="col-9">
                     <div className="">
-                      <p className="m-0 fs-5">ETHEREUM Buy</p>
+                      <p className="m-0 ">ETHEREUM Buy</p>
                       <p className="my-0 d-flex justify-content-between">
                         <span>3 Days ago</span>
                         <span className="text-success">+2.05 BTC</span>

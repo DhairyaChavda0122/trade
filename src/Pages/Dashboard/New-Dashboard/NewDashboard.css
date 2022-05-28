@@ -1,3 +1,7 @@
+.container,.container-fluid {
+  font-size: 0.875rem !important;
+}
+
 .bg-brown {
   background-color: brown;
 }
@@ -37,4 +41,12 @@
 .pos-rel {
   position: relative !important;
   top: 10px;
+}
+
+.border-dash-nav{
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.182) !important;
+}
+
+.navbar-toggler-icon{
+  color: black !important;
 }

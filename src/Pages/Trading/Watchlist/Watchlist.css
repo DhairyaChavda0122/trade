@@ -1,3 +1,6 @@
+.container, .container-fluid {
+  font-size: 0.875rem !important;
+}
 .fs-small {
   font-size: 12px;
   margin: 0px 0px !important;

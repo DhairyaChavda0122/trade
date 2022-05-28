@@ -112,11 +112,11 @@ const Navbar = () => {
                       to="/trade/trades-dashboard"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start">
-                        Trades
+                      <li className="list-group-item no-dec text-start border-list-2">
+                        Dashboard
                       </li>
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/trade/executed"
                       className="text-start no-dec text-dark"
                     >
@@ -163,7 +163,7 @@ const Navbar = () => {
                       <li className="list-group-item no-dec text-start border-list-2">
                         Trade Entry
                       </li>
-                    </Link>
+                    </Link> */}
                   </ul>
                 </div>
               </li>
