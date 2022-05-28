@@ -628,6 +628,14 @@ const Navbar = () => {
                         Valan
                       </li>
                     </Link>
+                    <Link
+                      to="/trade/jvbrocker-delete"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start border-list-2">
+                        JV Brocker Delete
+                      </li>
+                    </Link>
                   </ul>
                 </div>
               </li>
