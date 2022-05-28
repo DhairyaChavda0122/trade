@@ -35,7 +35,7 @@ const Login = () => {
               <div className="my-5 text-center">
                 <button
                   type="button"
-                  className="btn btn-lg bg-orange w-50 button-radius"
+                  className="btn btn-lg bg-orange w-50 button-radius fs-6"
                 >
                   Sign Up
                 </button>

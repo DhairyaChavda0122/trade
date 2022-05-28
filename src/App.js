@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Pages/Navbar/Navbar";
 import Login from "./Pages/Login/Login";
+import "./App.css"
 
 import NewDashboard from "./Pages/Dashboard/New-Dashboard/NewDashboard";
 import Executed from "./Pages/Dashboard/Executed/Executed";
@@ -56,7 +57,7 @@ const App = () => {
       <Router>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-end border-warning">
+            <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 border-grey-c">
               <Navbar />
             </div>
             <div className="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">

@@ -13,7 +13,7 @@ const Cross = () => {
       <Fade right bottom>
         <div className="container">
           <div className="row">
-            <div className="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 text-center">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 text-center mt-2">
               Edit/Delete Log
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
@@ -37,7 +37,7 @@ const Cross = () => {
           <div className="row">
             <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -60,7 +60,7 @@ const Cross = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -83,7 +83,7 @@ const Cross = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -106,7 +106,7 @@ const Cross = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -129,7 +129,7 @@ const Cross = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -155,17 +155,18 @@ const Cross = () => {
 
         <div className="container my-5">
           <div className="row">
-            <div className="col-0 col-sm-0 col-md-4 col-lg-6 col-xl-6"></div>
+            <div className="col-0 col-sm-0 col-md-4 col-lg-6 col-xl-6">              <Search />
+</div>
             <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center my-1">
               <button
                 type="button"
-                className="btn btn-lg btn-primary focus-none"
+                className="btn btn-primary focus-none float-end"
               >
                 Find Logs
               </button>
             </div>
             <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center my-1">
-              <button type="button" className="btn btn-lg btn-info focus-none">
+              <button type="button" className="btn btn-info focus-none text-light float-start">
                 Reset
               </button>
             </div>
@@ -176,11 +177,10 @@ const Cross = () => {
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center my-1"></div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center my-1">
-              <Search />
             </div>
           </div>
         </div>
-        <div>
+        <div className="ms-4">
           SHOW
           <span>
             <SelectEntry />

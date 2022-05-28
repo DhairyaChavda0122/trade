@@ -5,7 +5,7 @@ import Pagination from "../Pagination/Pagination";
 const Table = () => {
   return (
     <>
-      <div className="table-responsive ">
+      <div className="table-responsive ms-3">
         <table className="table my-5 table-borderless">
           <thead>
             <tr className="table-border-none">

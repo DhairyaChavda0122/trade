@@ -56,11 +56,11 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className={`btn  height-navbar-button border border-dark ${
+                    className={`btn  height-navbar-button border  ${
                       selectedTab === "/dashboard"
-                        ? "radius-navbar-remove bg-orange color-white border border-light"
-                        : "radius-navbar "
-                    } focus-none mt-3 p-0`}
+                        ? "radius-navbar-remove bg-orange color-white border border-none"
+                        : "radius-navbar border-light shadow-sm"
+                    } focus-none mt-4 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -79,17 +79,17 @@ const Navbar = () => {
                           <FontAwesomeIcon
                             icon={faArrowTrendUp}
                             color={
-                              selectedTab === "/dashboard" ? "white" : "black"
+                              selectedTab === "/dashboard" ? "white" : "#8E8E8E"
                             }
                             className=""
                           />
                         </div>
-                        <div className="col-8">Dashboard</div>
+                        <div className="col-8 text-start">Dashboard</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={
-                              selectedTab === "/dashboard" ? "white" : "black"
+                              selectedTab === "/dashboard" ? "white" : "#8E8E8E"
                             }
                             className=""
                           />
@@ -171,11 +171,11 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className={`btn  height-navbar-button border border-dark ${
+                    className={`btn  height-navbar-button border  ${
                       selectedTab === "/trades"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
-                        : "radius-navbar "
-                    } focus-none mt-3 p-0`}
+                        : "radius-navbar border-light shadow-sm"
+                    } focus-none mt-4 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -194,17 +194,17 @@ const Navbar = () => {
                           <FontAwesomeIcon
                             icon={faEye}
                             color={
-                              selectedTab === "/trades" ? "white" : "black"
+                              selectedTab === "/trades" ? "white" : "#8E8E8E"
                             }
                             className=""
                           />
                         </div>
-                        <div className="col-8">Trading</div>
+                        <div className="col-8 text-start">Trading</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={
-                              selectedTab === "/trades" ? "white" : "black"
+                              selectedTab === "/trades" ? "white" : "#8E8E8E"
                             }
                             className=""
                           />
@@ -269,11 +269,11 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className={`btn  height-navbar-button border border-dark ${
+                    className={`btn  height-navbar-button border  ${
                       selectedTab === "/forex"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
-                        : "radius-navbar "
-                    } focus-none mt-3 p-0`}
+                        : "radius-navbar border-light shadow-sm"
+                    } focus-none mt-4 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -291,15 +291,15 @@ const Navbar = () => {
                         <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faDollarSign}
-                            color={selectedTab === "/forex" ? "white" : "black"}
+                            color={selectedTab === "/forex" ? "white" : "#8E8E8E"}
                             className=""
                           />
                         </div>
-                        <div className="col-8">Forex/Comex</div>
+                        <div className="col-8 text-start">Forex/Comex</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
-                            color={selectedTab === "/forex" ? "white" : "black"}
+                            color={selectedTab === "/forex" ? "white" : "#8E8E8E"}
                             className=""
                           />
                         </div>
@@ -356,11 +356,11 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className={`btn  height-navbar-button border border-dark ${
+                    className={`btn  height-navbar-button border  ${
                       selectedTab === "/user"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
-                        : "radius-navbar "
-                    } focus-none mt-3 p-0`}
+                        : "radius-navbar border-light shadow-sm"
+                    } focus-none mt-4 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -378,15 +378,15 @@ const Navbar = () => {
                         <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faUserCircle}
-                            color={selectedTab === "/user" ? "white" : "black"}
+                            color={selectedTab === "/user" ? "white" : "#8E8E8E"}
                             className=""
                           />
                         </div>
-                        <div className="col-8">User</div>
+                        <div className="col-8 text-start">User</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
-                            color={selectedTab === "/user" ? "white" : "black"}
+                            color={selectedTab === "/user" ? "white" : "#8E8E8E"}
                             className=""
                           />
                         </div>
@@ -435,11 +435,11 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className={`btn  height-navbar-button border border-dark ${
+                    className={`btn  height-navbar-button border  ${
                       selectedTab === "/log"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
-                        : "radius-navbar "
-                    } focus-none mt-3 p-0`}
+                        : "radius-navbar border-light shadow-sm"
+                    } focus-none mt-4 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -457,15 +457,15 @@ const Navbar = () => {
                         <div className="col-2 p-0">
                           <FontAwesomeIcon
                             icon={faBook}
-                            color={selectedTab === "/log" ? "white" : "black"}
+                            color={selectedTab === "/log" ? "white" : "#8E8E8E"}
                             className=""
                           />
                         </div>
-                        <div className="col-8">Log</div>
+                        <div className="col-8 text-start">Log</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
-                            color={selectedTab === "/log" ? "white" : "black"}
+                            color={selectedTab === "/log" ? "white" : "#8E8E8E"}
                             className=""
                           />
                         </div>
@@ -530,11 +530,11 @@ const Navbar = () => {
               <li>
                 <div className="dropdown ">
                   <button
-                    className={`btn  height-navbar-button border border-dark ${
+                    className={`btn  height-navbar-button border  ${
                       selectedTab === "/accounts"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
-                        : "radius-navbar "
-                    } focus-none mt-3 p-0`}
+                        : "radius-navbar border-light shadow-sm"
+                    } focus-none mt-4 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -553,17 +553,17 @@ const Navbar = () => {
                           <FontAwesomeIcon
                             icon={faUser}
                             color={
-                              selectedTab === "/accounts" ? "white" : "black"
+                              selectedTab === "/accounts" ? "white" : "#8E8E8E"
                             }
                             className=""
                           />
                         </div>
-                        <div className="col-8">Accounts</div>
+                        <div className="col-8 text-start">Accounts</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={
-                              selectedTab === "/accounts" ? "white" : "black"
+                              selectedTab === "/accounts" ? "white" : "#8E8E8E"
                             }
                             className=""
                           />
@@ -642,11 +642,11 @@ const Navbar = () => {
               <li>
                 <div className=" ">
                   <button
-                    className={`btn  height-navbar-button border border-dark ${
+                    className={`btn  height-navbar-button border  ${
                       selectedTab === "/report"
                         ? "radius-navbar-remove bg-orange color-white border border-light"
-                        : "radius-navbar "
-                    } focus-none mt-3 p-0`}
+                        : "radius-navbar border-light shadow-sm"
+                    } focus-none mt-4 p-0`}
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -665,17 +665,17 @@ const Navbar = () => {
                           <FontAwesomeIcon
                             icon={faAddressBook}
                             color={
-                              selectedTab === "/report" ? "white" : "black"
+                              selectedTab === "/report" ? "white" : "#8E8E8E"
                             }
                             className=""
                           />
                         </div>
-                        <div className="col-8">Report</div>
+                        <div className="col-8 text-start">Report</div>
                         <div className="col-2">
                           <FontAwesomeIcon
                             icon={faAngleDown}
                             color={
-                              selectedTab === "/report" ? "white" : "black"
+                              selectedTab === "/report" ? "white" : "#8E8E8E"
                             }
                             className=""
                           />
@@ -737,7 +737,7 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-              <Footer />
+              {/* <Footer /> */}
             </ul>
           </div>
         </nav>

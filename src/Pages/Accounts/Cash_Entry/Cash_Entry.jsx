@@ -36,16 +36,16 @@ const Cash_Entry = () => {
               <p className="m-2">From End</p>
               <Calender />
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
               <button
                 type="button"
-                className="btn btn-lg btn-primary focus-none"
+                className="btn btn-primary focus-none"
               >
                 Find Logs
               </button>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
-              <button type="button" className="btn btn-lg btn-info focus-none">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
+              <button type="button" className="btn btn-info focus-none">
                 Reset
               </button>
             </div>
@@ -65,7 +65,7 @@ const Cash_Entry = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="ms-4">
           SHOW
           <span>
             <SelectEntry />

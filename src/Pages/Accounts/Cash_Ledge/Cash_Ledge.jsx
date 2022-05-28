@@ -40,20 +40,21 @@ const Cash_Ledge = () => {
                 </label>
               </div>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-              <p className="m-2">From End</p>
-              <Calender />
-            </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-              <p className="m-2">From End</p>
-              <Calender />
-            </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center mt-5">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
               <Notifications />
             </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-5 ">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
               <UserLogo />
             </div>
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+              <p className="m-2">From End</p>
+              <Calender />
+            </div>
+            <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center">
+              <p className="m-2">From End</p>
+              <Calender />
+            </div>
+            <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-5 "></div>
           </div>
         </div>
 
@@ -61,7 +62,7 @@ const Cash_Ledge = () => {
           <div className="row">
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -84,7 +85,7 @@ const Cash_Ledge = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -107,7 +108,7 @@ const Cash_Ledge = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -130,7 +131,7 @@ const Cash_Ledge = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -160,13 +161,16 @@ const Cash_Ledge = () => {
             <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center my-1">
               <button
                 type="button"
-                className="btn btn-lg btn-primary focus-none"
+                className="btn btn-primary focus-none float-end"
               >
                 Find Logs
               </button>
             </div>
             <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center my-1">
-              <button type="button" className="btn btn-lg btn-info focus-none">
+              <button
+                type="button"
+                className="btn btn-info focus-none text-light float-start"
+              >
                 Reset
               </button>
             </div>
@@ -180,7 +184,7 @@ const Cash_Ledge = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="ms-4">
           SHOW
           <span>
             <SelectEntry />

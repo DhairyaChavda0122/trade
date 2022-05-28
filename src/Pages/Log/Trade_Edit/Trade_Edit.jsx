@@ -61,7 +61,7 @@ const Trade_Edit = () => {
           <div className="row">
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -84,7 +84,7 @@ const Trade_Edit = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -107,7 +107,7 @@ const Trade_Edit = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -130,7 +130,7 @@ const Trade_Edit = () => {
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option

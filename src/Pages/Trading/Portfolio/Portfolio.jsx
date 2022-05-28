@@ -101,7 +101,7 @@ const Portfolio = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
               <p className="m-2">MARKET</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -125,7 +125,7 @@ const Portfolio = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
               <p className="m-2">SCRIPT</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option

@@ -35,16 +35,16 @@ const Client_Report = () => {
               <p className="m-2">From End</p>
               <Calender />
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
               <button
                 type="button"
-                className="btn btn-lg btn-primary focus-none"
+                className="btn btn-primary focus-none float-end custom-btn"
               >
                 Process
               </button>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center mt-5">
-              <button type="button" className="btn btn-lg btn-info focus-none">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
+              <button type="button" className="btn btn-info focus-none text-light custom-btn  float-start">
                 Clear
               </button>
             </div>

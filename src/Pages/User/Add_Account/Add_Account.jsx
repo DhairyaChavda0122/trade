@@ -289,7 +289,7 @@ const Add_Account = () => {
             <div className="col-12 text-end">
               <button
                 type="button"
-                className="btn bg-brown color-white btn-lg focus-none button-effect"
+                className="btn bg-brown color-white btn-lg focus-none button-effect my-5"
               >
                 Submit
               </button>

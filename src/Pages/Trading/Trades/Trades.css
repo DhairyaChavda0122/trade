@@ -3,7 +3,7 @@
 }
 
 .height-button{
-    height: 4rem;
+    height: 3rem !important;
     border-radius: 15px;
 }
 
@@ -17,4 +17,8 @@
 }
 .color-black{
     color: #000
+}
+
+.btn-bg-custom{
+    background-color: #4065FF;
 }

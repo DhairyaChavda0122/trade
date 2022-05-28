@@ -108,7 +108,7 @@ const Deposit = () => {
               <span className="color-blue fw-bold"> 0.00(Cr)</span>
             </div>
 
-            <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 my-3">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 my-3 mb-4">
               <div className="input-group">
                 <label
                   className="input-group-text bg-transparent border-none"
@@ -132,7 +132,7 @@ const Deposit = () => {
               <span className="color-blue fw-bold"> 0.00(Cr)</span>
             </div>
 
-            <div className="col-2">
+            <div className="col-1">
               <label
                 className="input-group-text bg-transparent border-none"
                 htmlFor="inputGroupSelect01"
@@ -140,7 +140,7 @@ const Deposit = () => {
                 Date
               </label>
             </div>
-            <div className="col-7">
+            <div className="col-5">
               <DateComp />
             </div>
             <Link to="/" className="col-3 color-blue fw-bold dec-none">
@@ -185,19 +185,19 @@ const Deposit = () => {
             <div className="col-12 text-end my-2">
               <button
                 type="button"
-                className="btn bg-orange mx-4 color-white btn-lg focus-none my-1"
+                className="btn bg-orange mx-4 color-white btn-lg focus-none custom-btn my-1"
               >
                 Save
               </button>
               <button
                 type="button"
-                className="btn bg-brown mx-4 color-white btn-lg focus-none button-effect my-1"
+                className="btn bg-brown mx-4 color-white btn-lg focus-none custom-btn button-effect my-1"
               >
                 Delete
               </button>
               <button
                 type="button"
-                className="btn bg-primary mx-4 color-white btn-lg focus-none  my-1"
+                className="btn bg-primary mx-4 color-white btn-lg focus-none custom-btn  my-1"
               >
                 Clear
               </button>

@@ -80,19 +80,19 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 my-2">
+            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4 my-2">
               <Search />
             </div>
 
-            <div className="container">
-              <div className="row">
-                <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center  my-3 my-sm-3 my-md-3 my-lg-0 my-xl-0">
+            {/* <div className="container">
+              <div className="row"> */}
+                <div className="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 text-center  my-3 my-sm-3 my-md-3 my-lg-0 my-xl-0">
                   <Notifications />
                 </div>
-                <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 my-3 my-sm-3 my-md-3 my-lg-0 my-xl-0">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 my-3 my-sm-3 my-md-3 my-lg-0 my-xl-0">
                   <UserLogo />
-                </div>
-              </div>
+                {/* </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ const Portfolio = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
               <p className="m-2">MARKET</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -125,7 +125,7 @@ const Portfolio = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
               <p className="m-2">SCRIPT</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -166,7 +166,7 @@ const Portfolio = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
               <button
                 type="button"
-                className="btn btn-info text-center btn-lg fs-6 focus-none"
+                className="btn btn-info text-center btn-lg fs-6 focus-none text-light"
               >
                 ROLL OVER ALL
               </button>
@@ -194,7 +194,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="ms-4">
           SHOW
           <span>
             <SelectEntry />

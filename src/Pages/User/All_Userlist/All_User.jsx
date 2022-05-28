@@ -16,7 +16,7 @@ const All_User = () => {
                   <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                     <p className="m-2">BROKER</p>
                     <select
-                      className="form-select bg-orange color-white height-button focus-none myClass"
+                      className="form-select bg-orange color-white height-button focus-none  "
                       aria-label="Default select example"
                     >
                       <option
@@ -40,7 +40,7 @@ const All_User = () => {
                   <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                     <p className="m-2">STATUS</p>
                     <select
-                      className="form-select bg-orange color-white height-button focus-none myClass"
+                      className="form-select bg-orange color-white height-button focus-none  "
                       aria-label="Default select example"
                     >
                       <option
@@ -64,7 +64,7 @@ const All_User = () => {
                   <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                     <p className="m-2">PARANTS</p>
                     <select
-                      className="form-select bg-orange color-white height-button focus-none myClass"
+                      className="form-select bg-orange color-white height-button focus-none  "
                       aria-label="Default select example"
                     >
                       <option
@@ -88,7 +88,7 @@ const All_User = () => {
                   <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
                     <p className="m-2">TYPE</p>
                     <select
-                      className="form-select bg-orange color-white height-button focus-none myClass"
+                      className="form-select bg-orange color-white height-button focus-none  "
                       aria-label="Default select example"
                     >
                       <option
@@ -115,7 +115,7 @@ const All_User = () => {
             <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 text-center">
               <button
                 type="button"
-                className="btn bg-brown color-white mt-5 focus-none"
+                className="btn bg-brown color-white margin-custom focus-none"
               >
                 Submit
               </button>
@@ -137,7 +137,7 @@ const All_User = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="ms-4">
           SHOW
           <span>
             <SelectEntry />

@@ -164,7 +164,7 @@ const Trade_Entry = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
               <p className="m-2">Script Name</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -189,7 +189,7 @@ const Trade_Entry = () => {
             <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-2">
               <p className="m-2">Lot</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -213,7 +213,7 @@ const Trade_Entry = () => {
             <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-2">
               <p className="m-2">Qty</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -237,7 +237,7 @@ const Trade_Entry = () => {
             <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">
               <p className="m-2">Price</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -261,7 +261,7 @@ const Trade_Entry = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
               <p className="m-2">Client</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option

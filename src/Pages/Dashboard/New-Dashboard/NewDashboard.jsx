@@ -57,10 +57,10 @@ const NewDashboard = () => {
               </span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav mb-2">
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-1 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav"
                     to="/trade/trades-dashboard"
                   >
                     Dashboard
@@ -68,30 +68,30 @@ const NewDashboard = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-1 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav"
                     to="/trade/executed"
                   >
                     Executed Options
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/running">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav" to="/trade/running">
                     Running Orders
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/summary">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav" to="/trade/summary">
                     Summary Reports
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/m2m">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav" to="/trade/m2m">
                     M2M Alerts
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-1 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav"
                     to="/trade/user-dashboard"
                   >
                     User
@@ -99,7 +99,7 @@ const NewDashboard = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-1 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav"
                     to="/trade/trade-entry"
                   >
                     Trade Entry
@@ -112,65 +112,65 @@ const NewDashboard = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 ">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mt-2">
               <div className=" d-flex justify-content-center pos-rel">
                 <FontAwesomeIcon
                   icon={faEye}
-                  className="bg-info p-3 btn-radius"
+                  className="bg-info p-2 btn-radius"
                   color="white"
                   size="1x"
                 />
               </div>
-              <div className="text-center border shadow btn-radius">
-                <p className="fs-3 my-1 text-info">17,000</p>
-                <p className="my-0">Daily Views</p>
+              <div className="text-center border shadow-sm btn-radius">
+                <p className="fs-4 mt-3 mb-0 text-info">17,000</p>
+                <p className="my-0 mb-1">Daily Views</p>
               </div>
             </div>
-            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 ">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mt-2">
               <div className=" d-flex justify-content-center pos-rel">
                 <FontAwesomeIcon
                   icon={faCartShopping}
-                  className="bg-primary p-3 btn-radius"
+                  className="bg-primary p-2 btn-radius"
                   color="white"
                   size="1x"
                 />
               </div>
-              <div className="text-center border shadow btn-radius">
-                <p className="fs-3 my-1 text-primary">8000</p>
-                <p className="my-0">Sales</p>
+              <div className="text-center border shadow-sm btn-radius">
+                <p className="fs-4 mt-3 mb-0 text-primary">8000</p>
+                <p className="my-0 mb-1">Sales</p>
               </div>
             </div>
-            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 ">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mt-2">
               <div className=" d-flex justify-content-center pos-rel">
                 <FontAwesomeIcon
                   icon={faMessage}
-                  className="bg-brown p-3 btn-radius"
+                  className="bg-brown p-2 btn-radius"
                   color="white"
                   size="1x"
                 />
               </div>
-              <div className="text-center border shadow btn-radius">
-                <p className="fs-3 my-1 color-brown">284</p>
-                <p className="my-0">Comments</p>
+              <div className="text-center border shadow-sm btn-radius">
+                <p className="fs-4 mt-3 mb-0 color-brown">284</p>
+                <p className="my-0 mb-1">Comments</p>
               </div>
             </div>
-            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 ">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mt-2">
               <div className=" d-flex justify-content-center pos-rel">
                 <FontAwesomeIcon
                   icon={faEye}
-                  className="bg-warning p-3 btn-radius"
+                  className="bg-warning p-2 btn-radius"
                   color="white"
                   size="1x"
                 />
               </div>
-              <div className="text-center border shadow btn-radius">
-                <p className="fs-3 my-1 text-warning">$7786</p>
-                <p className="my-0">Earnings</p>
+              <div className="text-center border shadow-sm btn-radius">
+                <p className="fs-4 mt-3 mb-0 text-warning">$7786</p>
+                <p className="my-0 mb-1">Earnings</p>
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
-              <p className="fs-3 fw-bold">Accounts</p>
-              <div className="bg-primary text-center py-5 accounts-radius">
+              <p className="fs-5 text-center mb-1 ft-bomb-0 ld">Accounts</p>
+              <div className="bg-primary text-center py-3 accounts-radius">
                 <p className="my-1 color-white fs-6">$14,45,000</p>
                 <span className="accounts-radius color-white bg-info font-smaller px-2 py-1">
                   <FontAwesomeIcon icon={faCaretUp} /> $32 (2%)
@@ -181,7 +181,7 @@ const NewDashboard = () => {
                   <div className="col-6 text-center mx-0 px-1">
                     <button
                       type="button"
-                      className="btn btn-primary w-100 my-2 btn-radius focus-none"
+                      className="btn btn-primary w-100 my-2 btn-radius focus-none float-start"
                     >
                       <FontAwesomeIcon icon={faArrowUp} /> Deposit
                     </button>
@@ -211,7 +211,7 @@ const NewDashboard = () => {
                         <div className="col-3">
                           <FontAwesomeIcon
                             icon={faB}
-                            className="bg-orange p-3 B-radius"
+                            className="bg-orange p-2 B-radius"
                             color="white"
                           />
                         </div>
@@ -239,7 +239,7 @@ const NewDashboard = () => {
                         <div className="col-3">
                           <FontAwesomeIcon
                             icon={faGem}
-                            className="bg-secondary p-3 B-radius"
+                            className="bg-secondary p-2 B-radius"
                             color="white"
                           />
                         </div>
@@ -267,7 +267,7 @@ const NewDashboard = () => {
                         <div className="col-3">
                           <FontAwesomeIcon
                             icon={faUpDown}
-                            className="bg-warning p-3 B-radius"
+                            className="bg-warning p-2 B-radius"
                             color="white"
                           />
                         </div>
@@ -295,7 +295,7 @@ const NewDashboard = () => {
                         <div className="col-3">
                           <FontAwesomeIcon
                             icon={faGem}
-                            className="bg-secondary p-3 B-radius"
+                            className="bg-secondary p-2 B-radius"
                             color="white"
                           />
                         </div>
@@ -321,14 +321,14 @@ const NewDashboard = () => {
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <p className="fs-3 fw-bold">Recent Transactions</p>
+              <p className="fs-4 ft-bomb-0 ld">Recent Transactions</p>
 
               <div className="container p-0">
                 <div className="row w-100">
                   <div className="col-3">
                     <FontAwesomeIcon
                       icon={faB}
-                      className="bg-warning p-3 B-radius"
+                      className="bg-warning p-2 B-radius"
                       color="white"
                     />
                   </div>
@@ -348,7 +348,7 @@ const NewDashboard = () => {
                   <div className="col-3">
                     <FontAwesomeIcon
                       icon={faGem}
-                      className="bg-secondary p-3 B-radius"
+                      className="bg-secondary p-2 B-radius"
                       color="white"
                     />
                   </div>
@@ -368,7 +368,7 @@ const NewDashboard = () => {
                   <div className="col-3">
                     <FontAwesomeIcon
                       icon={faGem}
-                      className="bg-secondary p-3 B-radius"
+                      className="bg-secondary p-2 B-radius"
                       color="white"
                     />
                   </div>

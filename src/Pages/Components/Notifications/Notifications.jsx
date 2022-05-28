@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
+import "./Notifications.css"
 
 const Notifications = () => {
   return (
@@ -16,12 +17,12 @@ const Notifications = () => {
       >
         <button
           type="button"
-          className="position-relative border-none bg-transparent"
+          className="position-relative border-none bg-transparent "
         >
           <FontAwesomeIcon
             icon={faBell}
-            className="p-0 "
-            size="2x"
+            className="p-0 custom-size"
+            size="1x"
             color="grey"
           />
           <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">

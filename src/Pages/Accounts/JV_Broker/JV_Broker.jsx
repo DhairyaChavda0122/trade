@@ -45,7 +45,7 @@ const JV_Broker = () => {
               </div>
             </div>
 
-            <div className="col-12 text-end my-4">
+            <div className="col-6 text-end my-4">
               <button
                 type="button"
                 className="btn bg-brown color-white btn-lg focus-none button-effect"
@@ -53,10 +53,10 @@ const JV_Broker = () => {
                 Process
               </button>
             </div>
-            <div className="col-12 text-end my-4">
+            <div className="col-6 text-start my-4">
               <button
                 type="button"
-                className="btn bg-primary color-white btn-lg focus-none button-effect"
+                className="btn bg-blue color-white btn-lg focus-none button-effect"
               >
                 Submit
               </button>

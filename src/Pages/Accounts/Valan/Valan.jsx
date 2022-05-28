@@ -67,7 +67,7 @@ const Valan = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <p>Market Type</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -91,7 +91,7 @@ const Valan = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2">
               <p>Valan Name</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -128,7 +128,7 @@ const Valan = () => {
             <div className="col-12">
               <button
                 type="button"
-                className="float-end btn btn-lg mx-5 btn-info focus-none"
+                className="float-end btn btn-lg mx-5 bg-danger focus-none text-light"
               >
                 +ADD
               </button>

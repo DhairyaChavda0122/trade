@@ -62,7 +62,7 @@ const Trades = () => {
             <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-2">
               <p className="m-2">SELECT MARKET</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -86,7 +86,7 @@ const Trades = () => {
             <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-2">
               <p className="m-2">SELECT SCRIPT</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -110,7 +110,7 @@ const Trades = () => {
             <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">
               <p className="m-2">ORDER TYPE</p>
               <select
-                className="form-select bg-orange color-white height-button focus-none myClass"
+                className="form-select bg-orange color-white height-button focus-none  "
                 aria-label="Default select example"
               >
                 <option
@@ -135,7 +135,10 @@ const Trades = () => {
         </div>
         <div className="container-fluid my-5">
           <div className="row">
-            <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center my-1">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-end my-1">
+
+            </div>
+            <div className="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-end my-1">
               <button
                 type="button"
                 className="btn btn-primary text-center btn-lg fs-6 focus-none"
@@ -143,10 +146,10 @@ const Trades = () => {
                 FIND ORDER
               </button>
             </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center my-1">
+            <div className="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-start my-1">
               <button
                 type="button"
-                className="btn btn-info text-center btn-lg fs-6 focus-none"
+                className="btn btn-info text-center btn-lg fs-6 focus-none text-light"
               >
                 CLEAR FILTER
               </button>

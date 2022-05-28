@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className="my-5">
         <p className="text-center mt-2 mb-0">User's information</p>
-        <button type="button" className="btn text-danger fs-5 w-100">
+        <button type="button" className="btn text-danger fs-5 w-100 focus-none">
           <FontAwesomeIcon
             icon={faArrowRightFromBracket}
             className=""

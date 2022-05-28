@@ -107,7 +107,7 @@ const JV = () => {
               <span className="color-blue fw-bold"> 0.00(Cr)</span>
             </div>
 
-            <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 my-3">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 my-3 mb-4">
               <div className="input-group">
                 <label
                   className="input-group-text bg-transparent border-none"
@@ -131,7 +131,7 @@ const JV = () => {
               <span className="color-blue fw-bold"> 0.00(Cr)</span>
             </div>
 
-            <div className="col-2">
+            <div className="col-1">
               <label
                 className="input-group-text bg-transparent border-none"
                 htmlFor="inputGroupSelect01"
@@ -139,7 +139,7 @@ const JV = () => {
                 Date
               </label>
             </div>
-            <div className="col-7">
+            <div className="col-5">
               <div className="input-group flex-nowrap">
                 <DateComp />
               </div>
@@ -192,7 +192,7 @@ const JV = () => {
               </button>
               <button
                 type="button"
-                className="btn bg-primary mx-4 color-white btn-lg focus-none button-effect my-1"
+                className="btn bg-blue mx-4 color-white btn-lg focus-none my-1"
               >
                 Clear
               </button>

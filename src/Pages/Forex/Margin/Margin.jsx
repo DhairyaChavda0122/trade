@@ -23,7 +23,7 @@ const Margin = () => {
             </div>
           </div>
         </div>
-        <div className="text-start fw-bold my-5">Margin Management</div>
+        <div className="text-start fw-bold my-5 ms-4">Margin Management</div>
 
         <Table />
       </Fade>

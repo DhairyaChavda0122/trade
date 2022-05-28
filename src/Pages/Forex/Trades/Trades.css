@@ -18,3 +18,7 @@
 .color-black{
     color: #000
 }
+
+.bg-danger{
+    background-color: #701323 !important;
+}
