@@ -1,5 +1,9 @@
-.height-login{
+/* .height-login{
     height: 100vh;
+} */
+
+.container, .container-fluid{
+    font-size: 0.875rem !important;
 }
 
 .flex-div{
@@ -8,7 +12,7 @@
     align-items: center;
 }
 .raduis-login{
-    border-radius: 25px;
+    border-radius: 25px !important;
     border: none
 }
 
@@ -26,3 +30,35 @@
 .color-red{
     color:rgb(176, 9, 9)
 }
+.border-r-none{
+    border-right: none !important;
+}
+.border-l-none{
+    border-left: none !important;
+}
+/* .top-images {
+    max-height: 153px;
+} */
+
+/* styling for bars on both the side */
+
+.left-bar {
+    width: 13px;
+    height: 300px;
+    background: #FAB417;
+    border-radius: 10px 0px 0px 10px;
+    transform: rotate(180deg);
+}
+
+.right-bar {
+    width: 13px;
+    height: 300px;
+    background: #FAB417;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.bar {
+    margin-top: 25%;
+}
+
+
