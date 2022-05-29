@@ -13,7 +13,7 @@ import {
   faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 const Navbar = () => {
   const [selectedTab, setSelectedTab] = useState();
@@ -114,6 +114,14 @@ const Navbar = () => {
                     >
                       <li className="list-group-item no-dec text-start border-list-2">
                         Dashboard
+                      </li>
+                    </Link>
+                    <Link
+                      to="/trade/create-market"
+                      className="text-start no-dec text-dark"
+                    >
+                      <li className="list-group-item no-dec text-start">
+                        Create
                       </li>
                     </Link>
                     {/* <Link
@@ -624,7 +632,7 @@ const Navbar = () => {
                       to="/trade/valan"
                       className="text-start no-dec text-dark"
                     >
-                      <li className="list-group-item no-dec text-start border-list-2">
+                      <li className="list-group-item no-dec text-start">
                         Valan
                       </li>
                     </Link>

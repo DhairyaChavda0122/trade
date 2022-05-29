@@ -17,7 +17,7 @@ import Search from "../../Components/Search/Search";
 import Notifications from "../../Components/Notifications/Notifications";
 import ChartComp from "../../Components/theChart/theChart";
 import UserLogo from "../../Components/UserLogo/UserLogo";
-import DetailTable from "../../Components/Detail-Table/Detail_Table";
+// import DetailTable from "../../Components/Detail-Table/Detail_Table";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 
@@ -60,7 +60,7 @@ const NewDashboard = () => {
               <ul className="navbar-nav mb-2">
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-3 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
                     to="/trade/trades-dashboard"
                   >
                     Dashboard
@@ -68,30 +68,30 @@ const NewDashboard = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-3 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
                     to="/trade/executed"
                   >
                     Executed Options
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav" to="/trade/running">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/running">
                     Running Orders
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav" to="/trade/summary">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/summary">
                     Summary Reports
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav" to="/trade/m2m">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/m2m">
                     M2M Alerts
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-3 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
                     to="/trade/user-dashboard"
                   >
                     User
@@ -99,7 +99,7 @@ const NewDashboard = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-3 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
                     to="/trade/trade-entry"
                   >
                     Trade Entry
@@ -388,7 +388,7 @@ const NewDashboard = () => {
         </div>
         <ChartComp />
 
-        <DetailTable />
+        {/* <DetailTable /> */}
       </Fade>
     </>
   );

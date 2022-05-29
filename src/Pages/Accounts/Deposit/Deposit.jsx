@@ -132,7 +132,7 @@ const Deposit = () => {
               <span className="color-blue fw-bold"> 0.00(Cr)</span>
             </div>
 
-            <div className="col-1">
+            <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
               <label
                 className="input-group-text bg-transparent border-none"
                 htmlFor="inputGroupSelect01"

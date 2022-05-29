@@ -11,6 +11,10 @@ import M2M from "./Pages/Dashboard/M2M/M2M";
 import UserDashboard from "./Pages/Dashboard/User-Dashboard/User_Dashboard";
 import TradeEntry from "./Pages/Dashboard/Trade-Entry/Trade_Entry";
 
+import Create from "./Pages/Create/Create";
+import Limit from "./Pages/Create/Limit";
+import Stop from "./Pages/Create/Stop";
+
 
 import WatchlistTrading from "./Pages/Trading/Watchlist/Watchlist";
 import TradesTrading from "./Pages/Trading/Trades/Trades";
@@ -73,6 +77,12 @@ const App = () => {
                 <Route path="/trade/m2m" element={<M2M />}></Route>
                 <Route path="/trade/user-dashboard" element={<UserDashboard />}></Route>
                 <Route path="/trade/trade-entry" element={<TradeEntry />}></Route>
+
+
+                <Route path="/trade/create-market" element={<Create />}></Route>
+                <Route path="/trade/create-limit" element={<Limit />}></Route>
+                <Route path="/trade/create-stop" element={<Stop />}></Route>
+
 
                 {/* Trading */}
 

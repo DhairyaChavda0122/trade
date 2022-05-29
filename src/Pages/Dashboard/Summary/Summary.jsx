@@ -40,13 +40,15 @@ const Summary = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon mt-2"><FontAwesomeIcon icon={faBars}/></span>
+              <span className="navbar-toggler-icon mt-2">
+                <FontAwesomeIcon icon={faBars} />
+              </span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav mb-2">
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-1 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
                     to="/trade/trades-dashboard"
                   >
                     Dashboard
@@ -54,37 +56,40 @@ const Summary = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-1 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
                     to="/trade/executed"
                   >
                     Executed Options
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/running">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/running">
                     Running Orders
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/summary">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/summary">
                     Summary Reports
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/m2m">
+                  <Link className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center" to="/trade/m2m">
                     M2M Alerts
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link mx-1 text-dark border rounder hover-effect-nav"
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
                     to="/trade/user-dashboard"
                   >
                     User
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-1 text-dark border rounder hover-effect-nav" to="/trade/trade-entry">
+                  <Link
+                    className="nav-link mx-3 text-dark border rounder hover-effect-nav text-center"
+                    to="/trade/trade-entry"
+                  >
                     Trade Entry
                   </Link>
                 </li>
@@ -92,7 +97,7 @@ const Summary = () => {
             </div>
           </div>
         </nav>
-        <div>
+        <div className="ms-4">
           SHOW
           <span>
             <SelectEntry />

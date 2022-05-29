@@ -79,21 +79,22 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 my-1">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-1">
               <Search />
             </div>
+            <div className="col-12 col-sm-6 col-md-6 col-lg-1 col-xl-1 text-center">
+              <Notifications />
+            </div>
+            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+              <UserLogo />
           </div>
         </div>
 
-        <div className="container">
-          <div className="row">
-            <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-              <Notifications />
-            </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <UserLogo />
-            </div>
-          </div>
+        {/* <div className="container">
+          <div className="row"> */}
+            
+            {/* </div>
+          </div> */}
         </div>
 
         <div className="container">
@@ -166,7 +167,7 @@ const Portfolio = () => {
             <div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 my-2 text-center">
               <button
                 type="button"
-                className="btn btn-info text-center btn-lg fs-6 focus-none"
+                className="btn btn-info text-center btn-lg fs-6 focus-none text-light"
               >
                 ROLL OVER ALL
               </button>

@@ -136,7 +136,7 @@ const Rejection = () => {
               {" "}
               <Search />
             </div>
-            <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center my-1">
+            <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 text-center my-1">
               <button
                 type="button"
                 className="btn btn-primary focus-none float-end"
@@ -144,7 +144,7 @@ const Rejection = () => {
                 Find Logs
               </button>
             </div>
-            <div className="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center my-1">
+            <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 text-center my-1">
               <button
                 type="button"
                 className="btn btn-info focus-none text-light float-start"

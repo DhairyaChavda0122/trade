@@ -13,7 +13,7 @@ const User_Edit = () => {
       <Fade right bottom>
         <div className="container">
           <div className="row my-2">
-            <div className="col-3 col-sm-3 col-md-6 col-lg-4 col-xl-4">
+            <div className="col-12 col-sm-3 col-md-6 col-lg-4 col-xl-4">
               User Edit Log
             </div>
             <div className="col-4 col-sm-3 col-md-1 col-lg-5 col-xl-5"></div>
@@ -36,7 +36,7 @@ const User_Edit = () => {
               <p className="m-2">From End</p>
               <Calender />
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
               <button
                 type="button"
                 className="btn btn-primary focus-none float-end"
@@ -44,7 +44,7 @@ const User_Edit = () => {
                 Find Logs
               </button>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
               <button type="button" className="text-light btn btn-info focus-none float-start">
                 Reset
               </button>

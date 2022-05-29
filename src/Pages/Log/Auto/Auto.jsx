@@ -35,7 +35,7 @@ const Auto = () => {
               <p className="m-2">From End</p>
               <Calender />
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
               <button
                 type="button"
                 className="btn btn-primary focus-none float-end"
@@ -43,7 +43,7 @@ const Auto = () => {
                 Find Logs
               </button>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 text-center margin-custom">
               <button type="button" className="text-light btn btn-info focus-none float-start">
                 Reset
               </button>

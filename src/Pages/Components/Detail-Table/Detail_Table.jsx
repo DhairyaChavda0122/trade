@@ -11,7 +11,7 @@ const Detail_Table = () => {
   return (
     <>
       <div className="my-5 table-responsive">
-        <table className="table">
+        <table className="table table-responsive">
           <thead>
             <tr>
               <th scope="col" className="text-muted">
